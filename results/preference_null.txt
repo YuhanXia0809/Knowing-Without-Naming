@@ -1,0 +1,16 @@
+=== EN ===
+  full_en_qwen7b     strict  441 | observed pass 0.896 | null pass 0.238 | TOT:DK  13.2 -> floor-corrected  9.8
+  full_en_qwen14b    strict  370 | observed pass 0.895 | null pass 0.241 | TOT:DK  12.7 -> floor-corrected  9.4
+  full_en_qwen32b    strict  348 | observed pass 0.922 | null pass 0.244 | TOT:DK  16.1 -> floor-corrected 11.9
+  full_en_qwen72b    strict  279 | observed pass 0.907 | null pass 0.243 | TOT:DK  14.1 -> floor-corrected 10.4
+  full_en_llama8b    strict  349 | observed pass 0.837 | null pass 0.238 | TOT:DK   7.1 -> floor-corrected  5.2
+  full_en_llama70b   strict  218 | observed pass 0.858 | null pass 0.239 | TOT:DK   7.8 -> floor-corrected  5.7
+  POOLED             strict 2005 | observed pass 0.887 | null pass 0.240 | TOT:DK  11.2 -> floor-corrected  8.3
+=== ZH ===
+  full_zh_qwen7b     strict  642 | observed pass 0.799 | null pass 0.234 | TOT:DK   5.4 -> floor-corrected  3.9
+  full_zh_qwen14b    strict  580 | observed pass 0.809 | null pass 0.234 | TOT:DK   5.9 -> floor-corrected  4.3
+  full_zh_qwen32b    strict  548 | observed pass 0.856 | null pass 0.241 | TOT:DK   7.4 -> floor-corrected  5.4
+  full_zh_qwen72b    strict  517 | observed pass 0.818 | null pass 0.240 | TOT:DK   5.6 -> floor-corrected  4.0
+  full_zh_llama8b    strict  622 | observed pass 0.690 | null pass 0.219 | TOT:DK   3.1 -> floor-corrected  2.2
+  full_zh_llama70b   strict  523 | observed pass 0.738 | null pass 0.231 | TOT:DK   3.8 -> floor-corrected  2.7
+  POOLED             strict 3432 | observed pass 0.784 | null pass 0.233 | TOT:DK   4.9 -> floor-corrected  3.5

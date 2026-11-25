@@ -1,0 +1,4 @@
+en TOT: 1117/1779 = 0.628  cluster-bootstrap [0.589, 0.664]  (615 items)
+en DK: 78/159 = 0.491  cluster-bootstrap [0.356, 0.631]  (64 items)
+zh TOT: 980/2689 = 0.364  cluster-bootstrap [0.335, 0.394]  (679 items)
+zh DK: 136/551 = 0.247  cluster-bootstrap [0.195, 0.306]  (219 items)

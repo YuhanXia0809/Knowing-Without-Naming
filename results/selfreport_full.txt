@@ -1,0 +1,32 @@
+# Self-report vs behavioral state, all 28 datasets
+# Behav. TOT = strict failures with recognition >= 3/4; Self-rep. TOT = items the model self-reports as TOT; OR(TOT/DK) = odds ratio for self-reported TOT discriminating behavioral TOT from DK among strict failures (log-linear 0.5 correction; * = Fisher exact p < .05); n/a^dagger = no self-reports inside that set, so no odds ratio is defined; Jaccard = overlap of the two TOT sets (descriptive, base-rate-bound); Claim%/Acc = rate and accuracy of first-unit claims in the performed-TOT probe on failed items. Per-dataset 2x2 cells: results/selfreport_cells.csv (code/selfreport_meta3.py). Computed by code/paper_tables.py.
+
+Lang	Model	Behav. TOT	Self-rep. TOT	OR(TOT/DK)	Jaccard	Claim% (TOT)	Acc (TOT)	Claim% (DK)	Acc (DK)
+EN	Qwen2.5-7B	395	868	1.03	0.248	0.83	0.12	0.77	0.13
+EN	Qwen2.5-14B	331	1142	1.89	0.247	1.00	0.16	1.00	0.08
+EN	Qwen2.5-32B	321	851	1.28	0.236	0.98	0.19	1.00	0.15
+EN	Qwen2.5-72B	253	210	0.59	0.146	0.93	0.16	0.83	0.20
+EN	Llama-3.1-8B	292	61	0.58	0.070	1.00	0.17	1.00	0.12
+EN	Llama-3.1-70B	187	10	0.07*	0.005	1.00	0.19	1.00	0.25
+EN	Gemma-3-12B	445	151	0.64	0.131	0.19	0.25	0.14	0.20
+EN	Gemma-3-27B	364	4	0.08	0.003	0.60	0.26	0.86	0.24
+EN	GLM-4-9B	328	455	0.59	0.190	0.97	0.13	0.94	0.04
+EN	Mistral-7B	521	1468	0.72	0.348	0.99	0.24	1.00	0.21
+EN	OLMo-2-13B	305	168	1.21	0.090	0.97	0.20	0.94	0.10
+EN	OLMo-2-32B	264	1014	0.99	0.186	0.15	0.13	0.27	0.29
+EN	Phi-4	247	23	1.63	0.034	0.91	0.17	0.95	0.11
+EN	R1-Distill-14B	132	70	0.78	0.047	0.69	0.16	0.56	0.07
+ZH	Qwen2.5-7B	513	500	0.86	0.431	0.87	0.06	0.95	0.03
+ZH	Qwen2.5-14B	469	647	0.71	0.502	0.81	0.06	0.79	0.02
+ZH	Qwen2.5-32B	469	356	1.26	0.333	0.53	0.09	0.65	0.07
+ZH	Qwen2.5-72B	423	23	1.12	0.035	0.99	0.07	0.97	0.04
+ZH	Llama-3.1-8B	429	19	0.74	0.023	0.95	0.03	0.89	0.02
+ZH	Llama-3.1-70B	386	0	n/a^dagger	0.000	0.97	0.06	0.97	0.02
+ZH	Gemma-3-12B	486	95	1.02	0.124	0.43	0.07	0.32	0.03
+ZH	Gemma-3-27B	487	0	n/a^dagger	0.000	0.26	0.07	0.31	0.04
+ZH	GLM-4-9B	442	203	0.52*	0.190	0.84	0.02	0.91	0.00
+ZH	Mistral-7B	346	899	0.50	0.380	0.40	0.02	0.42	0.00
+ZH	OLMo-2-13B	285	888	1.44	0.315	0.38	0.03	0.48	0.01
+ZH	OLMo-2-32B	496	586	1.33	0.503	0.72	0.03	0.76	0.01
+ZH	Phi-4	462	4	0.57	0.006	0.87	0.02	0.87	0.01
+ZH	R1-Distill-14B	391	3	n/a^dagger	0.000	0.58	0.04	0.69	0.02

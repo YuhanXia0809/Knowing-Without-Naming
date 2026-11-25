@@ -1,0 +1,14 @@
+====================================================================================================
+DECOY-CUE ARM ON THE MATCHED POPULATION
+====================================================================================================
+'all' = every usable decoy item.  'matched' = decoy items whose source bank item is a cleanly classified failure (TOT or DK) for that model -- the population the real-target rate is computed on.  'real' = the same model's real-target cue unlock on exactly those source items.  All rates are any-of-20 (greedy OR >=1/20).
+
+cell                    n_all  decoy_all  n_match  decoy_match  real_match  margin
+en/Qwen2.5-7B          397      0.151      128        0.141       0.531   3.78x
+en/Llama-3.1-8B        387      0.132       86        0.163       0.686   4.21x
+en/Qwen2.5-72B         396      0.169       72        0.208       0.653   3.13x
+en/Llama-3.1-70B       393      0.181       60        0.183       0.733   4.00x
+zh/Qwen2.5-7B          395      0.104      266        0.105       0.203   1.93x
+zh/Llama-3.1-8B        396      0.146      255        0.157       0.333   2.12x
+zh/Qwen2.5-72B         390      0.292      210        0.286       0.462   1.62x
+zh/Llama-3.1-70B       393      0.277      214        0.252       0.425   1.69x

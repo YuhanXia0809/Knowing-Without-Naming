@@ -1,0 +1,55 @@
+================================================================================================
+TARGET-ABSENT CONTROLS: EVERY PRINTED NUMBER, FROM THE RAW RECORDS
+================================================================================================
+
+### DECOY-TARGET 4AFC -- rung (ii): borrowed fillers   (consistent selection = k_rec >= 3/4; chance ~ 5%)
+cell                       n   k>=3    rate  mean p
+en/Qwen2.5-7B         400    211   0.527   0.622
+en/Llama-3.1-8B       400    283   0.708   0.669
+en/Qwen2.5-72B        400    290   0.725   0.749
+en/Llama-3.1-70B      400    204   0.510   0.572
+zh/Qwen2.5-7B         400    197   0.492   0.574
+zh/Llama-3.1-8B       400    208   0.520   0.541
+zh/Qwen2.5-72B        400    244   0.610   0.649
+zh/Llama-3.1-70B      400    202   0.505   0.537
+
+### DECOY-TARGET 4AFC -- rung (ii-b): option-matched   (consistent selection = k_rec >= 3/4; chance ~ 5%)
+cell                       n   k>=3    rate  mean p
+en/Qwen2.5-7B         345    111   0.322   0.385
+en/Llama-3.1-8B       345    137   0.397   0.407
+en/Qwen2.5-72B        345    142   0.412   0.436
+en/Llama-3.1-70B      345    100   0.290   0.349
+zh/Qwen2.5-7B         333    100   0.300   0.355
+zh/Llama-3.1-8B       333     92   0.276   0.329
+zh/Qwen2.5-72B        333    119   0.357   0.385
+zh/Llama-3.1-70B      333    100   0.300   0.321
+
+### DECOY-CUE (real word, not the stored answer for that gloss)   (any-of-20 = greedy OR >=1/20)
+cell                       n  greedy   any20  plac.g  plac.20
+en/Qwen2.5-7B         397   0.073   0.151   0.000    0.005
+en/Llama-3.1-8B       387   0.041   0.132   0.000    0.005
+en/Qwen2.5-72B        396   0.091   0.169   0.000    0.003
+en/Llama-3.1-70B      393   0.079   0.181   0.000    0.008
+zh/Qwen2.5-7B         395   0.041   0.104   0.000    0.003
+zh/Llama-3.1-8B       396   0.083   0.146   0.000    0.010
+zh/Qwen2.5-72B        390   0.200   0.292   0.000    0.005
+zh/Llama-3.1-70B      393   0.150   0.277   0.000    0.003
+
+### PSEUDOWORD-CUE (novel form, no stored entry at all)   (any-of-20 = greedy OR >=1/20)
+cell                       n  greedy   any20  plac.g  plac.20
+en/Qwen2.5-7B         400   0.000   0.000   0.000    0.000
+en/Llama-3.1-8B       400   0.000   0.000   0.000    0.000
+en/Qwen2.5-72B        400   0.000   0.000   0.000    0.000
+en/Llama-3.1-70B      400   0.000   0.000   0.000    0.000
+zh/Qwen2.5-7B         399   0.000   0.000   0.000    0.000
+zh/Llama-3.1-8B       399   0.000   0.000   0.000    0.000
+zh/Qwen2.5-72B        399   0.000   0.000   0.000    0.000
+zh/Llama-3.1-70B      399   0.000   0.003   0.000    0.000
+
+### NON-LEXICAL CONTROL BATTERY (300 English facts; identical pipeline and classifier)
+DK here is the complement of TOT within strict failures (the 2/4 recognition band included).
+cell                       n  strictfail   TOT    DK     T:D
+en/Qwen2.5-7B         300          99    87    12    7.25
+en/Llama-3.1-8B       300          97    30    67    0.45
+en/Qwen2.5-72B        300         101   100     1  100.00
+en/Llama-3.1-70B      300          96    86    10    8.60

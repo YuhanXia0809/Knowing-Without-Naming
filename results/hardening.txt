@@ -1,0 +1,42 @@
+============================================================================================
+A. LITERAL-DENOMINATOR (DK_jnt) JOINT RATIOS: item-cluster bootstrap 95% CIs
+============================================================================================
+reps=2000 seed=17; DK_jnt = strict failure failing either control (joint-criterion semantics, replicated per item).
+
+--- EN
+  Qwen2.5-7B     TOTjnt= 298 DKjnt= 144 r= 2.07  CI[ 1.72, 2.56]  (excludes parity)
+  Qwen2.5-72B    TOTjnt= 175 DKjnt= 106 r= 1.65  CI[ 1.30, 2.13]  (excludes parity)
+  Llama-3.1-8B   TOTjnt= 196 DKjnt= 154 r= 1.27  CI[ 1.02, 1.58]  (excludes parity)
+  Llama-3.1-70B  TOTjnt= 143 DKjnt=  75 r= 1.91  CI[ 1.46, 2.52]  (excludes parity)
+  POOLED         TOTjnt= 812 DKjnt= 479 r= 1.70  CI[ 1.42, 2.03]  (excludes parity)
+
+--- ZH
+  Qwen2.5-7B     TOTjnt= 312 DKjnt= 335 r= 0.93  CI[ 0.80, 1.08]  (covers parity)
+  Qwen2.5-72B    TOTjnt= 262 DKjnt= 256 r= 1.02  CI[ 0.86, 1.23]  (covers parity)
+  Llama-3.1-8B   TOTjnt= 162 DKjnt= 462 r= 0.35  CI[ 0.29, 0.41]  (excludes parity)
+  Llama-3.1-70B  TOTjnt= 179 DKjnt= 345 r= 0.52  CI[ 0.43, 0.62]  (excludes parity)
+  POOLED         TOTjnt= 915 DKjnt=1398 r= 0.65  CI[ 0.58, 0.73]  (excludes parity)
+
+============================================================================================
+B. COMPOSITION SERIES: Wilson 95% intervals for every rate (any-of-20, correct-cue arm)
+============================================================================================
+cell                     pseudo k/n          Wilson |  decoy k/n          Wilson | target k/n          Wilson   (decoy+target = matched population)
+en/Qwen2.5-7B          0/400    [0.0000,0.0095] |  18/128   [0.091,0.211] |  68/128   [0.445,0.616]
+en/Qwen2.5-72B         0/400    [0.0000,0.0095] |  15/72    [0.131,0.316] |  47/72    [0.538,0.752]
+en/Llama-3.1-8B        0/400    [0.0000,0.0095] |  14/86    [0.100,0.255] |  59/86    [0.582,0.774]
+en/Llama-3.1-70B       0/400    [0.0000,0.0095] |  11/60    [0.106,0.299] |  44/60    [0.610,0.829]
+en/POOLED              0/1600   [0.0000,0.0024] |  58/346   [0.132,0.211] | 218/346   [0.578,0.679]
+zh/Qwen2.5-7B          0/399    [-0.0000,0.0095] |  28/266   [0.074,0.148] |  54/266   [0.159,0.255]
+zh/Qwen2.5-72B         0/399    [-0.0000,0.0095] |  60/210   [0.229,0.350] |  97/210   [0.396,0.529]
+zh/Llama-3.1-8B        0/399    [-0.0000,0.0095] |  40/255   [0.117,0.207] |  85/255   [0.278,0.393]
+zh/Llama-3.1-70B       1/399    [0.0004,0.0141] |  54/214   [0.199,0.315] |  91/214   [0.361,0.492]
+zh/POOLED              1/1596   [0.0001,0.0035] | 182/945   [0.169,0.219] | 327/945   [0.316,0.377]
+
+============================================================================================
+C. OPENCC t2s HEADWORD-COLLISION AUDIT
+============================================================================================
+entries passing the builder's filters : 143702
+kept (first occurrence per simplified key): 143060
+dropped by first-wins collision        : 642 (0.45%) over 635 keys
+of the 903 bank items, words whose key had >=1 dropped competitor: 5 (0.55%)
+  affected items: 制图 当啷 打折 斗牛 泛泛

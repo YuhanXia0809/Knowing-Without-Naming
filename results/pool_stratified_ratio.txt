@@ -1,0 +1,17 @@
+============================================================================================
+POOL-STRATIFIED HEADLINE TOT:DK RATIO (NORMED vs BEYOND-CORPUS)
+============================================================================================
+PRIMARY6 models pooled per language; classify() from analyze_pilot.py; item-cluster bootstrap reps=1000 seed=17 (resample unit = item, within stratum).
+sanity targets: EN 501 normed / 1,002 beyond-corpus;  ZH 402 normed / 501 beyond-corpus
+
+--- EN  (bank n=1503 items, 6 primary models) ---
+  item counts by pool: beyond-corpus=1002, normed=501
+            pool   n_items       TOT        DK    ratio           95% CI    P(TOT|classified)
+          normed       501       390        46     8.48 [ 4.94,17.92]                0.894
+   beyond-corpus      1002      1389       113    12.29 [ 8.77,17.94]                0.925
+
+--- ZH  (bank n=903 items, 6 primary models) ---
+  item counts by pool: beyond-corpus=501, normed=402
+            pool   n_items       TOT        DK    ratio           95% CI    P(TOT|classified)
+          normed       402       783       108     7.25 [ 5.19,11.84]                0.879
+   beyond-corpus       501      1906       443     4.30 [ 3.59, 5.24]                0.811

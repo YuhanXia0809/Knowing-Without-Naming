@@ -1,0 +1,1094 @@
+{
+ "full_en_qwen7b": {
+  "n_classified": 1503,
+  "n_self_tot": 868,
+  "self_tot_that_are_behav_tot": 251,
+  "tot_vs_dk": {
+   "hit_rate": 0.6351,
+   "fa_rate": 0.629,
+   "dprime": 0.016,
+   "odds_ratio": 1.026,
+   "or_ci": [
+    0.482,
+    2.188
+   ],
+   "fisher_p": 1.0,
+   "counts": {
+    "hit": 251,
+    "miss": 144,
+    "fa": 19,
+    "cr": 11
+   }
+  },
+  "tot_vs_rest": {
+   "hit_rate": 0.6351,
+   "fa_rate": 0.5568,
+   "dprime": 0.203,
+   "odds_ratio": 1.385,
+   "or_ci": [
+    1.094,
+    1.755
+   ],
+   "fisher_p": 0.00755,
+   "counts": {
+    "hit": 251,
+    "miss": 144,
+    "fa": 617,
+    "cr": 491
+   }
+  }
+ },
+ "full_en_qwen14b": {
+  "n_classified": 1503,
+  "n_self_tot": 1142,
+  "self_tot_that_are_behav_tot": 292,
+  "tot_vs_dk": {
+   "hit_rate": 0.881,
+   "fa_rate": 0.7963,
+   "dprime": 0.352,
+   "odds_ratio": 1.894,
+   "or_ci": [
+    0.701,
+    5.117
+   ],
+   "fisher_p": 0.34584,
+   "counts": {
+    "hit": 292,
+    "miss": 39,
+    "fa": 21,
+    "cr": 5
+   }
+  },
+  "tot_vs_rest": {
+   "hit_rate": 0.881,
+   "fa_rate": 0.7251,
+   "dprime": 0.582,
+   "odds_ratio": 2.808,
+   "or_ci": [
+    1.967,
+    4.009
+   ],
+   "fisher_p": 0.0,
+   "counts": {
+    "hit": 292,
+    "miss": 39,
+    "fa": 850,
+    "cr": 322
+   }
+  }
+ },
+ "full_en_qwen32b": {
+  "n_classified": 1503,
+  "n_self_tot": 851,
+  "self_tot_that_are_behav_tot": 224,
+  "tot_vs_dk": {
+   "hit_rate": 0.6972,
+   "fa_rate": 0.6429,
+   "dprime": 0.15,
+   "odds_ratio": 1.279,
+   "or_ci": [
+    0.508,
+    3.222
+   ],
+   "fisher_p": 0.62511,
+   "counts": {
+    "hit": 224,
+    "miss": 97,
+    "fa": 13,
+    "cr": 7
+   }
+  },
+  "tot_vs_rest": {
+   "hit_rate": 0.6972,
+   "fa_rate": 0.5304,
+   "dprime": 0.44,
+   "odds_ratio": 2.038,
+   "or_ci": [
+    1.566,
+    2.653
+   ],
+   "fisher_p": 0.0,
+   "counts": {
+    "hit": 224,
+    "miss": 97,
+    "fa": 627,
+    "cr": 555
+   }
+  }
+ },
+ "full_en_qwen72b": {
+  "n_classified": 1503,
+  "n_self_tot": 210,
+  "self_tot_that_are_behav_tot": 59,
+  "tot_vs_dk": {
+   "hit_rate": 0.2343,
+   "fa_rate": 0.3421,
+   "dprime": -0.318,
+   "odds_ratio": 0.588,
+   "or_ci": [
+    0.218,
+    1.585
+   ],
+   "fisher_p": 0.39074,
+   "counts": {
+    "hit": 59,
+    "miss": 194,
+    "fa": 6,
+    "cr": 12
+   }
+  },
+  "tot_vs_rest": {
+   "hit_rate": 0.2343,
+   "fa_rate": 0.1211,
+   "dprime": 0.445,
+   "odds_ratio": 2.22,
+   "or_ci": [
+    1.586,
+    3.108
+   ],
+   "fisher_p": 1e-05,
+   "counts": {
+    "hit": 59,
+    "miss": 194,
+    "fa": 151,
+    "cr": 1099
+   }
+  }
+ },
+ "full_en_llama8b": {
+  "n_classified": 1503,
+  "n_self_tot": 61,
+  "self_tot_that_are_behav_tot": 23,
+  "tot_vs_dk": {
+   "hit_rate": 0.0802,
+   "fa_rate": 0.131,
+   "dprime": -0.282,
+   "odds_ratio": 0.579,
+   "or_ci": [
+    0.215,
+    1.558
+   ],
+   "fisher_p": 0.36494,
+   "counts": {
+    "hit": 23,
+    "miss": 269,
+    "fa": 5,
+    "cr": 36
+   }
+  },
+  "tot_vs_rest": {
+   "hit_rate": 0.0802,
+   "fa_rate": 0.0318,
+   "dprime": 0.452,
+   "odds_ratio": 2.658,
+   "or_ci": [
+    1.565,
+    4.515
+   ],
+   "fisher_p": 0.00072,
+   "counts": {
+    "hit": 23,
+    "miss": 269,
+    "fa": 38,
+    "cr": 1173
+   }
+  }
+ },
+ "full_en_llama70b": {
+  "n_classified": 1503,
+  "n_self_tot": 10,
+  "self_tot_that_are_behav_tot": 1,
+  "tot_vs_dk": {
+   "hit_rate": 0.008,
+   "fa_rate": 0.1,
+   "dprime": -1.128,
+   "odds_ratio": 0.072,
+   "or_ci": [
+    0.009,
+    0.574
+   ],
+   "fisher_p": 0.03475,
+   "counts": {
+    "hit": 1,
+    "miss": 186,
+    "fa": 2,
+    "cr": 22
+   }
+  },
+  "tot_vs_rest": {
+   "hit_rate": 0.008,
+   "fa_rate": 0.0072,
+   "dprime": 0.037,
+   "odds_ratio": 1.107,
+   "or_ci": [
+    0.196,
+    6.237
+   ],
+   "fisher_p": 1.0,
+   "counts": {
+    "hit": 1,
+    "miss": 186,
+    "fa": 9,
+    "cr": 1307
+   }
+  }
+ },
+ "full_en_gemma12b": {
+  "n_classified": 1503,
+  "n_self_tot": 151,
+  "self_tot_that_are_behav_tot": 69,
+  "tot_vs_dk": {
+   "hit_rate": 0.1558,
+   "fa_rate": 0.2237,
+   "dprime": -0.252,
+   "odds_ratio": 0.641,
+   "or_ci": [
+    0.286,
+    1.433
+   ],
+   "fisher_p": 0.34924,
+   "counts": {
+    "hit": 69,
+    "miss": 376,
+    "fa": 8,
+    "cr": 29
+   }
+  },
+  "tot_vs_rest": {
+   "hit_rate": 0.1558,
+   "fa_rate": 0.0779,
+   "dprime": 0.408,
+   "odds_ratio": 2.185,
+   "or_ci": [
+    1.554,
+    3.071
+   ],
+   "fisher_p": 1e-05,
+   "counts": {
+    "hit": 69,
+    "miss": 376,
+    "fa": 82,
+    "cr": 976
+   }
+  }
+ },
+ "full_en_gemma27b": {
+  "n_classified": 1503,
+  "n_self_tot": 4,
+  "self_tot_that_are_behav_tot": 1,
+  "tot_vs_dk": {
+   "hit_rate": 0.0041,
+   "fa_rate": 0.05,
+   "dprime": -0.998,
+   "odds_ratio": 0.078,
+   "or_ci": [
+    0.008,
+    0.778
+   ],
+   "fisher_p": 0.14231,
+   "counts": {
+    "hit": 1,
+    "miss": 363,
+    "fa": 1,
+    "cr": 28
+   }
+  },
+  "tot_vs_rest": {
+   "hit_rate": 0.0041,
+   "fa_rate": 0.0031,
+   "dprime": 0.097,
+   "odds_ratio": 1.34,
+   "or_ci": [
+    0.197,
+    9.107
+   ],
+   "fisher_p": 1.0,
+   "counts": {
+    "hit": 1,
+    "miss": 363,
+    "fa": 3,
+    "cr": 1136
+   }
+  }
+ },
+ "full_en_glm9b": {
+  "n_classified": 1503,
+  "n_self_tot": 455,
+  "self_tot_that_are_behav_tot": 125,
+  "tot_vs_dk": {
+   "hit_rate": 0.3815,
+   "fa_rate": 0.5093,
+   "dprime": -0.325,
+   "odds_ratio": 0.594,
+   "or_ci": [
+    0.333,
+    1.059
+   ],
+   "fisher_p": 0.09586,
+   "counts": {
+    "hit": 125,
+    "miss": 203,
+    "fa": 27,
+    "cr": 26
+   }
+  },
+  "tot_vs_rest": {
+   "hit_rate": 0.3815,
+   "fa_rate": 0.281,
+   "dprime": 0.278,
+   "odds_ratio": 1.578,
+   "or_ci": [
+    1.221,
+    2.038
+   ],
+   "fisher_p": 0.00066,
+   "counts": {
+    "hit": 125,
+    "miss": 203,
+    "fa": 330,
+    "cr": 845
+   }
+  }
+ },
+ "full_en_mistral7b": {
+  "n_classified": 1503,
+  "n_self_tot": 1468,
+  "self_tot_that_are_behav_tot": 514,
+  "tot_vs_dk": {
+   "hit_rate": 0.9856,
+   "fa_rate": 0.9896,
+   "dprime": -0.124,
+   "odds_ratio": 0.722,
+   "or_ci": [
+    0.041,
+    12.84
+   ],
+   "fisher_p": 1.0,
+   "counts": {
+    "hit": 514,
+    "miss": 7,
+    "fa": 47,
+    "cr": 0
+   }
+  },
+  "tot_vs_rest": {
+   "hit_rate": 0.9856,
+   "fa_rate": 0.971,
+   "dprime": 0.291,
+   "odds_ratio": 2.048,
+   "or_ci": [
+    0.91,
+    4.611
+   ],
+   "fisher_p": 0.07285,
+   "counts": {
+    "hit": 514,
+    "miss": 7,
+    "fa": 954,
+    "cr": 28
+   }
+  }
+ },
+ "full_en_olmo13b": {
+  "n_classified": 1503,
+  "n_self_tot": 168,
+  "self_tot_that_are_behav_tot": 39,
+  "tot_vs_dk": {
+   "hit_rate": 0.1291,
+   "fa_rate": 0.1094,
+   "dprime": 0.099,
+   "odds_ratio": 1.207,
+   "or_ci": [
+    0.379,
+    3.847
+   ],
+   "fisher_p": 0.78066,
+   "counts": {
+    "hit": 39,
+    "miss": 266,
+    "fa": 3,
+    "cr": 28
+   }
+  },
+  "tot_vs_rest": {
+   "hit_rate": 0.1291,
+   "fa_rate": 0.108,
+   "dprime": 0.106,
+   "odds_ratio": 1.224,
+   "or_ci": [
+    0.837,
+    1.791
+   ],
+   "fisher_p": 0.31032,
+   "counts": {
+    "hit": 39,
+    "miss": 266,
+    "fa": 129,
+    "cr": 1069
+   }
+  }
+ },
+ "full_en_olmo32b": {
+  "n_classified": 1503,
+  "n_self_tot": 1014,
+  "self_tot_that_are_behav_tot": 200,
+  "tot_vs_dk": {
+   "hit_rate": 0.7566,
+   "fa_rate": 0.7593,
+   "dprime": -0.009,
+   "odds_ratio": 0.986,
+   "or_ci": [
+    0.391,
+    2.488
+   ],
+   "fisher_p": 1.0,
+   "counts": {
+    "hit": 200,
+    "miss": 64,
+    "fa": 20,
+    "cr": 6
+   }
+  },
+  "tot_vs_rest": {
+   "hit_rate": 0.7566,
+   "fa_rate": 0.6569,
+   "dprime": 0.292,
+   "odds_ratio": 1.624,
+   "or_ci": [
+    1.198,
+    2.201
+   ],
+   "fisher_p": 0.00144,
+   "counts": {
+    "hit": 200,
+    "miss": 64,
+    "fa": 814,
+    "cr": 425
+   }
+  }
+ },
+ "full_en_phi4": {
+  "n_classified": 1503,
+  "n_self_tot": 23,
+  "self_tot_that_are_behav_tot": 9,
+  "tot_vs_dk": {
+   "hit_rate": 0.0383,
+   "fa_rate": 0.0238,
+   "dprime": 0.21,
+   "odds_ratio": 1.633,
+   "or_ci": [
+    0.092,
+    29.076
+   ],
+   "fisher_p": 1.0,
+   "counts": {
+    "hit": 9,
+    "miss": 238,
+    "fa": 0,
+    "cr": 20
+   }
+  },
+  "tot_vs_rest": {
+   "hit_rate": 0.0383,
+   "fa_rate": 0.0115,
+   "dprime": 0.502,
+   "odds_ratio": 3.413,
+   "or_ci": [
+    1.489,
+    7.826
+   ],
+   "fisher_p": 0.00738,
+   "counts": {
+    "hit": 9,
+    "miss": 238,
+    "fa": 14,
+    "cr": 1242
+   }
+  }
+ },
+ "full_en_r1d14b": {
+  "n_classified": 1503,
+  "n_self_tot": 70,
+  "self_tot_that_are_behav_tot": 9,
+  "tot_vs_dk": {
+   "hit_rate": 0.0714,
+   "fa_rate": 0.0893,
+   "dprime": -0.12,
+   "odds_ratio": 0.785,
+   "or_ci": [
+    0.183,
+    3.368
+   ],
+   "fisher_p": 1.0,
+   "counts": {
+    "hit": 9,
+    "miss": 123,
+    "fa": 2,
+    "cr": 25
+   }
+  },
+  "tot_vs_rest": {
+   "hit_rate": 0.0714,
+   "fa_rate": 0.0448,
+   "dprime": 0.232,
+   "odds_ratio": 1.639,
+   "or_ci": [
+    0.808,
+    3.326
+   ],
+   "fisher_p": 0.19864,
+   "counts": {
+    "hit": 9,
+    "miss": 123,
+    "fa": 61,
+    "cr": 1310
+   }
+  }
+ },
+ "full_zh_qwen7b": {
+  "n_classified": 903,
+  "n_self_tot": 500,
+  "self_tot_that_are_behav_tot": 305,
+  "tot_vs_dk": {
+   "hit_rate": 0.5944,
+   "fa_rate": 0.6302,
+   "dprime": -0.094,
+   "odds_ratio": 0.86,
+   "or_ci": [
+    0.548,
+    1.349
+   ],
+   "fisher_p": 0.56886,
+   "counts": {
+    "hit": 305,
+    "miss": 208,
+    "fa": 60,
+    "cr": 35
+   }
+  },
+  "tot_vs_rest": {
+   "hit_rate": 0.5944,
+   "fa_rate": 0.5,
+   "dprime": 0.239,
+   "odds_ratio": 1.465,
+   "or_ci": [
+    1.124,
+    1.91
+   ],
+   "fisher_p": 0.00557,
+   "counts": {
+    "hit": 305,
+    "miss": 208,
+    "fa": 195,
+    "cr": 195
+   }
+  }
+ },
+ "full_zh_qwen14b": {
+  "n_classified": 903,
+  "n_self_tot": 647,
+  "self_tot_that_are_behav_tot": 373,
+  "tot_vs_dk": {
+   "hit_rate": 0.7947,
+   "fa_rate": 0.8457,
+   "dprime": -0.195,
+   "odds_ratio": 0.706,
+   "or_ci": [
+    0.371,
+    1.344
+   ],
+   "fisher_p": 0.28952,
+   "counts": {
+    "hit": 373,
+    "miss": 96,
+    "fa": 68,
+    "cr": 12
+   }
+  },
+  "tot_vs_rest": {
+   "hit_rate": 0.7947,
+   "fa_rate": 0.631,
+   "dprime": 0.488,
+   "odds_ratio": 2.263,
+   "or_ci": [
+    1.682,
+    3.045
+   ],
+   "fisher_p": 0.0,
+   "counts": {
+    "hit": 373,
+    "miss": 96,
+    "fa": 274,
+    "cr": 160
+   }
+  }
+ },
+ "full_zh_qwen32b": {
+  "n_classified": 903,
+  "n_self_tot": 356,
+  "self_tot_that_are_behav_tot": 206,
+  "tot_vs_dk": {
+   "hit_rate": 0.4394,
+   "fa_rate": 0.3828,
+   "dprime": 0.146,
+   "odds_ratio": 1.263,
+   "or_ci": [
+    0.739,
+    2.159
+   ],
+   "fisher_p": 0.41818,
+   "counts": {
+    "hit": 206,
+    "miss": 263,
+    "fa": 24,
+    "cr": 39
+   }
+  },
+  "tot_vs_rest": {
+   "hit_rate": 0.4394,
+   "fa_rate": 0.346,
+   "dprime": 0.244,
+   "odds_ratio": 1.481,
+   "or_ci": [
+    1.132,
+    1.938
+   ],
+   "fisher_p": 0.00423,
+   "counts": {
+    "hit": 206,
+    "miss": 263,
+    "fa": 150,
+    "cr": 284
+   }
+  }
+ },
+ "full_zh_qwen72b": {
+  "n_classified": 903,
+  "n_self_tot": 23,
+  "self_tot_that_are_behav_tot": 15,
+  "tot_vs_dk": {
+   "hit_rate": 0.0366,
+   "fa_rate": 0.0329,
+   "dprime": 0.048,
+   "odds_ratio": 1.116,
+   "or_ci": [
+    0.287,
+    4.341
+   ],
+   "fisher_p": 1.0,
+   "counts": {
+    "hit": 15,
+    "miss": 408,
+    "fa": 2,
+    "cr": 73
+   }
+  },
+  "tot_vs_rest": {
+   "hit_rate": 0.0366,
+   "fa_rate": 0.0177,
+   "dprime": 0.312,
+   "odds_ratio": 2.109,
+   "or_ci": [
+    0.904,
+    4.92
+   ],
+   "fisher_p": 0.0905,
+   "counts": {
+    "hit": 15,
+    "miss": 408,
+    "fa": 8,
+    "cr": 472
+   }
+  }
+ },
+ "full_zh_llama8b": {
+  "n_classified": 903,
+  "n_self_tot": 19,
+  "self_tot_that_are_behav_tot": 10,
+  "tot_vs_dk": {
+   "hit_rate": 0.0244,
+   "fa_rate": 0.0326,
+   "dprime": -0.126,
+   "odds_ratio": 0.743,
+   "or_ci": [
+    0.242,
+    2.279
+   ],
+   "fisher_p": 0.75252,
+   "counts": {
+    "hit": 10,
+    "miss": 419,
+    "fa": 4,
+    "cr": 133
+   }
+  },
+  "tot_vs_rest": {
+   "hit_rate": 0.0244,
+   "fa_rate": 0.02,
+   "dprime": 0.084,
+   "odds_ratio": 1.226,
+   "or_ci": [
+    0.505,
+    2.979
+   ],
+   "fisher_p": 0.81718,
+   "counts": {
+    "hit": 10,
+    "miss": 419,
+    "fa": 9,
+    "cr": 465
+   }
+  }
+ },
+ "full_zh_llama70b": {
+  "n_classified": 903,
+  "n_self_tot": 0,
+  "self_tot_that_are_behav_tot": 0,
+  "tot_vs_dk": {
+   "hit_rate": 0.0013,
+   "fa_rate": 0.0049,
+   "dprime": -0.431,
+   "odds_ratio": 0.263,
+   "or_ci": [
+    0.005,
+    13.317
+   ],
+   "fisher_p": 1.0,
+   "counts": {
+    "hit": 0,
+    "miss": 386,
+    "fa": 0,
+    "cr": 101
+   }
+  },
+  "tot_vs_rest": {
+   "hit_rate": 0.0013,
+   "fa_rate": 0.001,
+   "dprime": 0.087,
+   "odds_ratio": 1.339,
+   "or_ci": [
+    0.027,
+    67.633
+   ],
+   "fisher_p": 1.0,
+   "counts": {
+    "hit": 0,
+    "miss": 386,
+    "fa": 0,
+    "cr": 517
+   }
+  }
+ },
+ "full_zh_gemma12b": {
+  "n_classified": 903,
+  "n_self_tot": 95,
+  "self_tot_that_are_behav_tot": 64,
+  "tot_vs_dk": {
+   "hit_rate": 0.1324,
+   "fa_rate": 0.1299,
+   "dprime": 0.012,
+   "odds_ratio": 1.022,
+   "or_ci": [
+    0.573,
+    1.826
+   ],
+   "fisher_p": 1.0,
+   "counts": {
+    "hit": 64,
+    "miss": 422,
+    "fa": 16,
+    "cr": 110
+   }
+  },
+  "tot_vs_rest": {
+   "hit_rate": 0.1324,
+   "fa_rate": 0.0754,
+   "dprime": 0.322,
+   "odds_ratio": 1.873,
+   "or_ci": [
+    1.197,
+    2.931
+   ],
+   "fisher_p": 0.0063,
+   "counts": {
+    "hit": 64,
+    "miss": 422,
+    "fa": 31,
+    "cr": 386
+   }
+  }
+ },
+ "full_zh_gemma27b": {
+  "n_classified": 903,
+  "n_self_tot": 0,
+  "self_tot_that_are_behav_tot": 0,
+  "tot_vs_dk": {
+   "hit_rate": 0.001,
+   "fa_rate": 0.0058,
+   "dprime": -0.56,
+   "odds_ratio": 0.175,
+   "or_ci": [
+    0.003,
+    8.899
+   ],
+   "fisher_p": 1.0,
+   "counts": {
+    "hit": 0,
+    "miss": 487,
+    "fa": 0,
+    "cr": 85
+   }
+  },
+  "tot_vs_rest": {
+   "hit_rate": 0.001,
+   "fa_rate": 0.0012,
+   "dprime": -0.047,
+   "odds_ratio": 0.854,
+   "or_ci": [
+    0.017,
+    43.154
+   ],
+   "fisher_p": 1.0,
+   "counts": {
+    "hit": 0,
+    "miss": 487,
+    "fa": 0,
+    "cr": 416
+   }
+  }
+ },
+ "full_zh_glm9b": {
+  "n_classified": 903,
+  "n_self_tot": 203,
+  "self_tot_that_are_behav_tot": 103,
+  "tot_vs_dk": {
+   "hit_rate": 0.2336,
+   "fa_rate": 0.371,
+   "dprime": -0.398,
+   "odds_ratio": 0.517,
+   "or_ci": [
+    0.322,
+    0.831
+   ],
+   "fisher_p": 0.00851,
+   "counts": {
+    "hit": 103,
+    "miss": 339,
+    "fa": 34,
+    "cr": 58
+   }
+  },
+  "tot_vs_rest": {
+   "hit_rate": 0.2336,
+   "fa_rate": 0.2175,
+   "dprime": 0.054,
+   "odds_ratio": 1.097,
+   "or_ci": [
+    0.803,
+    1.498
+   ],
+   "fisher_p": 0.57744,
+   "counts": {
+    "hit": 103,
+    "miss": 339,
+    "fa": 100,
+    "cr": 361
+   }
+  }
+ },
+ "full_zh_mistral7b": {
+  "n_classified": 903,
+  "n_self_tot": 899,
+  "self_tot_that_are_behav_tot": 343,
+  "tot_vs_dk": {
+   "hit_rate": 0.9899,
+   "fa_rate": 0.995,
+   "dprime": -0.25,
+   "odds_ratio": 0.497,
+   "or_ci": [
+    0.073,
+    3.383
+   ],
+   "fisher_p": 0.6282,
+   "counts": {
+    "hit": 343,
+    "miss": 3,
+    "fa": 296,
+    "cr": 1
+   }
+  },
+  "tot_vs_rest": {
+   "hit_rate": 0.9899,
+   "fa_rate": 0.9973,
+   "dprime": -0.46,
+   "odds_ratio": 0.265,
+   "or_ci": [
+    0.039,
+    1.8
+   ],
+   "fisher_p": 0.15984,
+   "counts": {
+    "hit": 343,
+    "miss": 3,
+    "fa": 556,
+    "cr": 1
+   }
+  }
+ },
+ "full_zh_olmo13b": {
+  "n_classified": 903,
+  "n_self_tot": 888,
+  "self_tot_that_are_behav_tot": 281,
+  "tot_vs_dk": {
+   "hit_rate": 0.9843,
+   "fa_rate": 0.9775,
+   "dprime": 0.146,
+   "odds_ratio": 1.44,
+   "or_ci": [
+    0.385,
+    5.387
+   ],
+   "fisher_p": 0.7223,
+   "counts": {
+    "hit": 281,
+    "miss": 4,
+    "fa": 195,
+    "cr": 4
+   }
+  },
+  "tot_vs_rest": {
+   "hit_rate": 0.9843,
+   "fa_rate": 0.9814,
+   "dprime": 0.067,
+   "odds_ratio": 1.184,
+   "or_ci": [
+    0.395,
+    3.554
+   ],
+   "fisher_p": 0.7862,
+   "counts": {
+    "hit": 281,
+    "miss": 4,
+    "fa": 607,
+    "cr": 11
+   }
+  }
+ },
+ "full_zh_olmo32b": {
+  "n_classified": 903,
+  "n_self_tot": 586,
+  "self_tot_that_are_behav_tot": 362,
+  "tot_vs_dk": {
+   "hit_rate": 0.7294,
+   "fa_rate": 0.6701,
+   "dprime": 0.171,
+   "odds_ratio": 1.327,
+   "or_ci": [
+    0.889,
+    1.979
+   ],
+   "fisher_p": 0.17263,
+   "counts": {
+    "hit": 362,
+    "miss": 134,
+    "fa": 96,
+    "cr": 47
+   }
+  },
+  "tot_vs_rest": {
+   "hit_rate": 0.7294,
+   "fa_rate": 0.5502,
+   "dprime": 0.485,
+   "odds_ratio": 2.203,
+   "or_ci": [
+    1.669,
+    2.909
+   ],
+   "fisher_p": 0.0,
+   "counts": {
+    "hit": 362,
+    "miss": 134,
+    "fa": 224,
+    "cr": 183
+   }
+  }
+ },
+ "full_zh_phi4": {
+  "n_classified": 903,
+  "n_self_tot": 4,
+  "self_tot_that_are_behav_tot": 3,
+  "tot_vs_dk": {
+   "hit_rate": 0.0076,
+   "fa_rate": 0.0132,
+   "dprime": -0.208,
+   "odds_ratio": 0.571,
+   "or_ci": [
+    0.083,
+    3.912
+   ],
+   "fisher_p": 0.5843,
+   "counts": {
+    "hit": 3,
+    "miss": 459,
+    "fa": 1,
+    "cr": 112
+   }
+  },
+  "tot_vs_rest": {
+   "hit_rate": 0.0076,
+   "fa_rate": 0.0034,
+   "dprime": 0.278,
+   "odds_ratio": 2.237,
+   "or_ci": [
+    0.329,
+    15.215
+   ],
+   "fisher_p": 0.62457,
+   "counts": {
+    "hit": 3,
+    "miss": 459,
+    "fa": 1,
+    "cr": 440
+   }
+  }
+ },
+ "full_zh_r1d14b": {
+  "n_classified": 903,
+  "n_self_tot": 3,
+  "self_tot_that_are_behav_tot": 0,
+  "tot_vs_dk": {
+   "hit_rate": 0.0013,
+   "fa_rate": 0.0066,
+   "dprime": -0.538,
+   "odds_ratio": 0.193,
+   "or_ci": [
+    0.004,
+    9.795
+   ],
+   "fisher_p": 1.0,
+   "counts": {
+    "hit": 0,
+    "miss": 391,
+    "fa": 0,
+    "cr": 75
+   }
+  },
+  "tot_vs_rest": {
+   "hit_rate": 0.0013,
+   "fa_rate": 0.0068,
+   "dprime": -0.551,
+   "odds_ratio": 0.186,
+   "or_ci": [
+    0.01,
+    3.61
+   ],
+   "fisher_p": 0.26265,
+   "counts": {
+    "hit": 0,
+    "miss": 391,
+    "fa": 3,
+    "cr": 509
+   }
+  }
+ }
+}

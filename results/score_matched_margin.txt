@@ -1,0 +1,25 @@
+================================================================================================
+SCORING-MATCHED DECOY-VS-TARGET MARGIN (|answer set| = 1 subset)
+================================================================================================
+Same matched population as decoycue_match (decoy items whose
+source item is a cleanly classified failure), additionally split by
+whether the source item's vetted answer set is a single word (=
+target credit is exact-string, scoring-symmetric with the decoy arm).
+
+--- EN: 485/1503 bank items have |answers| = 1
+cell                     nA1  decoy_A1  real_A1  marg_A1 |  nA2+ decoy_A2+ real_A2+ marg_A2+
+en/Qwen2.5-7B          45     0.222    0.556    2.50x |    83     0.096    0.518    5.38x
+en/Qwen2.5-72B         23     0.261    0.609    2.33x |    49     0.184    0.673    3.67x
+en/Llama-3.1-8B        30     0.233    0.667    2.86x |    56     0.125    0.696    5.57x
+en/Llama-3.1-70B       15     0.333    0.667    2.00x |    45     0.133    0.756    5.67x
+en pooled |A|=1  : decoy 28/113 = 0.248   target 69/113 = 0.611   margin 2.46x
+en pooled |A|>=2 : decoy 30/233 = 0.129   target 149/233 = 0.639   margin 4.97x
+
+--- ZH: 654/903 bank items have |answers| = 1
+cell                     nA1  decoy_A1  real_A1  marg_A1 |  nA2+ decoy_A2+ real_A2+ marg_A2+
+zh/Qwen2.5-7B         232     0.099    0.198    2.00x |    34     0.147    0.235    1.60x
+zh/Qwen2.5-72B        196     0.276    0.454    1.65x |    14     0.429    0.571    1.33x
+zh/Llama-3.1-8B       228     0.162    0.311    1.92x |    27     0.111    0.519    4.67x
+zh/Llama-3.1-70B      194     0.237    0.407    1.72x |    20     0.400    0.600    1.50x
+zh pooled |A|=1  : decoy 160/850 = 0.188   target 285/850 = 0.335   margin 1.78x
+zh pooled |A|>=2 : decoy 22/95 = 0.232   target 42/95 = 0.442   margin 1.91x

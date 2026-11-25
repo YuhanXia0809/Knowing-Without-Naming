@@ -1,0 +1,19 @@
+============================================================================================
+LABEL-PERTURBATION BOOTSTRAP: judge uncertainty inside the interval, not beside it
+============================================================================================
+reps=1000  seed=18  percentile intervals.
+Source (1) item resampling; source (2) certificate re-draw at a judge error rate of 0.100 (= 1 - 0.900 two-judge agreement, stratified 400-item English sample).
+
+--- EN  (n items 1503; re-certified 1503; certificate lost 63)
+  point ratio, all items                :  11.19:1
+  point ratio, certificate-losers dropped:  12.15:1
+  item-cluster only        95% CI [ 8.60, 15.82]  width  7.22
+  + certificate re-draw    95% CI [ 8.66, 18.57]  width  9.91   (1.37x wider)
+  both intervals exclude parity (1:1): yes
+
+--- ZH  (n items 903; re-certified 903; certificate lost 58)
+  point ratio, all items                :   4.88:1
+  point ratio, certificate-losers dropped:   4.68:1
+  item-cluster only        95% CI [ 4.18,  5.84]  width  1.66
+  + certificate re-draw    95% CI [ 3.97,  5.74]  width  1.77   (1.07x wider)
+  both intervals exclude parity (1:1): yes

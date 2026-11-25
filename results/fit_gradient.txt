@@ -1,0 +1,21 @@
+================================================================================================
+GLOSS-FIT GRADIENT AMONG DECOYS (decoy-cue unlock ~ B' fit)
+================================================================================================
+fit = mean_p_target of the decoy in the option-matched target-absent 4AFC (decoyb recognition);
+unlock = decoy produced under its first-unit cue, any-of-20, correct arm; matched population (source item a clean failure).
+
+--- EN  rows=299  items=140  mean fit=0.405  fit range [0.000,1.000]  unlock=0.164
+  logit unlock ~ z(fit) + model FE, item-clustered: b=+0.840 (SE 0.218), p=0.0001
+  unlock by fit tercile: bottom 0.060 vs top 0.310 (diff +0.250)
+  stored-target unlock on the same source items: 0.612 (183/299)
+  local slope ~+0.29 unlock per fit unit; the target margin would require a fit gap of ~1.53 (observed decoy-fit spread 1.00)
+  fit>=0.8: decoy unlock 0.329 (n=76 rows, 44 items) vs stored target on those source items 0.651 (84/129)
+  fit>=0.6: decoy unlock 0.301 (n=103 rows, 59 items) vs stored target on those source items 0.640 (105/164)
+
+--- ZH  rows=789  items=256  mean fit=0.343  fit range [0.000,1.000]  unlock=0.185
+  logit unlock ~ z(fit) + model FE, item-clustered: b=+0.446 (SE 0.127), p=0.0005
+  unlock by fit tercile: bottom 0.156 vs top 0.278 (diff +0.122)
+  stored-target unlock on the same source items: 0.357 (282/789)
+  local slope ~+0.17 unlock per fit unit; the target margin would require a fit gap of ~0.99 (observed decoy-fit spread 1.00)
+  fit>=0.8: decoy unlock 0.308 (n=169 rows, 80 items) vs stored target on those source items 0.349 (103/295)
+  fit>=0.6: decoy unlock 0.299 (n=221 rows, 97 items) vs stored target on those source items 0.355 (127/358)

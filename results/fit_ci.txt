@@ -1,0 +1,11 @@
+================================================================================================
+SOURCE-ITEM CLUSTER BOOTSTRAP FOR THE FIT>=0.8 DECOY-VS-TARGET CONTRAST (2000 resamples)
+================================================================================================
+
+--- EN  fit>=0.8: decoy 0.329 (76 rows) vs target 0.618 (76 rows), 44 source items
+  target-minus-decoy difference +0.289  95% CI [+0.084, +0.481]  P(diff<=0) = 0.0035
+  ratio 1.88x  95% CI [1.18, 3.40]
+
+--- ZH  fit>=0.8: decoy 0.308 (169 rows) vs target 0.320 (169 rows), 80 source items
+  target-minus-decoy difference +0.012  95% CI [-0.125, +0.145]  P(diff<=0) = 0.4595
+  ratio 1.04x  95% CI [0.67, 1.62]

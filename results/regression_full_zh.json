@@ -1,0 +1,831 @@
+{
+ "lang": "zh",
+ "models": {
+  "full_zh_qwen7b": {
+   "n_items": 903,
+   "fail_rate": 0.7165,
+   "states": {
+    "TOT": 513,
+    "ambiguous_prod": 32,
+    "weak": 49,
+    "ambiguous_rec": 34,
+    "known": 175,
+    "fail_norec": 5,
+    "DK": 95
+   },
+   "A_fail_full_covars": {
+    "n": 207,
+    "coef": {
+     "const": {
+      "b": -0.4964,
+      "se": 0.1452,
+      "p": 0.00063
+     },
+     "zipf": {
+      "b": -0.1274,
+      "se": 0.1831,
+      "p": 0.48671
+     },
+     "aoa": {
+      "b": 0.0103,
+      "se": 0.1539,
+      "p": 0.94645
+     },
+     "length": {
+      "b": -0.133,
+      "se": 0.1731,
+      "p": 0.44245
+     },
+     "tokens": {
+      "b": 0.3042,
+      "se": 0.2035,
+      "p": 0.13492
+     }
+    },
+    "vif": {
+     "zipf": 1.54,
+     "aoa": 1.2,
+     "length": 1.55,
+     "tokens": 1.99
+    }
+   },
+   "B_fail_reduced_all_items": {
+    "n": 903,
+    "coef": {
+     "const": {
+      "b": 1.1192,
+      "se": 0.0913,
+      "p": 0.0
+     },
+     "zipf": {
+      "b": -0.6745,
+      "se": 0.1362,
+      "p": 0.0
+     },
+     "length": {
+      "b": 0.0656,
+      "se": 0.1321,
+      "p": 0.61922
+     },
+     "tokens": {
+      "b": 0.34,
+      "se": 0.1643,
+      "p": 0.0385
+     }
+    },
+    "vif": {
+     "zipf": 1.85,
+     "length": 3.24,
+     "tokens": 4.52
+    }
+   },
+   "C_totdk": {
+    "n": 608,
+    "coef": {
+     "const": {
+      "b": 1.6984,
+      "se": 0.1128,
+      "p": 0.0
+     },
+     "zipf": {
+      "b": 0.1927,
+      "se": 0.139,
+      "p": 0.1656
+     },
+     "length": {
+      "b": 0.0741,
+      "se": 0.2299,
+      "p": 0.74724
+     },
+     "tokens": {
+      "b": -0.0344,
+      "se": 0.2542,
+      "p": 0.89239
+     }
+    },
+    "vif": {
+     "zipf": 1.75,
+     "length": 3.48,
+     "tokens": 4.64
+    }
+   },
+   "C_totdk_full_norms": {
+    "n": 76,
+    "coef": {
+     "const": {
+      "b": 12.3825,
+      "se": null,
+      "p": null
+     },
+     "zipf": {
+      "b": 0.1213,
+      "se": null,
+      "p": null
+     },
+     "aoa": {
+      "b": 0.8782,
+      "se": null,
+      "p": null
+     },
+     "length": {
+      "b": 18.6486,
+      "se": null,
+      "p": null
+     },
+     "tokens": {
+      "b": -14.6367,
+      "se": null,
+      "p": null
+     }
+    },
+    "vif": {
+     "zipf": 1.38,
+     "aoa": 1.13,
+     "length": 2.06,
+     "tokens": 2.39
+    },
+    "separation": "fitted probability within 1e-6 of 0 or 1 for 31 of 76 rows; se and p not estimable (null)"
+   },
+   "C_n_dk": 95,
+   "D_fok": {
+    "n_fail": 608,
+    "verbal_auc": 0.49949728121473275,
+    "verbal_gamma": -0.010790574763268003,
+    "verbal_gamma_ci": [
+     -0.6085427135678392,
+     0.37712729748127977
+    ],
+    "pyes_auc": 0.4906022365856161,
+    "pyes_gamma": -0.018832236842105263
+   }
+  },
+  "full_zh_llama8b": {
+   "n_items": 903,
+   "fail_rate": 0.691,
+   "states": {
+    "TOT": 429,
+    "weak": 96,
+    "known": 127,
+    "ambiguous_prod": 56,
+    "DK": 137,
+    "ambiguous_rec": 56,
+    "fail_norec": 2
+   },
+   "A_fail_full_covars": {
+    "n": 207,
+    "coef": {
+     "const": {
+      "b": -0.8081,
+      "se": 0.1538,
+      "p": 0.0
+     },
+     "zipf": {
+      "b": -0.3143,
+      "se": 0.1752,
+      "p": 0.07276
+     },
+     "aoa": {
+      "b": 0.0429,
+      "se": 0.1607,
+      "p": 0.78921
+     },
+     "length": {
+      "b": 0.1932,
+      "se": 0.1717,
+      "p": 0.26043
+     },
+     "tokens": {
+      "b": -0.0321,
+      "se": 0.18,
+      "p": 0.85863
+     }
+    },
+    "vif": {
+     "zipf": 1.28,
+     "aoa": 1.21,
+     "length": 1.36,
+     "tokens": 1.37
+    }
+   },
+   "B_fail_reduced_all_items": {
+    "n": 903,
+    "coef": {
+     "const": {
+      "b": 1.048,
+      "se": 0.0938,
+      "p": 0.0
+     },
+     "zipf": {
+      "b": -1.1009,
+      "se": 0.1274,
+      "p": 0.0
+     },
+     "length": {
+      "b": 0.2614,
+      "se": 0.129,
+      "p": 0.04273
+     },
+     "tokens": {
+      "b": -0.0985,
+      "se": 0.1497,
+      "p": 0.51075
+     }
+    },
+    "vif": {
+     "zipf": 1.68,
+     "length": 2.11,
+     "tokens": 2.78
+    }
+   },
+   "C_totdk": {
+    "n": 566,
+    "coef": {
+     "const": {
+      "b": 1.1531,
+      "se": 0.099,
+      "p": 0.0
+     },
+     "zipf": {
+      "b": 0.2176,
+      "se": 0.1257,
+      "p": 0.08337
+     },
+     "length": {
+      "b": 0.102,
+      "se": 0.1476,
+      "p": 0.48934
+     },
+     "tokens": {
+      "b": -0.0371,
+      "se": 0.188,
+      "p": 0.84349
+     }
+    },
+    "vif": {
+     "zipf": 1.67,
+     "length": 2.16,
+     "tokens": 2.99
+    }
+   },
+   "C_totdk_full_norms": {
+    "n": 63,
+    "coef": {
+     "const": {
+      "b": 6.8704,
+      "se": null,
+      "p": null
+     },
+     "zipf": {
+      "b": 0.4747,
+      "se": null,
+      "p": null
+     },
+     "aoa": {
+      "b": 0.7618,
+      "se": null,
+      "p": null
+     },
+     "length": {
+      "b": 7.8146,
+      "se": null,
+      "p": null
+     },
+     "tokens": {
+      "b": 1.4691,
+      "se": null,
+      "p": null
+     }
+    },
+    "vif": {
+     "zipf": 1.36,
+     "aoa": 1.19,
+     "length": 2.01,
+     "tokens": 2.14
+    },
+    "separation": "fitted probability within 1e-6 of 0 or 1 for 7 of 63 rows; se and p not estimable (null)"
+   },
+   "C_n_dk": 137,
+   "D_fok": {
+    "n_fail": 566,
+    "verbal_auc": 0.4341959743419597,
+    "verbal_gamma": -0.2603938730853392,
+    "verbal_gamma_ci": [
+     -0.4349775784753363,
+     -0.07670654468684025
+    ],
+    "pyes_auc": 0.5563949432562572,
+    "pyes_gamma": 0.11389838662565935
+   }
+  },
+  "full_zh_qwen72b": {
+   "n_items": 903,
+   "fail_rate": 0.5736,
+   "states": {
+    "TOT": 423,
+    "known": 277,
+    "weak": 72,
+    "DK": 75,
+    "ambiguous_prod": 36,
+    "ambiguous_rec": 19,
+    "fail_norec": 1
+   },
+   "A_fail_full_covars": {
+    "n": 207,
+    "coef": {
+     "const": {
+      "b": -1.3212,
+      "se": 0.1722,
+      "p": 0.0
+     },
+     "zipf": {
+      "b": 0.0391,
+      "se": 0.233,
+      "p": 0.8668
+     },
+     "aoa": {
+      "b": 0.1336,
+      "se": 0.1785,
+      "p": 0.45413
+     },
+     "length": {
+      "b": -0.21,
+      "se": 0.2732,
+      "p": 0.44211
+     },
+     "tokens": {
+      "b": 0.082,
+      "se": 0.2559,
+      "p": 0.74849
+     }
+    },
+    "vif": {
+     "zipf": 1.54,
+     "aoa": 1.2,
+     "length": 1.55,
+     "tokens": 1.99
+    }
+   },
+   "B_fail_reduced_all_items": {
+    "n": 903,
+    "coef": {
+     "const": {
+      "b": 0.3757,
+      "se": 0.0756,
+      "p": 0.0
+     },
+     "zipf": {
+      "b": -0.746,
+      "se": 0.1124,
+      "p": 0.0
+     },
+     "length": {
+      "b": 0.1266,
+      "se": 0.1235,
+      "p": 0.30519
+     },
+     "tokens": {
+      "b": 0.1646,
+      "se": 0.149,
+      "p": 0.26909
+     }
+    },
+    "vif": {
+     "zipf": 1.85,
+     "length": 3.24,
+     "tokens": 4.52
+    }
+   },
+   "C_totdk": {
+    "n": 498,
+    "coef": {
+     "const": {
+      "b": 1.7542,
+      "se": 0.1272,
+      "p": 0.0
+     },
+     "zipf": {
+      "b": -0.0561,
+      "se": 0.1631,
+      "p": 0.73082
+     },
+     "length": {
+      "b": 0.3762,
+      "se": 0.2283,
+      "p": 0.09937
+     },
+     "tokens": {
+      "b": -0.5285,
+      "se": 0.259,
+      "p": 0.04125
+     }
+    },
+    "vif": {
+     "zipf": 1.74,
+     "length": 3.51,
+     "tokens": 4.72
+    }
+   },
+   "C_totdk_full_norms": {
+    "n": 43,
+    "coef": {
+     "const": {
+      "b": 3.667,
+      "se": null,
+      "p": null
+     },
+     "zipf": {
+      "b": 0.3854,
+      "se": null,
+      "p": null
+     },
+     "aoa": {
+      "b": 1.2075,
+      "se": null,
+      "p": null
+     },
+     "length": {
+      "b": 6.0348,
+      "se": null,
+      "p": null
+     },
+     "tokens": {
+      "b": -0.1741,
+      "se": null,
+      "p": null
+     }
+    },
+    "vif": {
+     "zipf": 1.41,
+     "aoa": 1.23,
+     "length": 1.22,
+     "tokens": 1.32
+    },
+    "separation": "fitted probability within 1e-6 of 0 or 1 for 2 of 43 rows; se and p not estimable (null)"
+   },
+   "C_n_dk": 75,
+   "D_fok": {
+    "n_fail": 498,
+    "verbal_auc": 0.4988179669030733,
+    "verbal_gamma": -1.0,
+    "verbal_gamma_ci": [
+     -1.0,
+     -1.0
+    ],
+    "pyes_auc": 0.439070133963751,
+    "pyes_gamma": -0.12302698574338086
+   }
+  },
+  "full_zh_llama70b": {
+   "n_items": 903,
+   "fail_rate": 0.5803,
+   "states": {
+    "TOT": 386,
+    "weak": 97,
+    "DK": 101,
+    "ambiguous_prod": 80,
+    "known": 202,
+    "ambiguous_rec": 36,
+    "fail_norec": 1
+   },
+   "A_fail_full_covars": {
+    "n": 207,
+    "coef": {
+     "const": {
+      "b": -1.2615,
+      "se": 0.1755,
+      "p": 0.0
+     },
+     "zipf": {
+      "b": -0.4742,
+      "se": 0.1997,
+      "p": 0.01758
+     },
+     "aoa": {
+      "b": -0.098,
+      "se": 0.1807,
+      "p": 0.58774
+     },
+     "length": {
+      "b": 0.2644,
+      "se": 0.1712,
+      "p": 0.12246
+     },
+     "tokens": {
+      "b": -0.2713,
+      "se": 0.2179,
+      "p": 0.21308
+     }
+    },
+    "vif": {
+     "zipf": 1.28,
+     "aoa": 1.21,
+     "length": 1.36,
+     "tokens": 1.37
+    }
+   },
+   "B_fail_reduced_all_items": {
+    "n": 903,
+    "coef": {
+     "const": {
+      "b": 0.4221,
+      "se": 0.078,
+      "p": 0.0
+     },
+     "zipf": {
+      "b": -1.0443,
+      "se": 0.114,
+      "p": 0.0
+     },
+     "length": {
+      "b": 0.2408,
+      "se": 0.1118,
+      "p": 0.03126
+     },
+     "tokens": {
+      "b": -0.1917,
+      "se": 0.1292,
+      "p": 0.13768
+     }
+    },
+    "vif": {
+     "zipf": 1.68,
+     "length": 2.11,
+     "tokens": 2.78
+    }
+   },
+   "C_totdk": {
+    "n": 487,
+    "coef": {
+     "const": {
+      "b": 1.3483,
+      "se": 0.1126,
+      "p": 0.0
+     },
+     "zipf": {
+      "b": 0.0371,
+      "se": 0.1495,
+      "p": 0.80409
+     },
+     "length": {
+      "b": 0.0652,
+      "se": 0.1603,
+      "p": 0.68393
+     },
+     "tokens": {
+      "b": -0.1752,
+      "se": 0.2021,
+      "p": 0.3859
+     }
+    },
+    "vif": {
+     "zipf": 1.81,
+     "length": 2.18,
+     "tokens": 3.16
+    }
+   },
+   "C_totdk_full_norms": {
+    "n": 44,
+    "coef": {
+     "const": {
+      "b": 4.8713,
+      "se": null,
+      "p": null
+     },
+     "zipf": {
+      "b": -0.4746,
+      "se": null,
+      "p": null
+     },
+     "aoa": {
+      "b": -0.1302,
+      "se": null,
+      "p": null
+     },
+     "length": {
+      "b": 10.1083,
+      "se": null,
+      "p": null
+     },
+     "tokens": {
+      "b": -0.4006,
+      "se": null,
+      "p": null
+     }
+    },
+    "vif": {
+     "zipf": 1.25,
+     "aoa": 1.1,
+     "length": 1.69,
+     "tokens": 1.67
+    },
+    "separation": "fitted probability within 1e-6 of 0 or 1 for 4 of 44 rows; se and p not estimable (null)"
+   },
+   "C_n_dk": 101,
+   "D_fok": {
+    "n_fail": 487,
+    "verbal_auc": 0.5021289693736213,
+    "verbal_gamma": 0.12259970457902511,
+    "verbal_gamma_ci": [
+     -1.0,
+     0.7085862966175195
+    ],
+    "pyes_auc": 0.4951905812342892,
+    "pyes_gamma": -0.009621552277100705
+   }
+  }
+ },
+ "pooled_B": {
+  "n": 3612,
+  "coef": {
+   "const": {
+    "b": 0.7187,
+    "se": 0.0667,
+    "p": 0.0
+   },
+   "zipf": {
+    "b": -0.8955,
+    "se": 0.0922,
+    "p": 0.0
+   },
+   "length": {
+    "b": 0.2194,
+    "se": 0.0795,
+    "p": 0.00578
+   },
+   "tokens": {
+    "b": -0.0305,
+    "se": 0.07,
+    "p": 0.6625
+   }
+  },
+  "vif": {
+   "zipf": 1.54,
+   "length": 1.96,
+   "tokens": 2.35
+  }
+ },
+ "pooled_B_poolctl": {
+  "n": 3612,
+  "coef": {
+   "const": {
+    "b": 0.7462,
+    "se": 0.0682,
+    "p": 0.0
+   },
+   "zipf": {
+    "b": -0.2949,
+    "se": 0.1034,
+    "p": 0.00433
+   },
+   "length": {
+    "b": 0.2082,
+    "se": 0.0839,
+    "p": 0.01304
+   },
+   "tokens": {
+    "b": -0.0107,
+    "se": 0.0708,
+    "p": 0.87958
+   },
+   "hard_pool": {
+    "b": 0.8,
+    "se": 0.0795,
+    "p": 0.0
+   }
+  },
+  "vif": {
+   "zipf": 2.41,
+   "length": 1.96,
+   "tokens": 2.35,
+   "hard_pool": 1.85
+  }
+ },
+ "pooled_B_normedpool": {
+  "n": 1608,
+  "coef": {
+   "const": {
+    "b": -0.4602,
+    "se": 0.0844,
+    "p": 0.0
+   },
+   "zipf": {
+    "b": -0.4119,
+    "se": 0.0938,
+    "p": 1e-05
+   },
+   "length": {
+    "b": 0.2933,
+    "se": 0.0885,
+    "p": 0.00092
+   },
+   "tokens": {
+    "b": -0.0719,
+    "se": 0.0757,
+    "p": 0.34219
+   }
+  },
+  "vif": {
+   "zipf": 1.12,
+   "length": 1.52,
+   "tokens": 1.59
+  }
+ },
+ "pooled_B_hardpool": {
+  "n": 2004,
+  "coef": {
+   "const": {
+    "b": 1.6594,
+    "se": 0.1002,
+    "p": 0.0
+   },
+   "zipf": {
+    "b": 0.0142,
+    "se": 0.1153,
+    "p": 0.90233
+   },
+   "length": {
+    "b": 0.0607,
+    "se": 0.1178,
+    "p": 0.60666
+   },
+   "tokens": {
+    "b": 0.1324,
+    "se": 0.1186,
+    "p": 0.26431
+   }
+  },
+  "vif": {
+   "zipf": 1.47,
+   "length": 1.92,
+   "tokens": 2.38
+  }
+ },
+ "pooled_C_totdk": {
+  "n": 2159,
+  "coef": {
+   "const": {
+    "b": 1.4758,
+    "se": 0.0843,
+    "p": 0.0
+   },
+   "zipf": {
+    "b": 0.0662,
+    "se": 0.0918,
+    "p": 0.47094
+   },
+   "length": {
+    "b": 0.2028,
+    "se": 0.102,
+    "p": 0.04688
+   },
+   "tokens": {
+    "b": -0.3011,
+    "se": 0.088,
+    "p": 0.00062
+   }
+  },
+  "vif": {
+   "zipf": 1.53,
+   "length": 1.98,
+   "tokens": 2.44
+  }
+ },
+ "pooled_C_totdk_full_norms": {
+  "n": 226,
+  "coef": {
+   "const": {
+    "b": 5.212,
+    "se": null,
+    "p": null
+   },
+   "zipf": {
+    "b": 0.0669,
+    "se": null,
+    "p": null
+   },
+   "aoa": {
+    "b": 0.5517,
+    "se": null,
+    "p": null
+   },
+   "length": {
+    "b": 9.4871,
+    "se": null,
+    "p": null
+   },
+   "tokens": {
+    "b": -0.2418,
+    "se": null,
+    "p": null
+   }
+  },
+  "vif": {
+   "zipf": 1.31,
+   "aoa": 1.15,
+   "length": 1.61,
+   "tokens": 1.71
+  },
+  "separation": "fitted probability within 1e-6 of 0 or 1 for 19 of 226 rows; se and p not estimable (null)"
+ },
+ "pooled_C_n_dk": 408
+}

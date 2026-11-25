@@ -1,0 +1,66 @@
+
+============================================================================================
+MATCHED NO-CUE CONTROL -- strict failures (k_prod = 0/20), as in the paper
+============================================================================================
+rows = 5178; datasets = 12
+retest greedy correct = 0.0000  (expected ~0: temperature 0 on the production prompt replays production's own greedy answer)
+
+--- EN ------------------------------------------------------------------------------
+  MATCHED  cue@20 vs retest@20 (the causal estimate) 0.6156 vs 0.1125 | +0.5031 [+0.4674,+0.5377]  n=1938/640 items
+  published cue@21 vs CoT@6 (reference)              0.6166 vs 0.3483 | +0.2683 [+0.2304,+0.3073]  n=1938/640 items
+  CoT@6 vs retest@20  (what CoT buys beyond redraw)  0.3483 vs 0.1125 | +0.2358 [+0.2068,+0.2664]  n=1938/640 items
+  placebo@20 vs retest@20 (suppression, matched)     0.0480 vs 0.1125 | -0.0645 [-0.0828,-0.0468]  n=1938/640 items
+
+--- ZH ------------------------------------------------------------------------------
+  MATCHED  cue@20 vs retest@20 (the causal estimate) 0.3432 vs 0.0448 | +0.2985 [+0.2715,+0.3264]  n=3240/723 items
+  published cue@21 vs CoT@6 (reference)              0.3444 vs 0.0731 | +0.2713 [+0.2445,+0.2994]  n=3240/723 items
+  CoT@6 vs retest@20  (what CoT buys beyond redraw)  0.0731 vs 0.0448 | +0.0284 [+0.0175,+0.0391]  n=3240/723 items
+  placebo@20 vs retest@20 (suppression, matched)     0.0130 vs 0.0448 | -0.0318 [-0.0409,-0.0234]  n=3240/723 items
+
+per-dataset, the matched contrast:
+  en/llama70b    n= 211 | cue 0.659  retest 0.137 | +0.5213 [+0.4502,+0.5924] *
+  en/llama8b     n= 333 | cue 0.640  retest 0.135 | +0.5045 [+0.4474,+0.5616] *
+  en/qwen14b     n= 357 | cue 0.627  retest 0.081 | +0.5462 [+0.4902,+0.5994] *
+  en/qwen32b     n= 341 | cue 0.630  retest 0.114 | +0.5161 [+0.4545,+0.5777] *
+  en/qwen72b     n= 271 | cue 0.638  retest 0.103 | +0.5351 [+0.4723,+0.5978] *
+  en/qwen7b      n= 425 | cue 0.539  retest 0.113 | +0.4259 [+0.3741,+0.4776] *
+  zh/llama70b    n= 487 | cue 0.409  retest 0.068 | +0.3409 [+0.2957,+0.3860] *
+  zh/llama8b     n= 566 | cue 0.300  retest 0.053 | +0.2473 [+0.2085,+0.2845] *
+  zh/qwen14b     n= 549 | cue 0.392  retest 0.031 | +0.3607 [+0.3206,+0.4007] *
+  zh/qwen32b     n= 532 | cue 0.385  retest 0.034 | +0.3515 [+0.3102,+0.3947] *
+  zh/qwen72b     n= 498 | cue 0.420  retest 0.040 | +0.3795 [+0.3353,+0.4217] *
+  zh/qwen7b      n= 608 | cue 0.188  retest 0.044 | +0.1431 [+0.1118,+0.1760] *
+  positive with CI excluding 0: 12/12 datasets
+
+============================================================================================
+same, on the full cue pool (k_prod <= 2/20)
+============================================================================================
+rows = 5178; datasets = 12
+retest greedy correct = 0.0000  (expected ~0: temperature 0 on the production prompt replays production's own greedy answer)
+
+--- EN ------------------------------------------------------------------------------
+  MATCHED  cue@20 vs retest@20 (the causal estimate) 0.6156 vs 0.1125 | +0.5031 [+0.4674,+0.5377]  n=1938/640 items
+  published cue@21 vs CoT@6 (reference)              0.6166 vs 0.3483 | +0.2683 [+0.2304,+0.3073]  n=1938/640 items
+  CoT@6 vs retest@20  (what CoT buys beyond redraw)  0.3483 vs 0.1125 | +0.2358 [+0.2068,+0.2664]  n=1938/640 items
+  placebo@20 vs retest@20 (suppression, matched)     0.0480 vs 0.1125 | -0.0645 [-0.0828,-0.0468]  n=1938/640 items
+
+--- ZH ------------------------------------------------------------------------------
+  MATCHED  cue@20 vs retest@20 (the causal estimate) 0.3432 vs 0.0448 | +0.2985 [+0.2715,+0.3264]  n=3240/723 items
+  published cue@21 vs CoT@6 (reference)              0.3444 vs 0.0731 | +0.2713 [+0.2445,+0.2994]  n=3240/723 items
+  CoT@6 vs retest@20  (what CoT buys beyond redraw)  0.0731 vs 0.0448 | +0.0284 [+0.0175,+0.0391]  n=3240/723 items
+  placebo@20 vs retest@20 (suppression, matched)     0.0130 vs 0.0448 | -0.0318 [-0.0409,-0.0234]  n=3240/723 items
+
+per-dataset, the matched contrast:
+  en/llama70b    n= 211 | cue 0.659  retest 0.137 | +0.5213 [+0.4502,+0.5924] *
+  en/llama8b     n= 333 | cue 0.640  retest 0.135 | +0.5045 [+0.4474,+0.5616] *
+  en/qwen14b     n= 357 | cue 0.627  retest 0.081 | +0.5462 [+0.4902,+0.5994] *
+  en/qwen32b     n= 341 | cue 0.630  retest 0.114 | +0.5161 [+0.4545,+0.5777] *
+  en/qwen72b     n= 271 | cue 0.638  retest 0.103 | +0.5351 [+0.4723,+0.5978] *
+  en/qwen7b      n= 425 | cue 0.539  retest 0.113 | +0.4259 [+0.3741,+0.4776] *
+  zh/llama70b    n= 487 | cue 0.409  retest 0.068 | +0.3409 [+0.2957,+0.3860] *
+  zh/llama8b     n= 566 | cue 0.300  retest 0.053 | +0.2473 [+0.2085,+0.2845] *
+  zh/qwen14b     n= 549 | cue 0.392  retest 0.031 | +0.3607 [+0.3206,+0.4007] *
+  zh/qwen32b     n= 532 | cue 0.385  retest 0.034 | +0.3515 [+0.3102,+0.3947] *
+  zh/qwen72b     n= 498 | cue 0.420  retest 0.040 | +0.3795 [+0.3353,+0.4217] *
+  zh/qwen7b      n= 608 | cue 0.188  retest 0.044 | +0.1431 [+0.1118,+0.1760] *
+  positive with CI excluding 0: 12/12 datasets

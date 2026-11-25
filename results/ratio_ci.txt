@@ -1,0 +1,28 @@
+============================================================================================
+ITEM-CLUSTER BOOTSTRAP 95% CIs ON THE POOLED TOT:DK RATIOS
+============================================================================================
+reps=1000  seed=17  percentile intervals; the resampling unit is the ITEM (the bank is shared across models, so a single item contributes up to six correlated rows).
+
+--- EN  (bank n=1503 items, 6 primary models) ---
+                     ratio    point             95% CI
+standard TOT:DK (6 models)    11.19 [  8.60, 15.82]
+adversarial TOT:DK (6 models)     5.65 [  4.60,  7.23]
+joint adv+reversal (4 core)     3.90 [  3.15,  5.02]
+   joint, instrument-corr.     4.25 [  3.43,  5.47]
+  per-cell joint (adv+reversal), literal and corrected:
+    en/Qwen2.5-7B      literal  5.14 [ 3.96, 6.79]   corrected  5.62 [ 4.33, 7.51]
+    en/Llama-3.1-8B    literal  2.84 [ 2.21, 3.84]   corrected  3.10 [ 2.41, 4.20]
+    en/Qwen2.5-72B     literal  4.17 [ 3.08, 6.00]   corrected  4.49 [ 3.28, 6.42]
+    en/Llama-3.1-70B   literal  3.67 [ 2.69, 5.39]   corrected  3.97 [ 2.90, 5.89]
+
+--- ZH  (bank n=903 items, 6 primary models) ---
+                     ratio    point             95% CI
+standard TOT:DK (6 models)     4.88 [  4.16,  5.77]
+adversarial TOT:DK (6 models)     3.23 [  2.80,  3.73]
+joint adv+reversal (4 core)     1.66 [  1.42,  1.96]
+   joint, instrument-corr.     1.85 [  1.57,  2.19]
+  per-cell joint (adv+reversal), literal and corrected:
+    zh/Qwen2.5-7B      literal  2.05 [ 1.69, 2.54]   corrected  2.22 [ 1.82, 2.76]
+    zh/Llama-3.1-8B    literal  0.88 [ 0.70, 1.06]   corrected  1.12 [ 0.89, 1.39]
+    zh/Qwen2.5-72B     literal  2.43 [ 1.94, 3.11]   corrected  2.54 [ 2.01, 3.29]
+    zh/Llama-3.1-70B   literal  1.67 [ 1.32, 2.16]   corrected  1.91 [ 1.50, 2.46]

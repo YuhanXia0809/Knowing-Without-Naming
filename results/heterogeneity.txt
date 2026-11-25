@@ -1,0 +1,276 @@
+==============================================================================
+HETEROGENEITY CONSISTENCY ACROSS THE POOLED HEADLINE CLAIMS
+       DerSimonian-Laird tau^2, Cochran Q, I^2, H^2, HKSJ CI, 95% PI
+==============================================================================
+
+FAMILY 1 rows: 10194 over 8 datasets
+
+==============================================================================
+FAMILY 1 -- initial_unit  (confirmatory channel: initial_unit)
+==============================================================================
+  exact pooled FE fit (model+lang FE, item-clustered): b=+0.6767 SE=0.2486 p=0.00648  n=3399
+  dataset           nTOT   nDK   pTOT    pDK         adj b (SE)         logOR (SE)
+  en/llama70b        187    24  0.219  0.042     +1.963 (1.005) +1.490 (0.860)
+  en/llama8b         292    41  0.164  0.146     +0.310 (0.474) +0.080 (0.455)
+  en/qwen72b         253    18  0.245  0.167     +0.617 (0.667) +0.368 (0.609)
+  en/qwen7b          395    30  0.149  0.167     -0.159 (0.515) -0.199 (0.491)
+  zh/llama70b        386   101  0.067  0.010     +1.947 (1.028) +1.594 (0.847)
+  zh/llama8b         429   137  0.037  0.022     +0.512 (0.658) +0.428 (0.597)
+  zh/qwen72b         423    75  0.050  0.027     +0.603 (0.712) +0.451 (0.680)
+  zh/qwen7b          513    95  0.029  0.011     +1.013 (1.042) +0.672 (0.862)
+-- initial_unit: covariate-adjusted logistic coefficients  (k=8)
+   per-dataset: en/llama70b=+1.963(1.004), en/llama8b=+0.310(0.474), en/qwen72b=+0.617(0.667), en/qwen7b=-0.159(0.515), zh/llama70b=+1.947(1.028), zh/llama8b=+0.512(0.658), zh/qwen72b=+0.603(0.712), zh/qwen7b=+1.013(1.042)
+   FE  b=+0.526 [+0.059,+0.993] p=0.02733
+   RE  b=+0.526 [+0.059,+0.993] p=0.02733   HKSJ [-0.004,+1.056]   PI [-0.038,+1.090]
+   HET Q(7)=6.18 p=0.5191  I2=0.0%  tau2=0.0000 (tau=0.000)  H2=0.88
+-- initial_unit: unadjusted Haldane log-OR (2x2)  (k=8)
+   per-dataset: en/llama70b=+1.490(0.860), en/llama8b=+0.080(0.455), en/qwen72b=+0.368(0.610), en/qwen7b=-0.199(0.491), zh/llama70b=+1.594(0.847), zh/llama8b=+0.427(0.597), zh/qwen72b=+0.451(0.680), zh/qwen7b=+0.672(0.862)
+   FE  b=+0.379 [-0.051,+0.810] p=0.08396
+   RE  b=+0.379 [-0.051,+0.810] p=0.08396   HKSJ [-0.088,+0.847]   PI [-0.140,+0.899]
+   HET Q(7)=5.68 p=0.5776  I2=0.0%  tau2=0.0000 (tau=0.000)  H2=0.81
+
+==============================================================================
+FAMILY 1 -- length_unit  (confirmatory channel: initial_unit)
+==============================================================================
+  exact pooled FE fit (model+lang FE, item-clustered): b=+0.1941 SE=0.1265 p=0.12488  n=3399
+  dataset           nTOT   nDK   pTOT    pDK         adj b (SE)         logOR (SE)
+  en/llama70b        187    24  0.209  0.125     +0.733 (0.657) +0.491 (0.604)
+  en/llama8b         292    41  0.144  0.073     +0.983 (0.674) +0.624 (0.582)
+  en/qwen72b         253    18  0.174  0.222     -0.170 (0.641) -0.379 (0.564)
+  en/qwen7b          395    30  0.068  0.233     -1.109 (0.539) -1.453 (0.464)
+  zh/llama70b        386   101  0.500  0.436     +0.324 (0.238) +0.256 (0.224)
+  zh/llama8b         429   137  0.352  0.350     +0.102 (0.266) +0.004 (0.205)
+  zh/qwen72b         423    75  0.600  0.480     +0.532 (0.257) +0.485 (0.250)
+  zh/qwen7b          513    95  0.302  0.305     +0.116 (0.378) -0.022 (0.241)
+-- length_unit: covariate-adjusted logistic coefficients  (k=8)
+   per-dataset: en/llama70b=+0.733(0.657), en/llama8b=+0.983(0.674), en/qwen72b=-0.171(0.641), en/qwen7b=-1.109(0.539), zh/llama70b=+0.324(0.238), zh/llama8b=+0.102(0.266), zh/qwen72b=+0.532(0.257), zh/qwen7b=+0.116(0.378)
+   FE  b=+0.244 [-0.001,+0.488] p=0.0507
+   RE  b=+0.215 [-0.105,+0.536] p=0.1879   HKSJ [-0.198,+0.629]   PI [-0.493,+0.924]
+   HET Q(7)=10.25 p=0.1747  I2=31.7%  tau2=0.0630 (tau=0.251)  H2=1.46
+-- length_unit: unadjusted Haldane log-OR (2x2)  (k=8)
+   per-dataset: en/llama70b=+0.491(0.604), en/llama8b=+0.624(0.582), en/qwen72b=-0.379(0.564), en/qwen7b=-1.453(0.464), zh/llama70b=+0.256(0.224), zh/llama8b=+0.004(0.205), zh/qwen72b=+0.485(0.250), zh/qwen7b=-0.022(0.241)
+   FE  b=+0.086 [-0.120,+0.293] p=0.4115
+   RE  b=+0.036 [-0.315,+0.387] p=0.842   HKSJ [-0.453,+0.524]   PI [-0.916,+0.987]
+   HET Q(7)=16.50 p=0.02096  I2=57.6%  tau2=0.1299 (tau=0.360)  H2=2.36
+
+==============================================================================
+FAMILY 1 -- sound_unit  (confirmatory channel: initial_unit)
+==============================================================================
+  exact pooled FE fit (model+lang FE, item-clustered): b=+0.3402 SE=0.2021 p=0.09227  n=3396
+  dataset           nTOT   nDK   pTOT    pDK         adj b (SE)         logOR (SE)
+  en/llama70b        187    24  0.171  0.083     +0.850 (0.766) +0.632 (0.694)
+  en/llama8b         292    41  0.168  0.171     -0.068 (0.452) -0.067 (0.432)
+  en/qwen72b         253    18  0.099  0.111     +0.146 (0.790) -0.306 (0.710)
+  en/qwen7b          395    30  0.091  0.033     +1.033 (1.080) +0.692 (0.855)
+  zh/llama70b        384   100  0.099  0.060     +0.549 (0.461) +0.480 (0.440)
+  zh/llama8b         429   137  0.051  0.044     +0.209 (0.467) +0.111 (0.456)
+  zh/qwen72b         423    75  0.113  0.080     +0.351 (0.450) +0.323 (0.438)
+  zh/qwen7b          513    95  0.094  0.074     +0.240 (0.422) +0.207 (0.409)
+-- sound_unit: covariate-adjusted logistic coefficients  (k=8)
+   per-dataset: en/llama70b=+0.850(0.766), en/llama8b=-0.068(0.452), en/qwen72b=+0.146(0.790), en/qwen7b=+1.033(1.080), zh/llama70b=+0.549(0.461), zh/llama8b=+0.209(0.467), zh/qwen72b=+0.351(0.450), zh/qwen7b=+0.240(0.422)
+   FE  b=+0.306 [-0.058,+0.671] p=0.09948
+   RE  b=+0.306 [-0.058,+0.671] p=0.09948   HKSJ [+0.069,+0.544]   PI [-0.133,+0.746]
+   HET Q(7)=2.04 p=0.9576  I2=0.0%  tau2=0.0000 (tau=0.000)  H2=0.29
+-- sound_unit: unadjusted Haldane log-OR (2x2)  (k=8)
+   per-dataset: en/llama70b=+0.632(0.694), en/llama8b=-0.067(0.432), en/qwen72b=-0.306(0.710), en/qwen7b=+0.692(0.855), zh/llama70b=+0.480(0.440), zh/llama8b=+0.111(0.457), zh/qwen72b=+0.323(0.438), zh/qwen7b=+0.207(0.409)
+   FE  b=+0.226 [-0.121,+0.573] p=0.2013
+   RE  b=+0.226 [-0.121,+0.573] p=0.2013   HKSJ [-0.003,+0.456]   PI [-0.192,+0.644]
+   HET Q(7)=2.11 p=0.9537  I2=0.0%  tau2=0.0000 (tau=0.000)  H2=0.30
+
+==============================================================================
+FAMILY 2 -- pooled TOT:DK ratio (paper: 11.2:1 En, 4.9:1 Zh)
+==============================================================================
+  dataset              nTOT   nDK   ratio
+  en/qwen7b             395    30   13.17
+  en/qwen14b            331    26   12.73
+  en/qwen32b            321    20   16.05
+  en/qwen72b            253    18   14.06
+  en/llama8b            292    41    7.12
+  en/llama70b           187    24    7.79
+  zh/qwen7b             513    95    5.40
+  zh/qwen14b            469    80    5.86
+  zh/qwen32b            469    63    7.44
+  zh/qwen72b            423    75    5.64
+  zh/llama8b            429   137    3.13
+  zh/llama70b           386   101    3.82
+-- TOT:DK log-ratio [en]  (k=6)
+   per-dataset: en/qwen7b=+2.578(0.189), en/qwen14b=+2.544(0.204), en/qwen32b=+2.776(0.231), en/qwen72b=+2.643(0.244), en/llama8b=+1.963(0.167), en/llama70b=+2.053(0.217)
+   FE  OR=+10.760 [+9.143,+12.663] p=8.153e-180
+   RE  OR=+11.135 [+8.421,+14.724] p=3.932e-64   HKSJ [+7.808,+15.879]   PI [+4.959,+25.002]
+   HET Q(5)=14.37 p=0.01344  I2=65.2%  tau2=0.0787 (tau=0.281)  H2=2.87
+   reference value: aggregate sum(TOT)/sum(DK) = 1779/159 = 11.19:1
+-- TOT:DK log-ratio [zh]  (k=6)
+   per-dataset: zh/qwen7b=+1.686(0.112), zh/qwen14b=+1.769(0.121), zh/qwen32b=+2.007(0.134), zh/qwen72b=+1.730(0.125), zh/llama8b=+1.141(0.098), zh/llama70b=+1.341(0.112)
+   FE  OR=+4.749 [+4.330,+5.208] p=2.291e-240
+   RE  OR=+4.981 [+3.841,+6.460] p=9.626e-34   HKSJ [+3.576,+6.939]   PI [+2.129,+11.656]
+   HET Q(5)=39.25 p=2.116e-07  I2=87.3%  tau2=0.0918 (tau=0.303)  H2=7.85
+   reference value: aggregate sum(TOT)/sum(DK) = 2689/551 = 4.88:1
+-- TOT:DK log-ratio [both]  (k=12)
+   per-dataset: en/qwen7b=+2.578(0.189), en/qwen14b=+2.544(0.204), en/qwen32b=+2.776(0.231), en/qwen72b=+2.643(0.244), en/llama8b=+1.963(0.167), en/llama70b=+2.053(0.217), zh/qwen7b=+1.686(0.112), zh/qwen14b=+1.769(0.121), zh/qwen32b=+2.007(0.134), zh/qwen72b=+1.730(0.125), zh/llama8b=+1.141(0.098), zh/llama70b=+1.341(0.112)
+   FE  OR=+5.792 [+5.346,+6.276] p=0
+   RE  OR=+7.313 [+5.522,+9.684] p=7.711e-44   HKSJ [+5.243,+10.199]   PI [+2.493,+21.449]
+   HET Q(11)=126.99 p=7.076e-22  I2=91.3%  tau2=0.2185 (tau=0.467)  H2=11.54
+   reference value: aggregate sum(TOT)/sum(DK) = 4468/710 = 6.29:1
+
+[FAMILY 2 sensitivity: confirmatory four models only]
+
+==============================================================================
+FAMILY 2 -- pooled TOT:DK ratio (paper: 11.2:1 En, 4.9:1 Zh)
+==============================================================================
+  dataset              nTOT   nDK   ratio
+  en/qwen7b             395    30   13.17
+  en/llama8b            292    41    7.12
+  en/qwen72b            253    18   14.06
+  en/llama70b           187    24    7.79
+  zh/qwen7b             513    95    5.40
+  zh/llama8b            429   137    3.13
+  zh/qwen72b            423    75    5.64
+  zh/llama70b           386   101    3.82
+-- TOT:DK log-ratio [en]  (k=4)
+   per-dataset: en/qwen7b=+2.578(0.189), en/llama8b=+1.963(0.167), en/qwen72b=+2.643(0.244), en/llama70b=+2.053(0.217)
+   FE  OR=+9.604 [+7.909,+11.662] p=1.985e-115
+   RE  OR=+9.917 [+6.994,+14.060] p=5.861e-38   HKSJ [+5.675,+17.328]   PI [+3.336,+29.478]
+   HET Q(3)=9.36 p=0.0249  I2=67.9%  tau2=0.0855 (tau=0.292)  H2=3.12
+   reference value: aggregate sum(TOT)/sum(DK) = 1127/113 = 9.97:1
+-- TOT:DK log-ratio [zh]  (k=4)
+   per-dataset: zh/qwen7b=+1.686(0.112), zh/llama8b=+1.141(0.098), zh/qwen72b=+1.730(0.125), zh/llama70b=+1.341(0.112)
+   FE  OR=+4.211 [+3.779,+4.693] p=2.299e-149
+   RE  OR=+4.346 [+3.275,+5.769] p=2.645e-24   HKSJ [+2.770,+6.819]   PI [+1.657,+11.400]
+   HET Q(3)=20.26 p=0.0001499  I2=85.2%  tau2=0.0709 (tau=0.266)  H2=6.75
+   reference value: aggregate sum(TOT)/sum(DK) = 1751/408 = 4.29:1
+-- TOT:DK log-ratio [both]  (k=8)
+   per-dataset: en/qwen7b=+2.578(0.189), en/llama8b=+1.963(0.167), en/qwen72b=+2.643(0.244), en/llama70b=+2.053(0.217), zh/qwen7b=+1.686(0.112), zh/llama8b=+1.141(0.098), zh/qwen72b=+1.730(0.125), zh/llama70b=+1.341(0.112)
+   FE  OR=+5.121 [+4.659,+5.629] p=2.99e-251
+   RE  OR=+6.433 [+4.592,+9.012] p=2.713e-27   HKSJ [+4.129,+10.023]   PI [+2.020,+20.484]
+   HET Q(7)=82.45 p=4.353e-15  I2=91.5%  tau2=0.2103 (tau=0.459)  H2=11.78
+   reference value: aggregate sum(TOT)/sum(DK) = 2878/521 = 5.52:1
+
+==============================================================================
+FAMILY 3 -- cue rescue
+==============================================================================
+  rows=6798 datasets=['en/llama70b', 'en/llama8b', 'en/qwen72b', 'en/qwen7b', 'zh/llama70b', 'zh/llama8b', 'zh/qwen72b', 'zh/qwen7b']
+
+  (a) correct-cue vs placebo resolution
+  dataset              corr k/n    wrong k/n         logOR (SE)
+  en/llama70b        140/211       10/211    +3.630 (0.348)
+  en/llama8b         213/333       20/333    +3.299 (0.255)
+  en/qwen72b         173/271       12/271    +3.599 (0.316)
+  en/qwen7b          230/425       18/425    +3.257 (0.257)
+  zh/llama70b        200/487        4/487    +4.317 (0.482)
+  zh/llama8b         173/566        6/566    +3.638 (0.405)
+  zh/qwen72b         209/498        5/498    +4.173 (0.438)
+  zh/qwen7b          114/608        4/608    +3.437 (0.484)
+-- cue specificity (correct vs placebo)  (k=8)
+   per-dataset: en/llama70b=+3.630(0.348), en/llama8b=+3.299(0.255), en/qwen72b=+3.599(0.316), en/qwen7b=+3.257(0.257), zh/llama70b=+4.317(0.482), zh/llama8b=+3.638(0.405), zh/qwen72b=+4.173(0.438), zh/qwen7b=+3.437(0.484)
+   FE  b=+3.542 [+3.305,+3.778] p=2.07e-189
+   RE  b=+3.542 [+3.305,+3.778] p=2.07e-189   HKSJ [+3.257,+3.827]   PI [+3.257,+3.827]
+   HET Q(7)=6.99 p=0.4299  I2=0.0%  tau2=0.0000 (tau=0.000)  H2=1.00
+
+  (b) TOT vs DK resolution under the correct cue
+  dataset               TOT k/n       DK k/n         logOR (SE)
+  en/llama70b        128/187       12/24     +0.770 (0.430)
+  en/llama8b         190/292       23/41     +0.381 (0.334)
+  en/qwen72b         163/253       10/18     +0.380 (0.480)
+  en/qwen7b          218/395       12/30     +0.600 (0.380)
+  zh/llama70b        165/386       35/101    +0.336 (0.232)
+  zh/llama8b         151/429       22/137    +1.027 (0.252)
+  zh/qwen72b         187/423       22/75     +0.634 (0.270)
+  zh/qwen7b          104/513       10/95     +0.731 (0.345)
+-- state effect on rescue (correct cue)  (k=8)
+   per-dataset: en/llama70b=+0.770(0.430), en/llama8b=+0.381(0.334), en/qwen72b=+0.380(0.480), en/qwen7b=+0.600(0.380), zh/llama70b=+0.336(0.232), zh/llama8b=+1.027(0.252), zh/qwen72b=+0.634(0.270), zh/qwen7b=+0.731(0.345)
+   FE  b=+0.617 [+0.401,+0.833] p=2.196e-08
+   RE  b=+0.617 [+0.401,+0.833] p=2.196e-08   HKSJ [+0.394,+0.840]   PI [+0.356,+0.878]
+   HET Q(7)=5.11 p=0.6467  I2=0.0%  tau2=0.0000 (tau=0.000)  H2=0.73
+
+  (b) TOT vs DK resolution under the wrong cue
+  dataset               TOT k/n       DK k/n         logOR (SE)
+  en/llama70b         10/187        0/24     +1.064 (1.463)
+  en/llama8b          19/292        1/41     +0.655 (0.864)
+  en/qwen72b          12/253        0/18     +0.650 (1.462)
+  en/qwen7b           17/395        1/30     -0.095 (0.872)
+  zh/llama70b          4/386        0/101    +0.871 (1.495)
+  zh/llama8b           5/429        1/137    +0.165 (0.926)
+  zh/qwen72b           4/423        1/75     -0.630 (0.951)
+  zh/qwen7b            3/513        1/95     -0.839 (0.982)
+-- state effect on rescue (wrong cue)  (k=8)
+   per-dataset: en/llama70b=+1.064(1.464), en/llama8b=+0.655(0.864), en/qwen72b=+0.650(1.462), en/qwen7b=-0.095(0.872), zh/llama70b=+0.871(1.495), zh/llama8b=+0.165(0.926), zh/qwen72b=-0.630(0.951), zh/qwen7b=-0.840(0.982)
+   FE  b=+0.077 [-0.646,+0.801] p=0.8337
+   RE  b=+0.077 [-0.646,+0.801] p=0.8337   HKSJ [-0.475,+0.630]   PI [-0.795,+0.950]
+   HET Q(7)=2.81 p=0.9022  I2=0.0%  tau2=0.0000 (tau=0.000)  H2=0.40
+
+  exact pooled FE fit (dataset FE, item-clustered), all langs:
+    is_TOT       b=+0.878 SE=0.542 p=0.10495
+    correct_cue  b=+3.987 SE=0.527 p=0.00000
+    TOTxCue      b=-0.228 SE=0.541 p=0.67260
+
+[FAMILY 3 sensitivity: all six primary models with cue data]
+
+==============================================================================
+FAMILY 3 -- cue rescue
+==============================================================================
+  rows=10356 datasets=['en/llama70b', 'en/llama8b', 'en/qwen14b', 'en/qwen32b', 'en/qwen72b', 'en/qwen7b', 'zh/llama70b', 'zh/llama8b', 'zh/qwen14b', 'zh/qwen32b', 'zh/qwen72b', 'zh/qwen7b']
+
+  (a) correct-cue vs placebo resolution
+  dataset              corr k/n    wrong k/n         logOR (SE)
+  en/llama70b        140/211       10/211    +3.630 (0.348)
+  en/llama8b         213/333       20/333    +3.299 (0.255)
+  en/qwen14b         224/357       11/357    +3.925 (0.319)
+  en/qwen32b         215/341       22/341    +3.186 (0.245)
+  en/qwen72b         173/271       12/271    +3.599 (0.316)
+  en/qwen7b          230/425       18/425    +3.257 (0.257)
+  zh/llama70b        200/487        4/487    +4.317 (0.482)
+  zh/llama8b         173/566        6/566    +3.638 (0.405)
+  zh/qwen14b         215/549       11/549    +3.407 (0.311)
+  zh/qwen32b         205/532       12/532    +3.263 (0.300)
+  zh/qwen72b         209/498        5/498    +4.173 (0.438)
+  zh/qwen7b          114/608        4/608    +3.437 (0.484)
+-- cue specificity (correct vs placebo)  (k=12)
+   per-dataset: en/llama70b=+3.630(0.348), en/llama8b=+3.299(0.255), en/qwen14b=+3.925(0.319), en/qwen32b=+3.186(0.245), en/qwen72b=+3.599(0.316), en/qwen7b=+3.257(0.257), zh/llama70b=+4.317(0.482), zh/llama8b=+3.638(0.405), zh/qwen14b=+3.407(0.311), zh/qwen32b=+3.263(0.300), zh/qwen72b=+4.173(0.438), zh/qwen7b=+3.437(0.484)
+   FE  b=+3.485 [+3.303,+3.666] p=5.333e-310
+   RE  b=+3.487 [+3.303,+3.670] p=3.248e-303   HKSJ [+3.280,+3.693]   PI [+3.258,+3.716]
+   HET Q(11)=11.22 p=0.4252  I2=1.9%  tau2=0.0021 (tau=0.045)  H2=1.02
+
+  (b) TOT vs DK resolution under the correct cue
+  dataset               TOT k/n       DK k/n         logOR (SE)
+  en/llama70b        128/187       12/24     +0.770 (0.430)
+  en/llama8b         190/292       23/41     +0.381 (0.334)
+  en/qwen14b         213/331       11/26     +0.887 (0.406)
+  en/qwen32b         205/321       10/20     +0.568 (0.452)
+  en/qwen72b         163/253       10/18     +0.380 (0.480)
+  en/qwen7b          218/395       12/30     +0.600 (0.380)
+  zh/llama70b        165/386       35/101    +0.336 (0.232)
+  zh/llama8b         151/429       22/137    +1.027 (0.252)
+  zh/qwen14b         186/469       29/80     +0.138 (0.249)
+  zh/qwen32b         187/469       18/63     +0.490 (0.291)
+  zh/qwen72b         187/423       22/75     +0.634 (0.270)
+  zh/qwen7b          104/513       10/95     +0.731 (0.345)
+-- state effect on rescue (correct cue)  (k=12)
+   per-dataset: en/llama70b=+0.770(0.430), en/llama8b=+0.381(0.334), en/qwen14b=+0.887(0.406), en/qwen32b=+0.568(0.452), en/qwen72b=+0.380(0.480), en/qwen7b=+0.600(0.380), zh/llama70b=+0.336(0.232), zh/llama8b=+1.027(0.252), zh/qwen14b=+0.138(0.249), zh/qwen32b=+0.490(0.291), zh/qwen72b=+0.634(0.270), zh/qwen7b=+0.731(0.345)
+   FE  b=+0.553 [+0.375,+0.731] p=1.191e-09
+   RE  b=+0.553 [+0.375,+0.731] p=1.191e-09   HKSJ [+0.372,+0.733]   PI [+0.353,+0.753]
+   HET Q(11)=8.94 p=0.6278  I2=0.0%  tau2=0.0000 (tau=0.000)  H2=0.81
+
+  (b) TOT vs DK resolution under the wrong cue
+  dataset               TOT k/n       DK k/n         logOR (SE)
+  en/llama70b         10/187        0/24     +1.064 (1.463)
+  en/llama8b          19/292        1/41     +0.655 (0.864)
+  en/qwen14b          11/331        0/26     +0.643 (1.459)
+  en/qwen32b          22/321        0/20     +1.125 (1.448)
+  en/qwen72b          12/253        0/18     +0.650 (1.462)
+  en/qwen7b           17/395        1/30     -0.095 (0.872)
+  zh/llama70b          4/386        0/101    +0.871 (1.495)
+  zh/llama8b           5/429        1/137    +0.165 (0.926)
+  zh/qwen14b           9/469        2/80     -0.434 (0.721)
+  zh/qwen32b           9/469        3/63     -1.031 (0.640)
+  zh/qwen72b           4/423        1/75     -0.630 (0.951)
+  zh/qwen7b            3/513        1/95     -0.839 (0.982)
+-- state effect on rescue (wrong cue)  (k=12)
+   per-dataset: en/llama70b=+1.064(1.464), en/llama8b=+0.655(0.864), en/qwen14b=+0.643(1.459), en/qwen32b=+1.125(1.448), en/qwen72b=+0.650(1.462), en/qwen7b=-0.095(0.872), zh/llama70b=+0.871(1.495), zh/llama8b=+0.165(0.926), zh/qwen14b=-0.434(0.721), zh/qwen32b=-1.031(0.640), zh/qwen72b=-0.630(0.951), zh/qwen7b=-0.840(0.982)
+   FE  b=-0.154 [-0.705,+0.397] p=0.5847
+   RE  b=-0.154 [-0.705,+0.397] p=0.5847   HKSJ [-0.622,+0.315]   PI [-0.772,+0.465]
+   HET Q(11)=6.31 p=0.852  I2=0.0%  tau2=0.0000 (tau=0.000)  H2=0.57
+
+  exact pooled FE fit (dataset FE, item-clustered), all langs:
+    is_TOT       b=+0.602 SE=0.486 p=0.21613
+    correct_cue  b=+3.689 SE=0.471 p=0.00000
+    TOTxCue      b=+0.005 SE=0.480 p=0.99156

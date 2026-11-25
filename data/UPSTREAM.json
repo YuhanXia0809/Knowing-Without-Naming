@@ -1,0 +1,23 @@
+{
+ "upstream": {
+  "name": "moedict dict-revised.json",
+  "source": "Ministry of Education, Taiwan, Revised Mandarin Chinese Dictionary, via g0v/moedict-data",
+  "license": "CC BY-ND 3.0 TW",
+  "sha256": "ad43e8e2d30341f2c2458e04fb05a3fc1b1cd486fb52eb8708d89bcfbe46530f",
+  "bytes": 80300977,
+  "note": "obtained as a file rather than a clone, so the byte digest above is the pin; any copy with this digest reproduces our build exactly"
+ },
+ "conversion": {
+  "tool": "opencc-python-reimplemented",
+  "version": "0.1.7",
+  "profile": "t2s",
+  "call": "OpenCC(\"t2s\").convert(text)",
+  "applies_to": "headword and definition, before item construction"
+ },
+ "versions": {
+  "opencc-python-reimplemented": "0.1.7",
+  "pypinyin": "0.55.0",
+  "wordfreq": "3.1.1",
+  "source": "package metadata (dist-info) of the Python environment the item builders ran in"
+ }
+}

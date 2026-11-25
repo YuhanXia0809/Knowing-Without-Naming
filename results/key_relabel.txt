@@ -1,0 +1,124 @@
+
+==============================================================================
+=== EN ===
+==============================================================================
+rebuild sample: 299 items (of 1503)
+
+-- state counts on the rebuild sample --
+  qwen7b: orig TOT=77 DK=7 (11.0:1) | llama-key TOT=66 DK=5 (13.2:1) | re-score/stored mismatches=0
+  llama8b: orig TOT=59 DK=6 (9.8:1) | llama-key TOT=44 DK=4 (11.0:1) | re-score/stored mismatches=0
+  qwen72b: orig TOT=50 DK=5 (10.0:1) | llama-key TOT=39 DK=4 (9.8:1) | re-score/stored mismatches=0
+  llama70b: orig TOT=37 DK=6 (6.2:1) | llama-key TOT=23 DK=4 (5.8:1) | re-score/stored mismatches=0
+
+-- (a) in-episode FIRST-UNIT partial access (first_letter) --
+  qwen7b    FULL    : TOT=59/395 (14.9%) vs DK=5/30 (16.7%); diff=-1.7% 95%CI[-18.9%,+8.4%] Fisher p=0.7914
+  qwen7b    SAMPLE-0: TOT=17/77 (22.1%) vs DK=1/7 (14.3%); diff=+7.8% 95%CI[-30.0%,+23.5%] Fisher p=1.0000
+  qwen7b    SAMPLE-1: TOT=14/66 (21.2%) vs DK=1/4 (25.0%); diff=-3.8% 95%CI[-49.5%,+19.6%] Fisher p=1.0000
+  llama8b   FULL    : TOT=48/292 (16.4%) vs DK=6/41 (14.6%); diff=+1.8% 95%CI[-12.5%,+10.9%] Fisher p=1.0000
+  llama8b   SAMPLE-0: TOT=9/59 (15.3%) vs DK=0/6 (0.0%); diff=+15.3% 95%CI[-24.4%,+26.5%] Fisher p=0.5838
+  llama8b   SAMPLE-1: TOT=5/42 (11.9%) vs DK=0/4 (0.0%); diff=+11.9% 95%CI[-37.5%,+25.0%] Fisher p=1.0000
+  qwen72b   FULL    : TOT=62/253 (24.5%) vs DK=3/18 (16.7%); diff=+7.8% 95%CI[-15.2%,+20.1%] Fisher p=0.5763
+  qwen72b   SAMPLE-0: TOT=8/50 (16.0%) vs DK=0/5 (0.0%); diff=+16.0% 95%CI[-28.1%,+28.5%] Fisher p=1.0000
+  qwen72b   SAMPLE-1: TOT=5/37 (13.5%) vs DK=0/3 (0.0%); diff=+13.5% 95%CI[-43.1%,+28.0%] Fisher p=1.0000
+  llama70b  FULL    : TOT=41/187 (21.9%) vs DK=1/24 (4.2%); diff=+17.8% 95%CI[+0.8%,+25.1%] Fisher p=0.0537
+  llama70b  SAMPLE-0: TOT=11/37 (29.7%) vs DK=0/6 (0.0%); diff=+29.7% 95%CI[-11.2%,+45.8%] Fisher p=0.3122
+  llama70b  SAMPLE-1: TOT=6/23 (26.1%) vs DK=0/4 (0.0%); diff=+26.1% 95%CI[-24.7%,+46.5%] Fisher p=0.5453
+  pooled (model FE, item-clustered SE):
+    [FULL] n=1240 (TOT=1127, DK=113) raw TOT=0.186 DK=0.133 diff=+0.054 | b_TOT=+0.470 se=0.319 CI[-0.156,+1.096] p=0.14088
+    [SAMPLE-0] n=247 (TOT=223, DK=24) raw TOT=0.202 DK=0.042 diff=+0.160 | b_TOT=+1.897 se=1.076 CI[-0.211,+4.006] p=0.07783
+    [SAMPLE-1] n=183 (TOT=168, DK=15) raw TOT=0.179 DK=0.067 diff=+0.112 | b_TOT=+1.142 se=1.085 CI[-0.984,+3.267] p=0.29250
+
+-- (b) cue-rescue: correct-first-unit-cue resolution --
+   (NB resolution is scored under the ORIGINAL key: cue.jsonl stores only k_cue/greedy_correct, no raw text; only the STATE is relabelled)
+  qwen7b    FULL    : TOT=218/395 (55.2%) vs DK=12/30 (40.0%); diff=+15.2% 95%CI[-3.2%,+31.3%] Fisher p=0.1291
+  qwen7b    SAMPLE-0: TOT=41/77 (53.2%) vs DK=4/7 (57.1%); diff=-3.9% 95%CI[-33.1%,+29.9%] Fisher p=1.0000
+  qwen7b    SAMPLE-1: TOT=36/65 (55.4%) vs DK=1/4 (25.0%); diff=+30.4% 95%CI[-16.1%,+53.8%] Fisher p=0.3303
+  llama8b   FULL    : TOT=190/292 (65.1%) vs DK=23/41 (56.1%); diff=+9.0% 95%CI[-6.1%,+24.9%] Fisher p=0.2983
+  llama8b   SAMPLE-0: TOT=36/59 (61.0%) vs DK=3/6 (50.0%); diff=+11.0% 95%CI[-22.7%,+44.3%] Fisher p=0.6764
+  llama8b   SAMPLE-1: TOT=27/42 (64.3%) vs DK=2/4 (50.0%); diff=+14.3% 95%CI[-23.8%,+51.5%] Fisher p=0.6193
+  qwen72b   FULL    : TOT=163/253 (64.4%) vs DK=10/18 (55.6%); diff=+8.9% 95%CI[-11.9%,+31.4%] Fisher p=0.4562
+  qwen72b   SAMPLE-0: TOT=32/50 (64.0%) vs DK=2/5 (40.0%); diff=+24.0% 95%CI[-15.4%,+54.6%] Fisher p=0.3588
+  qwen72b   SAMPLE-1: TOT=25/37 (67.6%) vs DK=1/3 (33.3%); diff=+34.2% 95%CI[-14.4%,+64.3%] Fisher p=0.2763
+  llama70b  FULL    : TOT=128/187 (68.4%) vs DK=12/24 (50.0%); diff=+18.4% 95%CI[-1.4%,+38.0%] Fisher p=0.1062
+  llama70b  SAMPLE-0: TOT=22/37 (59.5%) vs DK=2/6 (33.3%); diff=+26.1% 95%CI[-13.9%,+53.7%] Fisher p=0.3802
+  llama70b  SAMPLE-1: TOT=15/23 (65.2%) vs DK=1/4 (25.0%); diff=+40.2% 95%CI[-9.1%,+66.2%] Fisher p=0.2729
+  pooled (model FE, item-clustered SE):
+    [FULL] n=1240 (TOT=1127, DK=113) raw TOT=0.620 DK=0.504 diff=+0.116 | b_TOT=+0.524 se=0.284 CI[-0.033,+1.081] p=0.06533
+    [SAMPLE-0] n=247 (TOT=223, DK=24) raw TOT=0.587 DK=0.458 diff=+0.129 | b_TOT=+0.341 se=0.601 CI[-0.837,+1.519] p=0.57093
+    [SAMPLE-1] n=182 (TOT=167, DK=15) raw TOT=0.617 DK=0.333 diff=+0.283 | b_TOT=+0.935 se=0.790 CI[-0.613,+2.483] p=0.23639
+
+-- (a-extra) remaining in-episode channels, raw TOT-DK diffs --
+  n_letters       qwen7b    S0 TOT=0.039(n=77) DK=0.143(n=7) | S1 TOT=0.045(n=66) DK=0.250(n=4)
+  n_letters       llama8b   S0 TOT=0.203(n=59) DK=0.000(n=6) | S1 TOT=0.190(n=42) DK=0.000(n=4)
+  n_letters       qwen72b   S0 TOT=0.220(n=50) DK=0.200(n=5) | S1 TOT=0.243(n=37) DK=0.333(n=3)
+  n_letters       llama70b  S0 TOT=0.162(n=37) DK=0.167(n=6) | S1 TOT=0.217(n=23) DK=0.250(n=4)
+  n_syllables     qwen7b    S0 TOT=0.208(n=77) DK=0.143(n=7) | S1 TOT=0.227(n=66) DK=0.000(n=4)
+  n_syllables     llama8b   S0 TOT=0.085(n=59) DK=0.167(n=6) | S1 TOT=0.071(n=42) DK=0.000(n=4)
+  n_syllables     qwen72b   S0 TOT=0.180(n=50) DK=0.200(n=5) | S1 TOT=0.135(n=37) DK=0.000(n=3)
+  n_syllables     llama70b  S0 TOT=0.243(n=37) DK=0.500(n=6) | S1 TOT=0.348(n=23) DK=0.500(n=4)
+  sounds_like     qwen7b    S0 TOT=0.091(n=77) DK=0.000(n=7) | S1 TOT=0.061(n=66) DK=0.000(n=4)
+  sounds_like     llama8b   S0 TOT=0.186(n=59) DK=0.167(n=6) | S1 TOT=0.143(n=42) DK=0.250(n=4)
+  sounds_like     qwen72b   S0 TOT=0.120(n=50) DK=0.200(n=5) | S1 TOT=0.081(n=37) DK=0.333(n=3)
+  sounds_like     llama70b  S0 TOT=0.162(n=37) DK=0.000(n=6) | S1 TOT=0.087(n=23) DK=0.000(n=4)
+
+==============================================================================
+=== ZH ===
+==============================================================================
+rebuild sample: 300 items (of 903)
+
+-- state counts on the rebuild sample --
+  qwen7b: orig TOT=157 DK=34 (4.6:1) | llama-key TOT=159 DK=31 (5.1:1) | re-score/stored mismatches=0
+  llama8b: orig TOT=134 DK=46 (2.9:1) | llama-key TOT=126 DK=43 (2.9:1) | re-score/stored mismatches=0
+  qwen72b: orig TOT=133 DK=27 (4.9:1) | llama-key TOT=136 DK=24 (5.7:1) | re-score/stored mismatches=0
+  llama70b: orig TOT=127 DK=40 (3.2:1) | llama-key TOT=92 DK=29 (3.2:1) | re-score/stored mismatches=0
+
+-- (a) in-episode FIRST-UNIT partial access (first_char) --
+  qwen7b    FULL    : TOT=15/513 (2.9%) vs DK=1/95 (1.1%); diff=+1.9% 95%CI[-2.9%,+3.9%] Fisher p=0.4879
+  qwen7b    SAMPLE-0: TOT=5/157 (3.2%) vs DK=0/34 (0.0%); diff=+3.2% 95%CI[-7.1%,+7.2%] Fisher p=0.5878
+  qwen7b    SAMPLE-1: TOT=5/148 (3.4%) vs DK=0/31 (0.0%); diff=+3.4% 95%CI[-7.8%,+7.7%] Fisher p=0.5890
+  llama8b   FULL    : TOT=16/429 (3.7%) vs DK=3/137 (2.2%); diff=+1.5% 95%CI[-2.8%,+4.2%] Fisher p=0.5859
+  llama8b   SAMPLE-0: TOT=7/134 (5.2%) vs DK=0/46 (0.0%); diff=+5.2% 95%CI[-2.9%,+10.4%] Fisher p=0.1934
+  llama8b   SAMPLE-1: TOT=7/117 (6.0%) vs DK=0/41 (0.0%); diff=+6.0% 95%CI[-3.1%,+11.8%] Fisher p=0.1914
+  qwen72b   FULL    : TOT=21/423 (5.0%) vs DK=2/75 (2.7%); diff=+2.3% 95%CI[-4.5%,+5.5%] Fisher p=0.5544
+  qwen72b   SAMPLE-0: TOT=5/133 (3.8%) vs DK=0/27 (0.0%); diff=+3.8% 95%CI[-8.9%,+8.5%] Fisher p=0.5900
+  qwen72b   SAMPLE-1: TOT=5/120 (4.2%) vs DK=0/24 (0.0%); diff=+4.2% 95%CI[-9.8%,+9.4%] Fisher p=0.5901
+  llama70b  FULL    : TOT=26/386 (6.7%) vs DK=1/101 (1.0%); diff=+5.7% 95%CI[+0.9%,+8.8%] Fisher p=0.0253
+  llama70b  SAMPLE-0: TOT=7/127 (5.5%) vs DK=0/40 (0.0%); diff=+5.5% 95%CI[-3.7%,+10.9%] Fisher p=0.1985
+  llama70b  SAMPLE-1: TOT=4/88 (4.5%) vs DK=0/28 (0.0%); diff=+4.5% 95%CI[-7.8%,+11.1%] Fisher p=0.5709
+  pooled (model FE, item-clustered SE):
+    [FULL] n=2159 (TOT=1751, DK=408) raw TOT=0.045 DK=0.017 diff=+0.027 | b_TOT=+0.941 se=0.394 CI[+0.169,+1.714] p=0.01697
+    [SAMPLE-0] n=698 (TOT=551, DK=147) successes TOT=24/551 DK=0/147 | b_TOT not estimable (separation: zero cell)
+    [SAMPLE-1] n=597 (TOT=473, DK=124) successes TOT=21/473 DK=0/124 | b_TOT not estimable (separation: zero cell)
+
+-- (b) cue-rescue: correct-first-unit-cue resolution --
+   (NB resolution is scored under the ORIGINAL key: cue.jsonl stores only k_cue/greedy_correct, no raw text; only the STATE is relabelled)
+  qwen7b    FULL    : TOT=104/513 (20.3%) vs DK=10/95 (10.5%); diff=+9.7% 95%CI[+1.3%,+15.7%] Fisher p=0.0309
+  qwen7b    SAMPLE-0: TOT=24/157 (15.3%) vs DK=6/34 (17.6%); diff=-2.4% 95%CI[-18.9%,+9.0%] Fisher p=0.7951
+  qwen7b    SAMPLE-1: TOT=25/143 (17.5%) vs DK=6/31 (19.4%); diff=-1.9% 95%CI[-19.6%,+10.5%] Fisher p=0.7982
+  llama8b   FULL    : TOT=151/429 (35.2%) vs DK=22/137 (16.1%); diff=+19.1% 95%CI[+10.8%,+26.1%] Fisher p=0.0000
+  llama8b   SAMPLE-0: TOT=43/134 (32.1%) vs DK=5/46 (10.9%); diff=+21.2% 95%CI[+7.0%,+31.5%] Fisher p=0.0062
+  llama8b   SAMPLE-1: TOT=40/116 (34.5%) vs DK=5/41 (12.2%); diff=+22.3% 95%CI[+6.7%,+33.6%] Fisher p=0.0083
+  qwen72b   FULL    : TOT=187/423 (44.2%) vs DK=22/75 (29.3%); diff=+14.9% 95%CI[+2.8%,+25.1%] Fisher p=0.0162
+  qwen72b   SAMPLE-0: TOT=60/133 (45.1%) vs DK=3/27 (11.1%); diff=+34.0% 95%CI[+15.2%,+45.2%] Fisher p=0.0009
+  qwen72b   SAMPLE-1: TOT=56/116 (48.3%) vs DK=2/24 (8.3%); diff=+39.9% 95%CI[+20.3%,+50.8%] Fisher p=0.0002
+  llama70b  FULL    : TOT=165/386 (42.7%) vs DK=35/101 (34.7%); diff=+8.1% 95%CI[-2.7%,+18.0%] Fisher p=0.1726
+  llama70b  SAMPLE-0: TOT=55/127 (43.3%) vs DK=11/40 (27.5%); diff=+15.8% 95%CI[-1.6%,+30.1%] Fisher p=0.0952
+  llama70b  SAMPLE-1: TOT=41/84 (48.8%) vs DK=5/26 (19.2%); diff=+29.6% 95%CI[+8.2%,+44.6%] Fisher p=0.0114
+  pooled (model FE, item-clustered SE):
+    [FULL] n=2159 (TOT=1751, DK=408) raw TOT=0.347 DK=0.218 diff=+0.129 | b_TOT=+0.668 se=0.172 CI[+0.331,+1.006] p=0.00010
+    [SAMPLE-0] n=698 (TOT=551, DK=147) raw TOT=0.330 DK=0.170 diff=+0.160 | b_TOT=+0.833 se=0.317 CI[+0.212,+1.454] p=0.00851
+    [SAMPLE-1] n=581 (TOT=459, DK=122) raw TOT=0.353 DK=0.148 diff=+0.205 | b_TOT=+1.204 se=0.372 CI[+0.475,+1.934] p=0.00121
+
+-- (a-extra) remaining in-episode channels, raw TOT-DK diffs --
+  n_chars         qwen7b    S0 TOT=0.306(n=157) DK=0.324(n=34) | S1 TOT=0.304(n=148) DK=0.290(n=31)
+  n_chars         llama8b   S0 TOT=0.373(n=134) DK=0.348(n=46) | S1 TOT=0.393(n=117) DK=0.341(n=41)
+  n_chars         qwen72b   S0 TOT=0.647(n=133) DK=0.481(n=27) | S1 TOT=0.592(n=120) DK=0.458(n=24)
+  n_chars         llama70b  S0 TOT=0.512(n=127) DK=0.450(n=40) | S1 TOT=0.557(n=88) DK=0.464(n=28)
+  pinyin_initial  qwen7b    S0 TOT=0.102(n=157) DK=0.000(n=34) | S1 TOT=0.095(n=148) DK=0.000(n=31)
+  pinyin_initial  llama8b   S0 TOT=0.052(n=134) DK=0.065(n=46) | S1 TOT=0.034(n=117) DK=0.073(n=41)
+  pinyin_initial  qwen72b   S0 TOT=0.113(n=133) DK=0.000(n=27) | S1 TOT=0.133(n=120) DK=0.000(n=24)
+  pinyin_initial  llama70b  S0 TOT=0.087(n=127) DK=0.050(n=40) | S1 TOT=0.080(n=88) DK=0.000(n=28)
+  tone1           qwen7b    S0 TOT=0.248(n=157) DK=0.147(n=34) | S1 TOT=0.264(n=148) DK=0.129(n=31)
+  tone1           llama8b   S0 TOT=0.321(n=134) DK=0.196(n=46) | S1 TOT=0.325(n=117) DK=0.220(n=41)
+  tone1           qwen72b   S0 TOT=0.241(n=133) DK=0.222(n=27) | S1 TOT=0.258(n=120) DK=0.250(n=24)
+  tone1           llama70b  S0 TOT=0.260(n=127) DK=0.200(n=40) | S1 TOT=0.250(n=88) DK=0.250(n=28)

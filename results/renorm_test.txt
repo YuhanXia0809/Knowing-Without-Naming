@@ -1,0 +1,27 @@
+================================================================================================
+RENORMALIZATION BASELINE FOR CUE-UNLOCKED PRODUCTION
+================================================================================================
+
+--- EN  n=1938 correct-cue rows (640 items, 6 datasets)
+  (1) w-hat: mean 0.126  median 0.000  zero-share 0.736  P90 0.750
+      unlock rate: 0.617  (TOT 0.628 / DK 0.491)
+  (2) implied per-draw post-cue target share q = 0.0446; with mean w-hat 0.126 the account needs pre-cue mass p = 0.0059 (rule-of-three ceiling .139)
+      at the p=.139 ceiling the account predicts mean unlock 0.996 vs observed 0.617
+  (3) unlocked ~ z(w-hat)+covs+dataset FE, item-clustered:
+      b(z_w-hat) = -1.001 (SE 0.086)  95% CI [-1.169, -0.833]  p = 2.062e-31
+      renormalization predicts strongly NEGATIVE; storage-style access predicts ~0.
+      stratum w=0        : n= 1427  unlock 0.729
+      stratum 0<w<=.10   : n=  174  unlock 0.523
+      stratum w>.10      : n=  337  unlock 0.190
+
+--- ZH  n=3240 correct-cue rows (723 items, 6 datasets)
+  (1) w-hat: mean 0.062  median 0.000  zero-share 0.847  P90 0.100
+      unlock rate: 0.344  (TOT 0.364 / DK 0.247)
+  (2) implied per-draw post-cue target share q = 0.0199; with mean w-hat 0.062 the account needs pre-cue mass p = 0.0013 (rule-of-three ceiling .139)
+      at the p=.139 ceiling the account predicts mean unlock 0.998 vs observed 0.344
+  (3) unlocked ~ z(w-hat)+covs+dataset FE, item-clustered:
+      b(z_w-hat) = -0.486 (SE 0.072)  95% CI [-0.628, -0.344]  p = 1.934e-11
+      renormalization predicts strongly NEGATIVE; storage-style access predicts ~0.
+      stratum w=0        : n= 2745  unlock 0.370
+      stratum 0<w<=.10   : n=  184  unlock 0.332
+      stratum w>.10      : n=  311  unlock 0.122

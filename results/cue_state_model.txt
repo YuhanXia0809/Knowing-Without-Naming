@@ -1,0 +1,217 @@
+====================================================================================================
+CUE-ARM COEFFICIENT RECONCILIATION + NO-CUE RETRY BASELINE
+====================================================================================================
+rows (dataset x item) = 5178; datasets = ['en/llama70b', 'en/llama8b', 'en/qwen14b', 'en/qwen32b', 'en/qwen72b', 'en/qwen7b', 'zh/llama70b', 'zh/llama8b', 'zh/qwen14b', 'zh/qwen32b', 'zh/qwen72b', 'zh/qwen7b']
+cue sample sizes n_cue = [np.int64(20)]; cot sample sizes n_cot = [np.int64(5)]
+CoT records available for 5178 of 5178 rows
+
+====================================================================================================
+A. cue_analysis.py joint model, every roster/language slice
+====================================================================================================
+(spec: resolved ~ is_TOT + correct_cue + TOTxCue + z(zipf,length,tokens) + model FE, item-clustered; is_TOT is the state effect AT THE PLACEBO REFERENCE)
+
+  [EN/core4 dropna-incl-def_correct (= cue_analysis.py as written)]  n_rows=2480  items=561  datasets=4
+    is_TOT       b=+1.171 SE=0.709 CI[-0.220,+2.561] p=0.0989
+    correct_cue  b=+4.131 SE=0.720 CI[+2.720,+5.541] p=0.0000
+    TOTxCue      b=-0.630 SE=0.733 CI[-2.068,+0.807] p=0.3901
+    TOT@correct  b=+0.540 SE=0.282 CI[-0.012,+1.093] p=0.0553   (= is_TOT + TOTxCue)
+
+  [EN/core4 no-def_correct-filter]  n_rows=2480  items=561  datasets=4
+    is_TOT       b=+1.171 SE=0.709 CI[-0.220,+2.561] p=0.0989
+    correct_cue  b=+4.131 SE=0.720 CI[+2.720,+5.541] p=0.0000
+    TOTxCue      b=-0.630 SE=0.733 CI[-2.068,+0.807] p=0.3901
+    TOT@correct  b=+0.540 SE=0.282 CI[-0.012,+1.093] p=0.0553   (= is_TOT + TOTxCue)
+
+  [EN/primary6 dropna-incl-def_correct (= cue_analysis.py as written)]  n_rows=2480  items=561  datasets=4
+    is_TOT       b=+1.171 SE=0.709 CI[-0.220,+2.561] p=0.0989
+    correct_cue  b=+4.131 SE=0.720 CI[+2.720,+5.541] p=0.0000
+    TOTxCue      b=-0.630 SE=0.733 CI[-2.068,+0.807] p=0.3901
+    TOT@correct  b=+0.540 SE=0.282 CI[-0.012,+1.093] p=0.0553   (= is_TOT + TOTxCue)
+
+  [EN/primary6 no-def_correct-filter]  n_rows=3876  items=640  datasets=6
+    is_TOT       b=+1.524 SE=0.699 CI[+0.154,+2.894] p=0.0293
+    correct_cue  b=+4.402 SE=0.702 CI[+3.025,+5.778] p=0.0000
+    TOTxCue      b=-0.879 SE=0.713 CI[-2.276,+0.519] p=0.2179
+    TOT@correct  b=+0.645 SE=0.282 CI[+0.094,+1.197] p=0.0219   (= is_TOT + TOTxCue)
+
+  [ZH/core4 dropna-incl-def_correct (= cue_analysis.py as written)]  n_rows=4318  items=699  datasets=4
+    is_TOT       b=+0.138 SE=0.795 CI[-1.420,+1.696] p=0.8621
+    correct_cue  b=+3.847 SE=0.741 CI[+2.394,+5.299] p=0.0000
+    TOTxCue      b=+0.528 SE=0.783 CI[-1.007,+2.063] p=0.5002
+    TOT@correct  b=+0.666 SE=0.172 CI[+0.329,+1.003] p=0.0001   (= is_TOT + TOTxCue)
+
+  [ZH/core4 no-def_correct-filter]  n_rows=4318  items=699  datasets=4
+    is_TOT       b=+0.138 SE=0.795 CI[-1.420,+1.696] p=0.8621
+    correct_cue  b=+3.847 SE=0.741 CI[+2.394,+5.299] p=0.0000
+    TOTxCue      b=+0.528 SE=0.783 CI[-1.007,+2.063] p=0.5002
+    TOT@correct  b=+0.666 SE=0.172 CI[+0.329,+1.003] p=0.0001   (= is_TOT + TOTxCue)
+
+  [ZH/primary6 dropna-incl-def_correct (= cue_analysis.py as written)]  n_rows=4318  items=699  datasets=4
+    is_TOT       b=+0.138 SE=0.795 CI[-1.420,+1.696] p=0.8621
+    correct_cue  b=+3.847 SE=0.741 CI[+2.394,+5.299] p=0.0000
+    TOTxCue      b=+0.528 SE=0.783 CI[-1.007,+2.063] p=0.5002
+    TOT@correct  b=+0.666 SE=0.172 CI[+0.329,+1.003] p=0.0001   (= is_TOT + TOTxCue)
+
+  [ZH/primary6 no-def_correct-filter]  n_rows=6480  items=723  datasets=6
+    is_TOT       b=-0.219 SE=0.595 CI[-1.384,+0.947] p=0.7128
+    correct_cue  b=+3.301 SE=0.551 CI[+2.220,+4.381] p=0.0000
+    TOTxCue      b=+0.780 SE=0.582 CI[-0.362,+1.921] p=0.1806
+    TOT@correct  b=+0.561 SE=0.168 CI[+0.231,+0.890] p=0.0008   (= is_TOT + TOTxCue)
+
+  [BOTH/core4 dropna-incl-def_correct (= cue_analysis.py as written)]  n_rows=6798  items=1260  datasets=8
+    is_TOT       b=+0.878 SE=0.542 CI[-0.183,+1.940] p=0.1050
+    correct_cue  b=+3.987 SE=0.527 CI[+2.953,+5.021] p=0.0000
+    TOTxCue      b=-0.228 SE=0.541 CI[-1.288,+0.831] p=0.6726
+    TOT@correct  b=+0.650 SE=0.151 CI[+0.355,+0.945] p=0.0000   (= is_TOT + TOTxCue)
+
+  [BOTH/core4 no-def_correct-filter]  n_rows=6798  items=1260  datasets=8
+    is_TOT       b=+0.878 SE=0.542 CI[-0.183,+1.940] p=0.1050
+    correct_cue  b=+3.987 SE=0.527 CI[+2.953,+5.021] p=0.0000
+    TOTxCue      b=-0.228 SE=0.541 CI[-1.288,+0.831] p=0.6726
+    TOT@correct  b=+0.650 SE=0.151 CI[+0.355,+0.945] p=0.0000   (= is_TOT + TOTxCue)
+
+  [BOTH/primary6 dropna-incl-def_correct (= cue_analysis.py as written)]  n_rows=6798  items=1260  datasets=8
+    is_TOT       b=+0.878 SE=0.542 CI[-0.183,+1.940] p=0.1050
+    correct_cue  b=+3.987 SE=0.527 CI[+2.953,+5.021] p=0.0000
+    TOTxCue      b=-0.228 SE=0.541 CI[-1.288,+0.831] p=0.6726
+    TOT@correct  b=+0.650 SE=0.151 CI[+0.355,+0.945] p=0.0000   (= is_TOT + TOTxCue)
+
+  [BOTH/primary6 no-def_correct-filter]  n_rows=10356  items=1363  datasets=12
+    is_TOT       b=+0.602 SE=0.486 CI[-0.352,+1.555] p=0.2161
+    correct_cue  b=+3.689 SE=0.471 CI[+2.766,+4.611] p=0.0000
+    TOTxCue      b=+0.005 SE=0.480 CI[-0.936,+0.947] p=0.9916
+    TOT@correct  b=+0.607 SE=0.150 CI[+0.312,+0.901] p=0.0001   (= is_TOT + TOTxCue)
+
+----------------------------------------------------------------------------------------------------
+A2. CANONICAL SINGLE JOINT MODEL: all 12 datasets, dataset FE, item-clustered, reference level = DK state on the WRONG-UNIT (placebo) arm
+----------------------------------------------------------------------------------------------------
+
+  [CANONICAL 12-dataset joint model]  n_rows=10356  items=1363  datasets=12
+    is_TOT       b=+0.602 SE=0.486 CI[-0.352,+1.555] p=0.2161
+    correct_cue  b=+3.689 SE=0.471 CI[+2.766,+4.611] p=0.0000
+    TOTxCue      b=+0.005 SE=0.480 CI[-0.936,+0.947] p=0.9916
+    TOT@correct  b=+0.607 SE=0.150 CI[+0.312,+0.901] p=0.0001   (= is_TOT + TOTxCue)
+
+  reading: is_TOT = placebo-arm state contrast; TOTxCue = state x cue interaction; TOT@correct = correct-arm state contrast. All three from ONE fit, so their signs are guaranteed mutually consistent.
+
+====================================================================================================
+B. SCOPING OF THE POOLED CUE-UNLOCK RATES
+====================================================================================================
+  en TOT cell                                         correct cue   1117/1779   = 0.6279 [0.605,0.650]
+  en TOT cell                                         placebo         91/1779   = 0.0512 [0.042,0.062]
+  en DK cell                                          correct cue     78/159    = 0.4906 [0.414,0.568]
+  en DK cell                                          placebo          2/159    = 0.0126 [0.003,0.045]
+  en ALL cleanly classified strict failures (TOT+DK)  correct cue   1195/1938   = 0.6166 [0.595,0.638]
+  en ALL cleanly classified strict failures (TOT+DK)  placebo         93/1938   = 0.0480 [0.039,0.058]
+  zh TOT cell                                         correct cue    980/2689   = 0.3644 [0.346,0.383]
+  zh TOT cell                                         placebo         34/2689   = 0.0126 [0.009,0.018]
+  zh DK cell                                          correct cue    136/551    = 0.2468 [0.213,0.284]
+  zh DK cell                                          placebo          8/551    = 0.0145 [0.007,0.028]
+  zh ALL cleanly classified strict failures (TOT+DK)  correct cue   1116/3240   = 0.3444 [0.328,0.361]
+  zh ALL cleanly classified strict failures (TOT+DK)  placebo         42/3240   = 0.0130 [0.010,0.017]
+
+====================================================================================================
+C. CUE-UNLOCK vs NO-CUE CoT RETRY ON THE MATCHED ITEM POPULATION
+====================================================================================================
+matched rows (correct cue AND placebo AND CoT retry all present) = 5178 of 5178
+
+per dataset x state: rates on the identical items, and the paired increments (correct-cue minus CoT, placebo minus CoT); paired CI = Wald on the within-item difference, McNemar exact p
+  en/llama70b    TOT n= 187 | cue 0.684  placebo 0.053  CoT 0.267 | cue-CoT +0.417 [+0.333,+0.501] McNemar p=3.6e-17 | plac-CoT -0.214 [-0.283,-0.145] p=1e-08
+  en/llama70b    DK  n=  24 | cue 0.500  placebo 0.000  CoT 0.042 | cue-CoT +0.458 [+0.255,+0.662] McNemar p=0.00098 | plac-CoT -0.042 [-0.123,+0.040] p=1
+  en/llama70b    ALL n= 211 | cue 0.664  placebo 0.047  CoT 0.242 | cue-CoT +0.422 [+0.344,+0.499] McNemar p=4.9e-20 | plac-CoT -0.194 [-0.257,-0.132] p=5.8e-09
+  en/llama8b     TOT n= 292 | cue 0.651  placebo 0.065  CoT 0.305 | cue-CoT +0.346 [+0.286,+0.406] McNemar p=2.3e-24 | plac-CoT -0.240 [-0.295,-0.185] p=5.1e-16
+  en/llama8b     DK  n=  41 | cue 0.561  placebo 0.024  CoT 0.122 | cue-CoT +0.439 [+0.257,+0.621] McNemar p=0.00012 | plac-CoT -0.098 [-0.212,+0.017] p=0.22
+  en/llama8b     ALL n= 333 | cue 0.640  placebo 0.060  CoT 0.282 | cue-CoT +0.357 [+0.300,+0.415] McNemar p=4.4e-28 | plac-CoT -0.222 [-0.273,-0.172] p=1.4e-16
+  en/qwen14b     TOT n= 331 | cue 0.644  placebo 0.033  CoT 0.426 | cue-CoT +0.218 [+0.151,+0.284] McNemar p=8.3e-10 | plac-CoT -0.393 [-0.447,-0.338] p=9.6e-36
+  en/qwen14b     DK  n=  26 | cue 0.423  placebo 0.000  CoT 0.115 | cue-CoT +0.308 [+0.070,+0.545] McNemar p=0.039 | plac-CoT -0.115 [-0.241,+0.010] p=0.25
+  en/qwen14b     ALL n= 357 | cue 0.627  placebo 0.031  CoT 0.403 | cue-CoT +0.224 [+0.160,+0.288] McNemar p=5.2e-11 | plac-CoT -0.373 [-0.425,-0.321] p=1.3e-36
+  en/qwen32b     TOT n= 321 | cue 0.639  placebo 0.069  CoT 0.464 | cue-CoT +0.174 [+0.110,+0.239] McNemar p=3.2e-07 | plac-CoT -0.396 [-0.453,-0.339] p=4.5e-33
+  en/qwen32b     DK  n=  20 | cue 0.500  placebo 0.000  CoT 0.150 | cue-CoT +0.350 [+0.093,+0.607] McNemar p=0.039 | plac-CoT -0.150 [-0.311,+0.011] p=0.25
+  en/qwen32b     ALL n= 341 | cue 0.630  placebo 0.065  CoT 0.446 | cue-CoT +0.185 [+0.122,+0.247] McNemar p=2.5e-08 | plac-CoT -0.381 [-0.436,-0.326] p=6.2e-34
+  en/qwen72b     TOT n= 253 | cue 0.644  placebo 0.047  CoT 0.289 | cue-CoT +0.356 [+0.280,+0.432] McNemar p=1.6e-16 | plac-CoT -0.241 [-0.301,-0.181] p=1.2e-13
+  en/qwen72b     DK  n=  18 | cue 0.556  placebo 0.000  CoT 0.222 | cue-CoT +0.333 [+0.016,+0.650] McNemar p=0.11 | plac-CoT -0.222 [-0.420,-0.025] p=0.12
+  en/qwen72b     ALL n= 271 | cue 0.638  placebo 0.044  CoT 0.284 | cue-CoT +0.354 [+0.280,+0.428] McNemar p=2.4e-17 | plac-CoT -0.240 [-0.298,-0.182] p=1.1e-14
+  en/qwen7b      TOT n= 395 | cue 0.552  placebo 0.043  CoT 0.375 | cue-CoT +0.177 [+0.121,+0.233] McNemar p=2.6e-09 | plac-CoT -0.332 [-0.382,-0.281] p=5.3e-32
+  en/qwen7b      DK  n=  30 | cue 0.400  placebo 0.033  CoT 0.300 | cue-CoT +0.100 [-0.117,+0.317] McNemar p=0.55 | plac-CoT -0.267 [-0.428,-0.106] p=0.0078
+  en/qwen7b      ALL n= 425 | cue 0.541  placebo 0.042  CoT 0.369 | cue-CoT +0.172 [+0.117,+0.226] McNemar p=2.3e-09 | plac-CoT -0.327 [-0.375,-0.279] p=3.2e-34
+  zh/llama70b    TOT n= 386 | cue 0.427  placebo 0.010  CoT 0.067 | cue-CoT +0.360 [+0.309,+0.411] McNemar p=1.1e-35 | plac-CoT -0.057 [-0.082,-0.032] p=1e-05
+  zh/llama70b    DK  n= 101 | cue 0.347  placebo 0.000  CoT 0.000 | cue-CoT +0.347 [+0.253,+0.440] McNemar p=5.8e-11 | plac-CoT +0.000 [+0.000,+0.000] p=1
+  zh/llama70b    ALL n= 487 | cue 0.411  placebo 0.008  CoT 0.053 | cue-CoT +0.357 [+0.312,+0.402] McNemar p=1.1e-45 | plac-CoT -0.045 [-0.065,-0.025] p=1e-05
+  zh/llama8b     TOT n= 429 | cue 0.352  placebo 0.012  CoT 0.016 | cue-CoT +0.336 [+0.290,+0.381] McNemar p=3.3e-42 | plac-CoT -0.005 [-0.018,+0.008] p=0.73
+  zh/llama8b     DK  n= 137 | cue 0.161  placebo 0.007  CoT 0.015 | cue-CoT +0.146 [+0.083,+0.209] McNemar p=1.1e-05 | plac-CoT -0.007 [-0.032,+0.018] p=1
+  zh/llama8b     ALL n= 566 | cue 0.306  placebo 0.011  CoT 0.016 | cue-CoT +0.290 [+0.252,+0.328] McNemar p=7.6e-47 | plac-CoT -0.005 [-0.017,+0.006] p=0.55
+  zh/qwen14b     TOT n= 469 | cue 0.397  placebo 0.019  CoT 0.109 | cue-CoT +0.288 [+0.241,+0.334] McNemar p=1.1e-29 | plac-CoT -0.090 [-0.119,-0.060] p=1.3e-09
+  zh/qwen14b     DK  n=  80 | cue 0.362  placebo 0.025  CoT 0.050 | cue-CoT +0.312 [+0.199,+0.426] McNemar p=1.6e-06 | plac-CoT -0.025 [-0.085,+0.035] p=0.69
+  zh/qwen14b     ALL n= 549 | cue 0.392  placebo 0.020  CoT 0.100 | cue-CoT +0.291 [+0.248,+0.335] McNemar p=3e-35 | plac-CoT -0.080 [-0.107,-0.054] p=2.4e-09
+  zh/qwen32b     TOT n= 469 | cue 0.399  placebo 0.019  CoT 0.115 | cue-CoT +0.284 [+0.238,+0.330] McNemar p=1.2e-29 | plac-CoT -0.096 [-0.125,-0.067] p=2e-11
+  zh/qwen32b     DK  n=  63 | cue 0.286  placebo 0.048  CoT 0.032 | cue-CoT +0.254 [+0.129,+0.379] McNemar p=0.0004 | plac-CoT +0.016 [-0.038,+0.070] p=1
+  zh/qwen32b     ALL n= 532 | cue 0.385  placebo 0.023  CoT 0.105 | cue-CoT +0.280 [+0.237,+0.323] McNemar p=7.4e-33 | plac-CoT -0.083 [-0.109,-0.057] p=3.9e-10
+  zh/qwen72b     TOT n= 423 | cue 0.442  placebo 0.009  CoT 0.092 | cue-CoT +0.350 [+0.300,+0.400] McNemar p=2.1e-35 | plac-CoT -0.083 [-0.110,-0.056] p=5.5e-10
+  zh/qwen72b     DK  n=  75 | cue 0.293  placebo 0.013  CoT 0.053 | cue-CoT +0.240 [+0.136,+0.344] McNemar p=4e-05 | plac-CoT -0.040 [-0.098,+0.018] p=0.38
+  zh/qwen72b     ALL n= 498 | cue 0.420  placebo 0.010  CoT 0.086 | cue-CoT +0.333 [+0.288,+0.379] McNemar p=1e-39 | plac-CoT -0.076 [-0.101,-0.052] p=4.1e-10
+  zh/qwen7b      TOT n= 513 | cue 0.203  placebo 0.006  CoT 0.084 | cue-CoT +0.119 [+0.080,+0.157] McNemar p=3.5e-09 | plac-CoT -0.078 [-0.102,-0.054] p=2e-11
+  zh/qwen7b      DK  n=  95 | cue 0.105  placebo 0.011  CoT 0.053 | cue-CoT +0.053 [-0.021,+0.127] McNemar p=0.27 | plac-CoT -0.042 [-0.092,+0.008] p=0.22
+  zh/qwen7b      ALL n= 608 | cue 0.188  placebo 0.007  CoT 0.079 | cue-CoT +0.109 [+0.074,+0.143] McNemar p=1.6e-09 | plac-CoT -0.072 [-0.094,-0.051] p=8.4e-12
+
+pooled increments over the 12 datasets (DL random effects on the paired risk difference; datasets share items, so see cue_meta.py for the item-clustered version):
+-- correct-cue MINUS CoT-retry  (k=12)
+   per-dataset: en/llama70b=+0.422(0.040), en/llama8b=+0.357(0.029), en/qwen14b=+0.224(0.033), en/qwen32b=+0.185(0.032), en/qwen72b=+0.354(0.038), en/qwen7b=+0.172(0.028), zh/llama70b=+0.357(0.023), zh/llama8b=+0.290(0.019), zh/qwen14b=+0.291(0.022), zh/qwen32b=+0.280(0.022), zh/qwen72b=+0.333(0.023), zh/qwen7b=+0.109(0.018)
+   FE  b=+0.264 [+0.250,+0.278] p=3.034e-298
+   RE  b=+0.280 [+0.226,+0.334] p=3.723e-24   HKSJ [+0.221,+0.338]   PI [+0.069,+0.490]
+   HET Q(11)=157.71 p=3.943e-28  I2=93.0%  tau2=0.0084 (tau=0.091)  H2=14.34
+-- placebo MINUS CoT-retry  (k=12)
+   per-dataset: en/llama70b=-0.194(0.032), en/llama8b=-0.222(0.026), en/qwen14b=-0.372(0.026), en/qwen32b=-0.381(0.028), en/qwen72b=-0.240(0.029), en/qwen7b=-0.327(0.025), zh/llama70b=-0.045(0.010), zh/llama8b=-0.005(0.006), zh/qwen14b=-0.080(0.013), zh/qwen32b=-0.083(0.013), zh/qwen72b=-0.076(0.013), zh/qwen7b=-0.072(0.011)
+   FE  b=-0.068 [-0.075,-0.061] p=5.476e-75
+   RE  b=-0.172 [-0.229,-0.114] p=5.434e-09   HKSJ [-0.256,-0.087]   PI [-0.400,+0.057]
+   HET Q(11)=575.49 p=2.437e-116  I2=98.1%  tau2=0.0099 (tau=0.100)  H2=52.32
+  POOLED en TOT n= 1779 | cue 0.6279  placebo 0.0512  CoT 0.3654 | cue-CoT +0.2625 | plac-CoT -0.3142
+  POOLED en DK  n=  159 | cue 0.4906  placebo 0.0126  CoT 0.1572 | cue-CoT +0.3333 | plac-CoT -0.1447
+  POOLED en ALL n= 1938 | cue 0.6166  placebo 0.0480  CoT 0.3483 | cue-CoT +0.2683 | plac-CoT -0.3003
+  POOLED zh TOT n= 2689 | cue 0.3644  placebo 0.0126  CoT 0.0818 | cue-CoT +0.2826 | plac-CoT -0.0692
+  POOLED zh DK  n=  551 | cue 0.2468  placebo 0.0145  CoT 0.0309 | cue-CoT +0.2160 | plac-CoT -0.0163
+  POOLED zh ALL n= 3240 | cue 0.3444  placebo 0.0130  CoT 0.0731 | cue-CoT +0.2713 | plac-CoT -0.0602
+
+SAMPLING-MATCHED ARMS.  The cue arm draws 20 samples per item, the CoT arm 5, so the any-of-k comparison above favours the cue arm on sampling budget alone.  The single greedy decode is matched 1-to-1 across all three arms:
+  greedy-matched rows = 5178
+  en/llama70b    TOT n= 187 | greedy: cue 0.497  placebo 0.011  CoT 0.118 | cue-CoT +0.380 [+0.300,+0.460]
+  en/llama70b    DK  n=  24 | greedy: cue 0.292  placebo 0.000  CoT 0.042 | cue-CoT +0.250 [+0.073,+0.427]
+  en/llama70b    ALL n= 211 | greedy: cue 0.474  placebo 0.009  CoT 0.109 | cue-CoT +0.365 [+0.291,+0.439]
+  en/llama8b     TOT n= 292 | greedy: cue 0.339  placebo 0.003  CoT 0.123 | cue-CoT +0.216 [+0.154,+0.277]
+  en/llama8b     DK  n=  41 | greedy: cue 0.220  placebo 0.000  CoT 0.073 | cue-CoT +0.146 [+0.000,+0.293]
+  en/llama8b     ALL n= 333 | greedy: cue 0.324  placebo 0.003  CoT 0.117 | cue-CoT +0.207 [+0.150,+0.264]
+  en/qwen14b     TOT n= 331 | greedy: cue 0.435  placebo 0.015  CoT 0.184 | cue-CoT +0.251 [+0.190,+0.312]
+  en/qwen14b     DK  n=  26 | greedy: cue 0.231  placebo 0.000  CoT 0.000 | cue-CoT +0.231 [+0.066,+0.396]
+  en/qwen14b     ALL n= 357 | greedy: cue 0.420  placebo 0.014  CoT 0.171 | cue-CoT +0.249 [+0.191,+0.307]
+  en/qwen32b     TOT n= 321 | greedy: cue 0.427  placebo 0.019  CoT 0.231 | cue-CoT +0.196 [+0.135,+0.258]
+  en/qwen32b     DK  n=  20 | greedy: cue 0.250  placebo 0.000  CoT 0.050 | cue-CoT +0.200 [+0.020,+0.380]
+  en/qwen32b     ALL n= 341 | greedy: cue 0.416  placebo 0.018  CoT 0.220 | cue-CoT +0.196 [+0.138,+0.255]
+  en/qwen72b     TOT n= 253 | greedy: cue 0.399  placebo 0.008  CoT 0.119 | cue-CoT +0.281 [+0.210,+0.351]
+  en/qwen72b     DK  n=  18 | greedy: cue 0.444  placebo 0.000  CoT 0.056 | cue-CoT +0.389 [+0.157,+0.621]
+  en/qwen72b     ALL n= 271 | greedy: cue 0.402  placebo 0.007  CoT 0.114 | cue-CoT +0.288 [+0.220,+0.356]
+  en/qwen7b      TOT n= 395 | greedy: cue 0.342  placebo 0.010  CoT 0.175 | cue-CoT +0.167 [+0.112,+0.223]
+  en/qwen7b      DK  n=  30 | greedy: cue 0.200  placebo 0.000  CoT 0.067 | cue-CoT +0.133 [+0.010,+0.257]
+  en/qwen7b      ALL n= 425 | greedy: cue 0.332  placebo 0.009  CoT 0.167 | cue-CoT +0.165 [+0.112,+0.217]
+  zh/llama70b    TOT n= 386 | greedy: cue 0.275  placebo 0.000  CoT 0.008 | cue-CoT +0.267 [+0.223,+0.311]
+  zh/llama70b    DK  n= 101 | greedy: cue 0.158  placebo 0.000  CoT 0.000 | cue-CoT +0.158 [+0.087,+0.230]
+  zh/llama70b    ALL n= 487 | greedy: cue 0.251  placebo 0.000  CoT 0.006 | cue-CoT +0.244 [+0.206,+0.283]
+  zh/llama8b     TOT n= 429 | greedy: cue 0.205  placebo 0.002  CoT 0.007 | cue-CoT +0.198 [+0.159,+0.237]
+  zh/llama8b     DK  n= 137 | greedy: cue 0.073  placebo 0.000  CoT 0.000 | cue-CoT +0.073 [+0.029,+0.117]
+  zh/llama8b     ALL n= 566 | greedy: cue 0.173  placebo 0.002  CoT 0.005 | cue-CoT +0.168 [+0.136,+0.199]
+  zh/qwen14b     TOT n= 469 | greedy: cue 0.262  placebo 0.002  CoT 0.049 | cue-CoT +0.213 [+0.172,+0.255]
+  zh/qwen14b     DK  n=  80 | greedy: cue 0.212  placebo 0.000  CoT 0.050 | cue-CoT +0.163 [+0.061,+0.264]
+  zh/qwen14b     ALL n= 549 | greedy: cue 0.255  placebo 0.002  CoT 0.049 | cue-CoT +0.206 [+0.167,+0.244]
+  zh/qwen32b     TOT n= 469 | greedy: cue 0.296  placebo 0.011  CoT 0.034 | cue-CoT +0.262 [+0.220,+0.304]
+  zh/qwen32b     DK  n=  63 | greedy: cue 0.190  placebo 0.000  CoT 0.016 | cue-CoT +0.175 [+0.070,+0.279]
+  zh/qwen32b     ALL n= 532 | greedy: cue 0.284  placebo 0.009  CoT 0.032 | cue-CoT +0.252 [+0.213,+0.291]
+  zh/qwen72b     TOT n= 423 | greedy: cue 0.286  placebo 0.000  CoT 0.040 | cue-CoT +0.246 [+0.201,+0.291]
+  zh/qwen72b     DK  n=  75 | greedy: cue 0.200  placebo 0.000  CoT 0.000 | cue-CoT +0.200 [+0.109,+0.291]
+  zh/qwen72b     ALL n= 498 | greedy: cue 0.273  placebo 0.000  CoT 0.034 | cue-CoT +0.239 [+0.198,+0.280]
+  zh/qwen7b      TOT n= 513 | greedy: cue 0.078  placebo 0.000  CoT 0.029 | cue-CoT +0.049 [+0.023,+0.075]
+  zh/qwen7b      DK  n=  95 | greedy: cue 0.063  placebo 0.000  CoT 0.011 | cue-CoT +0.053 [+0.007,+0.098]
+  zh/qwen7b      ALL n= 608 | greedy: cue 0.076  placebo 0.000  CoT 0.026 | cue-CoT +0.049 [+0.026,+0.072]
+  POOLED-GREEDY en TOT n= 1779 | cue 0.3985  placebo 0.0112  CoT 0.1641 | cue-CoT +0.2344 | plac-CoT -0.1529
+  POOLED-GREEDY en DK  n=  159 | cue 0.2579  placebo 0.0000  CoT 0.0503 | cue-CoT +0.2075 | plac-CoT -0.0503
+  POOLED-GREEDY en ALL n= 1938 | cue 0.3870  placebo 0.0103  CoT 0.1548 | cue-CoT +0.2322 | plac-CoT -0.1445
+  POOLED-GREEDY zh TOT n= 2689 | cue 0.2295  placebo 0.0026  CoT 0.0286 | cue-CoT +0.2008 | plac-CoT -0.0260
+  POOLED-GREEDY zh DK  n=  551 | cue 0.1379  placebo 0.0000  CoT 0.0109 | cue-CoT +0.1270 | plac-CoT -0.0109
+  POOLED-GREEDY zh ALL n= 3240 | cue 0.2139  placebo 0.0022  CoT 0.0256 | cue-CoT +0.1883 | plac-CoT -0.0235

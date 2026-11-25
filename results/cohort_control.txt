@@ -1,0 +1,529 @@
+====================================================================================================
+CUE-NARROWING / COHORT-SIZE CONTROL ANALYSIS
+'Knowing Without Naming' (Findings of EACL 2027) -- cohort-size control
+====================================================================================================
+
+CLAIM TESTED.  The first-unit cue works only because it shrinks
+the candidate set, so unlocking under the cue does not show the
+target was available beforehand.
+
+TESTABLE CONSEQUENCE.  If narrowing is the whole story, the cue's
+benefit must scale with how much the first unit narrows the cohort.
+Cohort sizes differ by up to two orders of magnitude within each
+language, so this is a high-powered test.
+
+COHORT DEFINITION (primary).
+  English: number of distinct orthographic types in the CLEARPOND
+    English lexicon (27,751 SUBTLEX-US-attested word forms, every
+    one >= 0.33 occurrences per million) that begin with the same
+    letter as the cued word.  Analyses use log10(count + 1).
+  Chinese: number of CC-CEDICT simplified headwords (120,968) that
+    begin with the same character as the cued word (the Chinese cue
+    is the first character).  log10(count + 1).
+  Sensitivity variants per language are reported in analysis 1.
+  Cohort size is only ever compared WITHIN a language, so the two
+  languages using different resources is harmless.
+
+DATA NOTES / PROBLEMS ENCOUNTERED.
+  * The Chinese cohort is counted in CC-CEDICT rather than in the
+    MoE Revised dictionary the bank's glosses come from; SUBTLEX-CH
+    is the frequency-attested alternative.
+  * SUBTLEX-CH-WF covers only 642 of the 689 distinct target first
+    characters (47 missing); CC-CEDICT misses only 6, which is why
+    CC-CEDICT is the primary Chinese resource.
+  * Every CLEARPOND entry already clears 0.33 per million, so a
+    'Zipf floor' variant is implemented as freq >= 1 per million.
+  * The recorded `cue` field equals the cued word's first unit in
+    100% of rows in both languages and both arms (verified when
+    this analysis was written), so the cohort can be keyed on the word itself.
+  * English has only 26 distinct first letters, so the log-cohort
+    regressor takes 26 values; item-clustered SEs are reported as
+    specified but first-unit-clustered SEs and a 26-point
+    letter-level aggregate are reported alongside them.
+
+lexicon sizes: CLEARPOND 27751 types (26 first letters); WordNet 3.1 77568 lemmas; CC-CEDICT 120968 headwords (10825 first characters); SUBTLEX-CH 99121 types
+
+====================================================================================================
+ANALYSIS 1 [EN]  TARGET CUE BENEFIT vs COHORT SIZE
+====================================================================================================
+population: strict production failure (greedy wrong AND k_prod == 0),
+cleanly classified (TOT or DK), with a correct-cue record, over the
+six main settings.  outcome: unlock = greedy_correct OR k_cue >= 1
+(any-of-20).  A pure narrowing account predicts a strong NEGATIVE
+slope of unlock on log cohort size.
+
+rows=1938  items=640  distinct first units=26  unlock=0.6166 (1195/1938)
+cohort size (raw count): min=4  p25=967  median=1553  p75=1795  max=3398
+log10 cohort: mean=3.128  sd=0.298  range [0.699, 3.531]
+
+-- primary model: logit(unlock) ~ z(log cohort) + model FE, item-clustered
+   b(z log cohort) = -0.1046  SE 0.0864  95% CI [-0.2739, +0.0647]  p=0.2259
+   odds ratio per +1 SD of log cohort = 0.901  95% CI [0.760, 1.067]
+   1 SD of log10 cohort = 0.298 decades (a 2.0x change in cohort)
+   average marginal effect = -0.0245 unlock per +1 SD (95% CI [-0.0641, +0.0152])
+   -> per 10x larger cohort: -0.0821 unlock (95% CI [-0.2149, +0.0508])
+   n=1938, clusters(items)=640
+
+-- same model, SEs clustered on the CUED FIRST UNIT instead
+   (English has only 26 distinct first letters, so the
+    item-clustered fit above treats a 26-valued regressor as if
+    it had 640 independent levels.  With G=26 the cluster-robust
+    asymptotics are unreliable and the SE is typically biased
+    DOWN, so neither version is decisive; the 26-point
+    letter-level aggregate below is the transparent check.)
+   b = -0.1046  SE 0.0698  95% CI [-0.2415, +0.0323]  p=0.1342  clusters=26
+
+-- with word-frequency and word-length controls
+   b(z log cohort) = -0.1176  SE 0.0871  95% CI [-0.2882, +0.0531]  p=0.1770  (n=1938)
+   b(zfreq) = +0.2273  SE 0.0818  p=0.0054
+   b(zlen) = +0.1041  SE 0.0764  p=0.1730
+
+-- per-model cohort slope (is the pooled estimate driven by one model?)
+   model                 n   unlock    b(zcoh)       SE               95% CI
+   Qwen2.5-7B          425   0.5412    -0.1741   0.0999 [-0.3699,+0.0216]
+   Qwen2.5-14B         357   0.6275    -0.1231   0.1349 [-0.3874,+0.1412]
+   Qwen2.5-32B         341   0.6305    -0.0410   0.1070 [-0.2508,+0.1688]
+   Qwen2.5-72B         271   0.6384    -0.2052   0.1474 [-0.4941,+0.0838]
+   Llama-3.1-8B        333   0.6396    -0.0487   0.1256 [-0.2948,+0.1975]
+   Llama-3.1-70B       211   0.6635    +0.0223   0.1533 [-0.2781,+0.3227]
+
+-- sensitivity: alternative cohort definitions (same model)
+   definition                                         b       SE             95% CI        p
+   CLEARPOND type count (PRIMARY)               -0.1046   0.0864 [-0.2739,+0.0647]   0.2259
+   CLEARPOND frequency mass                     -0.0569   0.0870 [-0.2274,+0.1137]   0.5134
+   CLEARPOND, length matched +/-1               -0.0274   0.0775 [-0.1793,+0.1245]   0.7237
+   CLEARPOND, freq >= 1/million (Zipf>=3)       -0.1090   0.0869 [-0.2793,+0.0614]   0.2099
+   WordNet 3.1 lemma count                      -0.0804   0.0877 [-0.2522,+0.0915]   0.3594
+
+-- unlock by cohort-size tercile (equal-count split of rows)
+   tercile         n   unlock  cohort_md        k               95% CI
+   bottom        668   0.6527        916      436 [0.6158, 0.6878]
+   middle        682   0.6290       1553      429 [0.5921, 0.6645]
+   top           588   0.5612       2766      330 [0.5208, 0.6008]
+   top-minus-bottom = -0.0915  (cohort medians 916 vs 2766, a 3.0x difference)
+   cutpoints at log10 cohort = 3.041, 3.231
+
+-- unlock by cohort-size decile (finer grain)
+   decile       n   unlock  cohort_md
+   1          194   0.5876        441
+   2          194   0.6186        916
+   3          194   0.7320        967
+   4          193   0.6788       1254
+   5          194   0.6237       1470
+   6          194   0.6186       1553
+   7          193   0.6218       1701
+   8          194   0.5979       1795
+   9          194   0.5206       2766
+   10         194   0.5670       3398
+   Spearman(log cohort, unlock) over rows = -0.0648 (p=0.0043)
+
+-- HOW MUCH UNLOCK CAN NARROWING BUY? (the narrowing budget)
+   observed cohort span = 2.83 decades (4 to 3398 entries, a 850x range)
+   fitted unlock change across that ENTIRE span = -0.2325 (95% CI [-0.6088, +0.1438])
+   observed target unlock on this population = 0.6166
+   -> narrowing works in the predicted direction, but the whole
+      850x cohort range moves unlock by at most 23.2 points,
+      against an observed unlock level of 61.7 points.
+
+-- per-letter aggregate (26 points: the honest unit of analysis
+   for a letter-level regressor)
+   letter   cohort       n   unlock
+   x             4       4   0.7500
+   z            54      17   0.6471
+   q           110       6   0.6667
+   y           112       3   1.0000
+   k           266      19   0.7895
+   j           317      17   0.2941
+   v           441      38   0.5526
+   u           504      26   0.7692
+   n           530      39   0.4103
+   o           595      64   0.6406
+   w           805      47   0.4894
+   l           916      72   0.6806
+   g           931      84   0.7857
+   i           967      68   0.6176
+   e          1015      83   0.7349
+   h          1098      81   0.6914
+   f          1254      74   0.7432
+   t          1446     121   0.5372
+   m          1470      81   0.7284
+   r          1553     123   0.5854
+   a          1603     178   0.6348
+   d          1701     105   0.6190
+   b          1795     121   0.6116
+   p          2100     137   0.5766
+   c          2766     180   0.5056
+   s          3398     150   0.5733
+   Pearson(log cohort, letter unlock rate) over 26 letters = -0.284 (p=0.159)
+   Spearman = -0.342 (p=0.088)
+   weighted letter-level slope = -0.0798 unlock per decade of cohort
+
+====================================================================================================
+ANALYSIS 2 [EN]  FIT-MATCHED TARGET-vs-DECOY MARGIN, COHORT CONTROLLED
+====================================================================================================
+matched population of decoycue_match / fit_gradient / fit_ci:
+decoy-cue rows whose SOURCE bank item is a cleanly classified failure
+(TOT or DK) for that same model, paired 1:1 with the same model's
+correct-cue row on that source item.  4 settings (CORE).  fit = the
+cued word's mean_p_target in its 4AFC (decoyb target-absent 4AFC for
+decoys, the main 4AFC for targets).  cohort = of the CUED word.
+
+REPRODUCTION CHECK
+  matched rows: decoy 299, target 299, source items 140  (fit_gradient reports 299 En / 789 Zh)
+  decoy unlock 0.1639, target unlock 0.6120
+  fit >= 0.8 subset: decoy 0.3289 (76 rows) vs target 0.6184 (76 rows), 44 source items
+  paper reports 32.9% decoy vs 61.8% target (fit_ci.txt) -- REPRODUCED
+
+----------------------------------------------------------------------------------------------------
+(a) NESTED LOGISTIC MODELS -- fit >= 0.8 (headline subset)   [n=152 rows, 44 source items]
+    cohort of the cued word: target rows median 1701, decoy rows median 1701
+    model                              b_target       SE               95% CI        p       OR
+    M1  is_target + model FE            +1.2133   0.4633 [+0.3052,+2.1214]   0.0088    3.365
+    M2  + z(log cohort)                 +1.1969   0.4702 [+0.2754,+2.1185]   0.0109    3.310
+    M3  + z(log cohort) + z(fit)        +1.0773   0.4760 [+0.1444,+2.0102]   0.0236    2.937
+    M4  M3 + is_target:z(log cohort)    +1.0777   0.4767 [+0.1434,+2.0119]   0.0238    2.938
+    ATTENUATION of b_target from adding cohort size (M1 -> M2): 1.35% of the coefficient (+1.2133 -> +1.1969)
+    M3 b(zcoh ) = -0.2360  SE 0.2447  95% CI [-0.7156, +0.2435]  p=0.3347
+    M3 b(zfit ) = +0.7050  SE 0.4431  95% CI [-0.1634, +1.5735]  p=0.1116
+    M3 average marginal effect of is_target = +0.2328 unlock (probability scale)
+    M4 INTERACTION is_target x z(log cohort) = -0.2191  SE 0.5306  95% CI [-1.2590, +0.8207]  p=0.6796
+       (this is the direct test of 'the margin depends on how
+        much the cue narrows'; a null means it does not)
+
+(b) TARGET-vs-DECOY MARGIN WITHIN COHORT-SIZE STRATA -- fit >= 0.8 (headline subset)
+    strata are terciles of the POOLED (target + decoy) log cohort
+    distribution; cutpoints log10 = 3.191, 3.254
+    tercile    cohort_md   n_dec    decoy   n_tgt   target      diff    ratio   95% CI (bootstrap)
+    bottom          1015      26   0.3846      28   0.6786   +0.2940     1.76 [+0.0509,+0.5379] p=0.011
+    middle          1701      25   0.3600      24   0.6667   +0.3067     1.85 [+0.0152,+0.6019] p=0.020
+    top             2766      25   0.2400      24   0.5000   +0.2600     2.08 [-0.1452,+0.6086] p=0.096
+    ALL             1701      76   0.3289      76   0.6184   +0.2895     1.88 [+0.0853,+0.4800] p=0.003
+
+(c) EXACT-COHORT MATCHING: rows whose cued word shares the SAME
+    first unit, so the cue narrows target and decoy identically
+    14 first units have both arms; decoy 0.3200 (75) vs target 0.6349 (63)
+    difference +0.3149  95% CI [+0.1012, +0.5168]  P(diff<=0)=0.0020
+    NOTE: restricting to shared first units breaks the 1:1
+    source-item pairing (a target and its decoy rarely share
+    a first unit), so the two arms have different n here.
+    logit with FIRST-UNIT fixed effects: b_target=+1.4953 SE 0.6015 95% CI [+0.3164,+2.6741] p=0.0129 (n=138)  [ML did not fully converge]
+
+----------------------------------------------------------------------------------------------------
+(a) NESTED LOGISTIC MODELS -- full matched population   [n=598 rows, 140 source items]
+    cohort of the cued word: target rows median 1553, decoy rows median 1701
+    model                              b_target       SE               95% CI        p       OR
+    M1  is_target + model FE            +2.1145   0.2533 [+1.6181,+2.6109]   0.0000    8.286
+    M2  + z(log cohort)                 +2.0612   0.2544 [+1.5625,+2.5598]   0.0000    7.855
+    M3  + z(log cohort) + z(fit)        +1.3963   0.3461 [+0.7180,+2.0746]   0.0001    4.040
+    M4  M3 + is_target:z(log cohort)    +1.4175   0.3383 [+0.7545,+2.0806]   0.0000    4.127
+    ATTENUATION of b_target from adding cohort size (M1 -> M2): 2.52% of the coefficient (+2.1145 -> +2.0612)
+    M3 b(zcoh ) = -0.1919  SE 0.1350  95% CI [-0.4565, +0.0727]  p=0.1553
+    M3 b(zfit ) = +0.6275  SE 0.2060  95% CI [+0.2238, +1.0313]  p=0.0023
+    M3 average marginal effect of is_target = +0.2470 unlock (probability scale)
+    M4 INTERACTION is_target x z(log cohort) = -0.1744  SE 0.3097  95% CI [-0.7814, +0.4327]  p=0.5734
+       (this is the direct test of 'the margin depends on how
+        much the cue narrows'; a null means it does not)
+
+(b) TARGET-vs-DECOY MARGIN WITHIN COHORT-SIZE STRATA -- full matched population
+    strata are terciles of the POOLED (target + decoy) log cohort
+    distribution; cutpoints log10 = 3.160, 3.254
+    tercile    cohort_md   n_dec    decoy   n_tgt   target      diff    ratio   95% CI (bootstrap)
+    bottom           949      88   0.1477     140   0.6286   +0.4808     4.25 [+0.3430,+0.6099] p=0.000
+    middle          1603     125   0.1920      98   0.6837   +0.4917     3.56 [+0.3415,+0.6313] p=0.000
+    top             2766      86   0.1395      61   0.4590   +0.3195     3.29 [+0.1239,+0.5147] p=0.001
+    ALL             1603     299   0.1639     299   0.6120   +0.4482     3.73 [+0.3618,+0.5347] p=0.000
+
+(c) EXACT-COHORT MATCHING: rows whose cued word shares the SAME
+    first unit, so the cue narrows target and decoy identically
+    20 first units have both arms; decoy 0.1639 (299) vs target 0.6092 (284)
+    difference +0.4453  95% CI [+0.3557, +0.5363]  P(diff<=0)=0.0000
+    NOTE: restricting to shared first units breaks the 1:1
+    source-item pairing (a target and its decoy rarely share
+    a first unit), so the two arms have different n here.
+    logit with FIRST-UNIT fixed effects: b_target=+2.3448 SE 0.3051 95% CI [+1.7468,+2.9428] p=0.0000 (n=583)
+
+====================================================================================================
+ANALYSIS 3 [EN]  DESCRIPTIVES: COHORT SIZE OF TARGETS vs DECOYS
+====================================================================================================
+cohort size (raw count of lexicon entries sharing the first unit),
+over the matched rows:
+  arm             n      mean       p25    median       p75 mean_log10
+  targets       299    1529.9       931      1553      1795     3.111
+  decoys        299    1775.9      1254      1701      2100     3.209
+  Mann-Whitney U on log cohort (target vs decoy): U=34586 p=0.0000
+  paired (same source item, same model): mean log10 difference target-minus-decoy = -0.0976 (n=299 pairs)
+  Wilcoxon signed-rank: W=14024 p=0.0000
+  -> decoys sit in LARGER cohorts, i.e. the decoy cue narrows LESS than the target cue
+  share of pairs where the decoy's cohort is smaller: 0.331
+
+cohort size vs definition fit:
+  targets    Spearman(log cohort, fit) = +0.1114 (p=0.0544)  Pearson = +0.0024 (n=299)
+  decoys     Spearman(log cohort, fit) = +0.0695 (p=0.2308)  Pearson = +0.0564 (n=299)
+  pooled     Spearman(log cohort, fit) = -0.0618 (p=0.1314, n=598)
+  analysis-1 target rows: Spearman(log cohort, 4AFC fit) = +0.0128 (p=0.5744, n=1938)
+
+agreement among the cohort definitions (Spearman over analysis-1 rows):
+  primary vs CLEARPOND frequency mass                     +0.2003
+  primary vs CLEARPOND, length matched +/-1               +0.6761
+  primary vs CLEARPOND, freq >= 1/million (Zipf>=3)       +0.9972
+  primary vs WordNet 3.1 lemma count                      +0.9586
+
+====================================================================================================
+ANALYSIS 1 [ZH]  TARGET CUE BENEFIT vs COHORT SIZE
+====================================================================================================
+population: strict production failure (greedy wrong AND k_prod == 0),
+cleanly classified (TOT or DK), with a correct-cue record, over the
+six main settings.  outcome: unlock = greedy_correct OR k_cue >= 1
+(any-of-20).  A pure narrowing account predicts a strong NEGATIVE
+slope of unlock on log cohort size.
+
+rows=3240  items=723  distinct first units=567  unlock=0.3444 (1116/3240)
+cohort size (raw count): min=0  p25=11  median=38  p75=104  max=969
+log10 cohort: mean=1.556  sd=0.666  range [0.000, 2.987]
+
+-- primary model: logit(unlock) ~ z(log cohort) + model FE, item-clustered
+   b(z log cohort) = +0.1461  SE 0.0642  95% CI [+0.0204, +0.2719]  p=0.0228
+   odds ratio per +1 SD of log cohort = 1.157  95% CI [1.021, 1.312]
+   1 SD of log10 cohort = 0.666 decades (a 4.6x change in cohort)
+   average marginal effect = +0.0318 unlock per +1 SD (95% CI [+0.0044, +0.0592])
+   -> per 10x larger cohort: +0.0478 unlock (95% CI [+0.0067, +0.0889])
+   n=3240, clusters(items)=723
+
+-- same model, SEs clustered on the CUED FIRST UNIT instead
+   (567 distinct first characters, so this is close to the item-clustered fit)
+   b = +0.1461  SE 0.0667  95% CI [+0.0153, +0.2769]  p=0.0285  clusters=567
+
+-- with word-frequency and word-length controls
+   b(z log cohort) = +0.1287  SE 0.0809  95% CI [-0.0299, +0.2872]  p=0.1116  (n=3240)
+   b(zfreq) = +0.4856  SE 0.0831  p=0.0000
+   b(zlen) = -0.5458  SE 0.0901  p=0.0000
+
+-- per-model cohort slope (is the pooled estimate driven by one model?)
+   model                 n   unlock    b(zcoh)       SE               95% CI
+   Qwen2.5-7B          608   0.1875    +0.4578   0.1063 [+0.2494,+0.6662]
+   Qwen2.5-14B         549   0.3916    +0.0968   0.0858 [-0.0715,+0.2650]
+   Qwen2.5-32B         532   0.3853    +0.0125   0.0879 [-0.1598,+0.1849]
+   Qwen2.5-72B         498   0.4197    +0.0512   0.0904 [-0.1260,+0.2283]
+   Llama-3.1-8B        566   0.3057    +0.2207   0.0897 [+0.0449,+0.3965]
+   Llama-3.1-70B       487   0.4107    +0.1382   0.0917 [-0.0417,+0.3180]
+
+-- sensitivity: alternative cohort definitions (same model)
+   definition                                         b       SE             95% CI        p
+   CC-CEDICT headword count (PRIMARY)           +0.1461   0.0642 [+0.0204,+0.2719]   0.0228
+   SUBTLEX-CH frequency mass                    +0.1134   0.0641 [-0.0123,+0.2391]   0.0771
+   CC-CEDICT, same n_chars                      +0.3348   0.0666 [+0.2043,+0.4653]   0.0000
+   SUBTLEX-CH type count                        +0.1332   0.0650 [+0.0058,+0.2605]   0.0404
+
+-- unlock by cohort-size tercile (equal-count split of rows)
+   tercile         n   unlock  cohort_md        k               95% CI
+   bottom       1099   0.2966          6      326 [0.2704, 0.3243]
+   middle       1061   0.3487         38      370 [0.3206, 0.3779]
+   top          1080   0.3889        162      420 [0.3603, 0.4183]
+   top-minus-bottom = +0.0923  (cohort medians 6 vs 162, a 27.0x difference)
+   cutpoints at log10 cohort = 1.301, 1.865
+
+-- unlock by cohort-size decile (finer grain)
+   decile       n   unlock  cohort_md
+   1          324   0.2685          1
+   2          324   0.3117          6
+   3          324   0.2623         11
+   4          324   0.3580         20
+   5          324   0.3179         30
+   6          324   0.4012         43
+   7          324   0.4475         69
+   8          324   0.3611        104
+   9          324   0.3858        167
+   10         324   0.3302        461
+   Spearman(log cohort, unlock) over rows = +0.0704 (p=0.0001)
+
+-- HOW MUCH UNLOCK CAN NARROWING BUY? (the narrowing budget)
+   observed cohort span = 2.99 decades (0 to 969 entries, a 969x range)
+   fitted unlock change across that ENTIRE span = +0.1428 (95% CI [+0.0199, +0.2657])
+   observed target unlock on this population = 0.3444
+   -> the slope has the WRONG SIGN for a narrowing account:
+      unlock RISES with cohort size, so tighter narrowing is
+      associated with LESS recovery, not more.
+
+====================================================================================================
+ANALYSIS 2 [ZH]  FIT-MATCHED TARGET-vs-DECOY MARGIN, COHORT CONTROLLED
+====================================================================================================
+matched population of decoycue_match / fit_gradient / fit_ci:
+decoy-cue rows whose SOURCE bank item is a cleanly classified failure
+(TOT or DK) for that same model, paired 1:1 with the same model's
+correct-cue row on that source item.  4 settings (CORE).  fit = the
+cued word's mean_p_target in its 4AFC (decoyb target-absent 4AFC for
+decoys, the main 4AFC for targets).  cohort = of the CUED word.
+
+REPRODUCTION CHECK
+  matched rows: decoy 789, target 789, source items 256  (fit_gradient reports 299 En / 789 Zh)
+  decoy unlock 0.1850, target unlock 0.3574
+  fit >= 0.8 subset: decoy 0.3077 (169 rows) vs target 0.3195 (169 rows), 80 source items
+  paper reports 30.8% decoy vs 32.0% target (fit_ci.txt) -- REPRODUCED
+
+----------------------------------------------------------------------------------------------------
+(a) NESTED LOGISTIC MODELS -- fit >= 0.8 (headline subset)   [n=338 rows, 80 source items]
+    cohort of the cued word: target rows median 77, decoy rows median 38
+    model                              b_target       SE               95% CI        p       OR
+    M1  is_target + model FE            +0.0587   0.3333 [-0.5947,+0.7120]   0.8603    1.060
+    M2  + z(log cohort)                 +0.0063   0.3341 [-0.6485,+0.6611]   0.9850    1.006
+    M3  + z(log cohort) + z(fit)        +0.1496   0.3398 [-0.5165,+0.8156]   0.6599    1.161
+    M4  M3 + is_target:z(log cohort)    +0.0959   0.3570 [-0.6037,+0.7956]   0.7881    1.101
+    ATTENUATION of b_target from adding cohort size (M1 -> M2): not meaningful, b_target is already ~0 (+0.0587 -> +0.0063)
+    M3 b(zcoh ) = +0.1176  SE 0.1384  95% CI [-0.1537, +0.3888]  p=0.3956
+    M3 b(zfit ) = +0.4241  SE 0.2034  95% CI [+0.0254, +0.8227]  p=0.0371
+    M3 average marginal effect of is_target = +0.0294 unlock (probability scale)
+    M4 INTERACTION is_target x z(log cohort) = +0.7457  SE 0.3579  95% CI [+0.0442, +1.4471]  p=0.0372
+       (this is the direct test of 'the margin depends on how
+        much the cue narrows'; a null means it does not)
+
+(b) TARGET-vs-DECOY MARGIN WITHIN COHORT-SIZE STRATA -- fit >= 0.8 (headline subset)
+    strata are terciles of the POOLED (target + decoy) log cohort
+    distribution; cutpoints log10 = 1.420, 2.021
+    tercile    cohort_md   n_dec    decoy   n_tgt   target      diff    ratio   95% CI (bootstrap)
+    bottom             8      70   0.3429      43   0.2093   -0.1336     0.61 [-0.3123,+0.0635] p=0.910
+    middle            46      55   0.3636      58   0.2586   -0.1050     0.71 [-0.3366,+0.1431] p=0.794
+    top              264      44   0.1818      68   0.4412   +0.2594     2.43 [+0.0247,+0.4605] p=0.015
+    ALL               46     169   0.3077     169   0.3195   +0.0118     1.04 [-0.1191,+0.1413] p=0.448
+
+(c) EXACT-COHORT MATCHING: rows whose cued word shares the SAME
+    first unit, so the cue narrows target and decoy identically
+    6 first units have both arms; decoy 0.2500 (16) vs target 0.2632 (19)
+    difference +0.0132  95% CI [-0.5556, +0.4074]  P(diff<=0)=0.4818
+    NOTE: restricting to shared first units breaks the 1:1
+    source-item pairing (a target and its decoy rarely share
+    a first unit), so the two arms have different n here.
+    n=35 rows is too small for a first-unit FE model; skipped.
+
+----------------------------------------------------------------------------------------------------
+(a) NESTED LOGISTIC MODELS -- full matched population   [n=1578 rows, 256 source items]
+    cohort of the cued word: target rows median 42, decoy rows median 43
+    model                              b_target       SE               95% CI        p       OR
+    M1  is_target + model FE            +0.9341   0.1779 [+0.5854,+1.2828]   0.0000    2.545
+    M2  + z(log cohort)                 +0.9335   0.1782 [+0.5843,+1.2828]   0.0000    2.543
+    M3  + z(log cohort) + z(fit)        +0.4819   0.1985 [+0.0928,+0.8709]   0.0152    1.619
+    M4  M3 + is_target:z(log cohort)    +0.5491   0.2119 [+0.1336,+0.9645]   0.0096    1.732
+    ATTENUATION of b_target from adding cohort size (M1 -> M2): 0.06% of the coefficient (+0.9341 -> +0.9335)
+    M3 b(zcoh ) = +0.0222  SE 0.0891  95% CI [-0.1525, +0.1969]  p=0.8031
+    M3 b(zfit ) = +0.4465  SE 0.1134  95% CI [+0.2243, +0.6688]  p=0.0001
+    M3 average marginal effect of is_target = +0.0855 unlock (probability scale)
+    M4 INTERACTION is_target x z(log cohort) = +0.6472  SE 0.1846  95% CI [+0.2853, +1.0091]  p=0.0005
+       (this is the direct test of 'the margin depends on how
+        much the cue narrows'; a null means it does not)
+
+(b) TARGET-vs-DECOY MARGIN WITHIN COHORT-SIZE STRATA -- full matched population
+    strata are terciles of the POOLED (target + decoy) log cohort
+    distribution; cutpoints log10 = 1.362, 1.944
+    tercile    cohort_md   n_dec    decoy   n_tgt   target      diff    ratio   95% CI (bootstrap)
+    bottom             8     272   0.2390     256   0.2812   +0.0423     1.18 [-0.0649,+0.1484] p=0.220
+    middle            43     251   0.1753     281   0.3559   +0.1806     2.03 [+0.0736,+0.2829] p=0.001
+    top              189     266   0.1391     252   0.4365   +0.2974     3.14 [+0.1901,+0.4009] p=0.000
+    ALL               43     789   0.1850     789   0.3574   +0.1724     1.93 [+0.1110,+0.2314] p=0.000
+
+(c) EXACT-COHORT MATCHING: rows whose cued word shares the SAME
+    first unit, so the cue narrows target and decoy identically
+    34 first units have both arms; decoy 0.1702 (141) vs target 0.3357 (143)
+    difference +0.1655  95% CI [+0.0339, +0.2989]  P(diff<=0)=0.0053
+    NOTE: restricting to shared first units breaks the 1:1
+    source-item pairing (a target and its decoy rarely share
+    a first unit), so the two arms have different n here.
+    logit with FIRST-UNIT fixed effects: b_target=+1.0245 SE 0.4439 95% CI [+0.1544,+1.8945] p=0.0210 (n=284)  [ML did not fully converge]
+
+====================================================================================================
+ANALYSIS 3 [ZH]  DESCRIPTIVES: COHORT SIZE OF TARGETS vs DECOYS
+====================================================================================================
+cohort size (raw count of lexicon entries sharing the first unit),
+over the matched rows:
+  arm             n      mean       p25    median       p75 mean_log10
+  targets       789     105.8        16        42       139     1.631
+  decoys        789      92.4        15        43       116     1.611
+  Mann-Whitney U on log cohort (target vs decoy): U=314032 p=0.7594
+  paired (same source item, same model): mean log10 difference target-minus-decoy = +0.0195 (n=789 pairs)
+  Wilcoxon signed-rank: W=147386 p=0.6788
+  -> no reliable difference: targets and decoys are narrowed about equally
+  share of pairs where the decoy's cohort is smaller: 0.488
+
+cohort size vs definition fit:
+  targets    Spearman(log cohort, fit) = +0.1176 (p=0.0009)  Pearson = +0.1111 (n=789)
+  decoys     Spearman(log cohort, fit) = -0.0925 (p=0.0093)  Pearson = -0.1074 (n=789)
+  pooled     Spearman(log cohort, fit) = +0.0085 (p=0.7344, n=1578)
+  analysis-1 target rows: Spearman(log cohort, 4AFC fit) = +0.0974 (p=0.0000, n=3240)
+
+agreement among the cohort definitions (Spearman over analysis-1 rows):
+  primary vs SUBTLEX-CH frequency mass                    +0.8607
+  primary vs CC-CEDICT, same n_chars                      +0.9113
+  primary vs SUBTLEX-CH type count                        +0.9597
+
+====================================================================================================
+SUMMARY
+====================================================================================================
+
+0  COMPOSITION-SERIES ANCHORS RECOMPUTED HERE (CORE 4 settings)
+   en   pseudoword cue 0.0000 (0/1600)  |  decoy cue (matched) 0.1639  |  target cue 0.6120
+   zh   pseudoword cue 0.0006 (1/1596)  |  decoy cue (matched) 0.1850  |  target cue 0.3574
+
+1  DOES THE TARGET'S OWN CUE BENEFIT TRACK COHORT SIZE?  (no)
+   lang      n   unlock   b(z logC)               95% CI      unlock per 10x cohort
+   en     1938   0.6166     -0.1046 [-0.2739,+0.0647]     -0.0821 [-0.2149,+0.0508]
+   zh     3240   0.3444     +0.1461 [+0.0204,+0.2719]     +0.0478 [+0.0067,+0.0889]
+   unlock by cohort tercile (bottom / middle / top; cohort medians):
+     en   0.653 / 0.629 / 0.561   (cohorts 916 / 1553 / 2766)
+     zh   0.297 / 0.349 / 0.389   (cohorts 6 / 38 / 162)
+   EN: slope is in the predicted direction but small and not
+       significant (p=0.226).  Sweeping the ENTIRE 850x observed
+       cohort range moves unlock by -23.2 points [-60.9, 14.4], while
+       unlock itself sits at 61.7 points and the same cue aimed at
+       a pseudoword yields 0.00% (0/1600).  The CI is wide, so a
+       small narrowing effect is not excluded -- it is just far too
+       small to be the mechanism.
+   ZH: slope is POSITIVE and significant -- the wrong sign for a
+       narrowing account (tighter narrowing, LESS recovery).
+
+2  DOES THE FIT-MATCHED TARGET-DECOY MARGIN SURVIVE COHORT CONTROL?
+   lang     subset     decoy    target   b_target   b_target   atten.
+                        rate      rate   M1 (raw)  M2 (+coh)         
+   en     fit>=0.8    0.3289    0.6184    +1.2133    +1.1969     1.4%
+   en   all matched    0.1639    0.6120    +2.1145    +2.0612     2.5%
+   zh     fit>=0.8    0.3077    0.3195    +0.0587    +0.0063      n/a
+   zh   all matched    0.1850    0.3574    +0.9341    +0.9335     0.1%
+   (attenuation n/a where b_target is already ~0, i.e. ZH fit>=0.8)
+
+   margin within cohort terciles (target rate - decoy rate):
+     en   fit>=0.8     C~1015: +0.294 [+0.051,+0.538]  C~1701: +0.307 [+0.015,+0.602]  C~2766: +0.260 [-0.145,+0.609]
+     en   all matched  C~949: +0.481 [+0.343,+0.610]  C~1603: +0.492 [+0.342,+0.631]  C~2766: +0.319 [+0.124,+0.515]
+     zh   fit>=0.8     C~8: -0.134 [-0.312,+0.063]  C~46: -0.105 [-0.337,+0.143]  C~264: +0.259 [+0.025,+0.460]
+     zh   all matched  C~8: +0.042 [-0.065,+0.148]  C~43: +0.181 [+0.074,+0.283]  C~189: +0.297 [+0.190,+0.401]
+
+   is_target x z(log cohort) interaction (direct test that the
+   margin depends on how hard the cue narrows).  Note the SIGN: a
+   POSITIVE interaction means the target's advantage is LARGEST
+   where the cohort is largest, i.e. where the cue constrains
+   LEAST -- the opposite of what narrowing predicts.
+     en   fit>=0.8     b=-0.2191  95% CI [-1.2590,+0.8207]  p=0.6796
+     en   all matched  b=-0.1744  95% CI [-0.7814,+0.4327]  p=0.5734
+     zh   fit>=0.8     b=+0.7457  95% CI [+0.0442,+1.4471]  p=0.0372
+     zh   all matched  b=+0.6472  95% CI [+0.2853,+1.0091]  p=0.0005
+
+   same-first-unit (cue narrows both arms identically):
+     en   fit>=0.8     decoy 0.3200 (n=75) vs target 0.6349 (n=63), diff +0.3149 95% CI [+0.1012,+0.5168]
+     en   all matched  decoy 0.1639 (n=299) vs target 0.6092 (n=284), diff +0.4453 95% CI [+0.3557,+0.5363]
+     zh   fit>=0.8     decoy 0.2500 (n=16) vs target 0.2632 (n=19), diff +0.0132 95% CI [-0.5556,+0.4074]
+     zh   all matched  decoy 0.1702 (n=141) vs target 0.3357 (n=143), diff +0.1655 95% CI [+0.0339,+0.2989]
+
+3  BOTTOM LINE
+   * The English fit-matched margin (61.8% target vs 32.9% decoy)
+     is essentially untouched by cohort size: adding log cohort
+     attenuates the target coefficient by only 1.4%, and within
+     every cohort tercile the target still leads the decoy by
+     26.0 to 30.7 points.
+   * The target's own unlock rate is insensitive to cohort size in
+     English and moves the WRONG WAY in Chinese, so the size of the
+     search space the cue leaves open is not what drives recovery.
+   * In Chinese the target-over-decoy margin GROWS with cohort size
+     (interaction b=+0.647, p=0.0005 on the matched population): the
+     target's advantage is concentrated exactly where the cue
+     narrows LEAST, which a narrowing account cannot produce.
+   * Chinese remains the weak cell: at matched fit the target-decoy
+     margin is ~0 (as already reported by fit_ci), and cohort control
+     does not rescue it. The Chinese contribution here is the
+     wrong-signed cohort slope, which damages the narrowing account
+     without supporting the availability account.

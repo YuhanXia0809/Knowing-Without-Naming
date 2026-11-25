@@ -1,0 +1,12 @@
+set                     items  strict    TOT    DK  TOT:DK 4/4 of strict
+main English bank        1503    1291   1127   113    10.0   1086/1287 = 84.4%
+                       cumulative English items 1503 (x1.00 of the main bank), cumulative DK 113
+ultrarare extension       500     680    643    23    28.0    627/680 = 92.2%
+                       cumulative English items 2003 (x1.33 of the main bank), cumulative DK 136
+opaque-word set           500     658    635    18    35.3    615/658 = 93.5%
+                       cumulative English items 2503 (x1.67 of the main bank), cumulative DK 154
+
+known-item recognition ceiling (items with k_prod >= 6/20 and a full recognition record, share with k_rec >= 3/4)
+main English bank      qwen7b 97.8% (n=835); llama8b 97.9% (n=895); qwen72b 98.5% (n=1076); llama70b 98.2% (n=1091)
+ultrarare extension    qwen7b 98.5% (n=200); llama8b 98.1% (n=206); qwen72b 99.7% (n=296); llama70b 99.7% (n=307)
+opaque-word set        qwen7b 99.5% (n=210); llama8b 98.8% (n=242); qwen72b 100.0% (n=300); llama70b 99.7% (n=325)

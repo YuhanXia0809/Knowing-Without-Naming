@@ -1,0 +1,286 @@
+{
+ "note": "Worked example referenced in the paper: one item carried through every stage of the battery, with the raw per-stage records as run.",
+ "item": "taps",
+ "model": "meta-llama/Llama-3.1-70B-Instruct",
+ "language": "en",
+ "stages": {
+  "production": [
+   {
+    "item_id": "en_taps",
+    "greedy": "Lightsout",
+    "greedy_correct": false,
+    "samples": [
+     "LightsOut",
+     "LightsOut",
+     "Lightsout",
+     "Lightsout",
+     "Lightsout",
+     "Darken",
+     "Darken",
+     "Lightsout",
+     "Lightsout",
+     "Lightsout",
+     "Extinguish",
+     "Lightsout",
+     "Lightsout",
+     "Lightsout",
+     "Lightsout",
+     "Lightsout",
+     "Lightsout",
+     "Lightsout",
+     "Lightsout",
+     "Extinguish"
+    ],
+    "samples_correct": [
+     false,
+     false,
+     false,
+     false,
+     false,
+     false,
+     false,
+     false,
+     false,
+     false,
+     false,
+     false,
+     false,
+     false,
+     false,
+     false,
+     false,
+     false,
+     false,
+     false
+    ],
+    "k_prod": 0,
+    "n_prod": 20,
+    "candidates": [
+     "lightsout",
+     "lightsout",
+     "lightsout",
+     "lightsout",
+     "lightsout",
+     "darken",
+     "darken",
+     "lightsout",
+     "lightsout",
+     "lightsout",
+     "extinguish",
+     "lightsout",
+     "lightsout",
+     "lightsout",
+     "lightsout",
+     "lightsout",
+     "lightsout",
+     "lightsout",
+     "lightsout",
+     "extinguish"
+    ]
+   }
+  ],
+  "recognition": [
+   {
+    "item_id": "en_taps",
+    "rotations": [
+     {
+      "rotation": 0,
+      "target_pos": "A",
+      "choice": "A",
+      "gen": "A",
+      "p_target": 0.9998801710818181,
+      "correct": true
+     },
+     {
+      "rotation": 1,
+      "target_pos": "B",
+      "choice": "B",
+      "gen": "B",
+      "p_target": 0.9999170492452476,
+      "correct": true
+     },
+     {
+      "rotation": 2,
+      "target_pos": "C",
+      "choice": "C",
+      "gen": "C",
+      "p_target": 0.9996450904949246,
+      "correct": true
+     },
+     {
+      "rotation": 3,
+      "target_pos": "D",
+      "choice": "D",
+      "gen": "D",
+      "p_target": 0.9994171578127532,
+      "correct": true
+     }
+    ],
+    "k_rec": 4,
+    "n_rec": 4,
+    "mean_p_target": 0.999714867158686
+   }
+  ],
+  "partial_episode": [
+   {
+    "item_id": "en_taps",
+    "group": "failed_greedy",
+    "first_letter": {
+     "greedy": "T",
+     "samples": [
+      "T",
+      "T",
+      "T",
+      "T",
+      "T"
+     ]
+    },
+    "n_letters": {
+     "greedy": "9",
+     "samples": [
+      "6",
+      "8",
+      "7",
+      "6",
+      "8"
+     ]
+    },
+    "n_syllables": {
+     "greedy": "2",
+     "samples": [
+      "2",
+      "2",
+      "3",
+      "2",
+      "2"
+     ]
+    },
+    "sounds_like": {
+     "greedy": "Taps",
+     "samples": [
+      "Extinguish",
+      "Taps",
+      "Taps",
+      "Taps",
+      "Taps"
+     ]
+    }
+   }
+  ],
+  "partial": [
+   {
+    "item_id": "en_taps",
+    "first_letter": {
+     "greedy": "L",
+     "samples": [
+      "L",
+      "L.",
+      "L",
+      "L",
+      "L"
+     ]
+    },
+    "n_letters": {
+     "greedy": "9",
+     "samples": [
+      "8",
+      "8",
+      "8",
+      "9",
+      "8"
+     ]
+    },
+    "n_syllables": {
+     "greedy": "2",
+     "samples": [
+      "2",
+      "3",
+      "3",
+      "2",
+      "2"
+     ]
+    },
+    "sounds_like": {
+     "greedy": "Lights",
+     "samples": [
+      "Lights",
+      "Lights.",
+      "Lightsout",
+      "Lightsout",
+      "Lights"
+     ]
+    }
+   }
+  ],
+  "cue": [
+   {
+    "item_id": "en_taps",
+    "condition": "correct",
+    "cue": "t",
+    "greedy_correct": true,
+    "k_cue": 20,
+    "n_cue": 20
+   },
+   {
+    "item_id": "en_taps",
+    "condition": "wrong",
+    "cue": "u",
+    "greedy_correct": false,
+    "k_cue": 0,
+    "n_cue": 20
+   }
+  ],
+  "selfreport": [
+   {
+    "item_id": "en_taps",
+    "raw": "Lights out",
+    "label": "ANSWER",
+    "answer_correct": false
+   }
+  ],
+  "fok": [
+   {
+    "item_id": "en_taps",
+    "fok_verbal": 100,
+    "fok_verbal_raw": "100",
+    "fok_p_yes": 0.9986749774580075,
+    "fok_yn_raw": "Yes"
+   }
+  ],
+  "reverse_judged": [
+   {
+    "item_id": "en_taps",
+    "def_correct": true,
+    "definition": "The English word \"taps\" refers to a signal on a bugle or trumpet, typically played at a military funeral or to signal the end of the day."
+   }
+  ],
+  "cot": [
+   {
+    "item_id": "en_taps",
+    "group": "failed",
+    "greedy_correct": false,
+    "greedy_answer": "Lights out",
+    "k_cot": 0,
+    "n_cot": 5,
+    "trace": "To find the English word described by the definition, let's break it down step by step:\n\n1. **Understanding the context**: The definition is related to a military signal, which indicates that it's time to turn off the lights. This suggests that the word is likely to be a term used in military protocols or commands.\n\n2. **Identifying candidate words**: Based on the context, some possible words that come to mind are:\n   - \"Lights out\"\n   - \"Extinguish\"\n   - \"Darken\"\n   - \"Blackout\"\n\n3. **Selecting the most appropriate word**: Considering the military context and the specific action of extinguish"
+   }
+  ],
+  "feature_ceiling": [
+   {
+    "item_id": "en_taps",
+    "first_letter": {
+     "greedy": "T"
+    },
+    "n_letters": {
+     "greedy": "4"
+    },
+    "n_syllables": {
+     "greedy": "1"
+    },
+    "sounds_like": {
+     "greedy": "Maps"
+    }
+   }
+  ]
+ }
+}

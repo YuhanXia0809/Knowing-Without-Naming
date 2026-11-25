@@ -1,0 +1,21 @@
+=== EN ===
+target present, strict failures    items  2005 | pass>=3/4  88.7% | same WORD >=3/4:  96.1%  of which slot0  92.3%  d1  2.0%  d2  5.7%  d3  0.1% | same POSITION >=3/4:  0.4%
+target present, all items          items  8928 | pass>=3/4  95.7% | same WORD >=3/4:  98.5%  of which slot0  97.2%  d1  0.7%  d2  2.0%  d3  0.0% | same POSITION >=3/4:  0.1%
+TARGET ABSENT (decoyb), all items  items  1380 | pass>=3/4  35.5% | same WORD >=3/4:  80.3%  of which slot0  44.2%  d1 28.4%  d2 24.6%  d3  2.7% | same POSITION >=3/4: 12.7%
+  full_en_qwen7b strict            items   441 | pass>=3/4  89.6% | same WORD >=3/4:  95.2%  of which slot0  94.0%  d1  1.9%  d2  4.0%  d3  0.0% | same POSITION >=3/4:  0.5%
+  full_en_qwen14b strict           items   370 | pass>=3/4  89.5% | same WORD >=3/4:  96.2%  of which slot0  93.0%  d1  1.7%  d2  5.3%  d3  0.0% | same POSITION >=3/4:  0.5%
+  full_en_qwen32b strict           items   348 | pass>=3/4  92.2% | same WORD >=3/4:  97.7%  of which slot0  94.4%  d1  1.5%  d2  4.1%  d3  0.0% | same POSITION >=3/4:  0.0%
+  full_en_qwen72b strict           items   279 | pass>=3/4  90.7% | same WORD >=3/4:  97.1%  of which slot0  93.4%  d1  1.1%  d2  5.5%  d3  0.0% | same POSITION >=3/4:  0.0%
+  full_en_llama8b strict           items   349 | pass>=3/4  83.7% | same WORD >=3/4:  95.1%  of which slot0  88.0%  d1  3.6%  d2  8.4%  d3  0.0% | same POSITION >=3/4:  0.3%
+  full_en_llama70b strict          items   218 | pass>=3/4  85.8% | same WORD >=3/4:  95.4%  of which slot0  89.9%  d1  1.9%  d2  7.7%  d3  0.5% | same POSITION >=3/4:  1.4%
+
+=== ZH ===
+target present, strict failures    items  3432 | pass>=3/4  78.4% | same WORD >=3/4:  93.2%  of which slot0  84.1%  d1  6.4%  d2  8.9%  d3  0.5% | same POSITION >=3/4:  1.2%
+target present, all items          items  5358 | pass>=3/4  83.1% | same WORD >=3/4:  94.7%  of which slot0  87.8%  d1  5.2%  d2  6.6%  d3  0.4% | same POSITION >=3/4:  0.8%
+TARGET ABSENT (decoyb), all items  items  1332 | pass>=3/4  30.9% | same WORD >=3/4:  82.6%  of which slot0  37.4%  d1 36.6%  d2 23.5%  d3  2.5% | same POSITION >=3/4:  7.7%
+  full_zh_qwen7b strict            items   642 | pass>=3/4  79.9% | same WORD >=3/4:  93.6%  of which slot0  85.4%  d1  4.7%  d2  9.7%  d3  0.3% | same POSITION >=3/4:  0.8%
+  full_zh_qwen14b strict           items   580 | pass>=3/4  80.9% | same WORD >=3/4:  93.4%  of which slot0  86.5%  d1  4.8%  d2  8.7%  d3  0.0% | same POSITION >=3/4:  0.5%
+  full_zh_qwen32b strict           items   548 | pass>=3/4  85.6% | same WORD >=3/4:  96.5%  of which slot0  88.7%  d1  5.5%  d2  5.7%  d3  0.2% | same POSITION >=3/4:  0.2%
+  full_zh_qwen72b strict           items   517 | pass>=3/4  81.8% | same WORD >=3/4:  96.1%  of which slot0  85.1%  d1  5.2%  d2  9.3%  d3  0.4% | same POSITION >=3/4:  0.0%
+  full_zh_llama8b strict           items   622 | pass>=3/4  69.0% | same WORD >=3/4:  87.8%  of which slot0  78.6%  d1  9.3%  d2 11.0%  d3  1.1% | same POSITION >=3/4:  4.0%
+  full_zh_llama70b strict          items   523 | pass>=3/4  73.8% | same WORD >=3/4:  92.4%  of which slot0  79.9%  d1  9.5%  d2  9.3%  d3  1.2% | same POSITION >=3/4:  1.3%

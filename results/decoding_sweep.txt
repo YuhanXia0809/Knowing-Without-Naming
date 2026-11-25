@@ -1,0 +1,16 @@
+=== en / qwen7b  (1503 items; published strict failures 442 = 29.4%) ===
+  published_t10  fail  29.4%  TOT  395  DK  30  TOT:DK  13.2 | overlap with T=1.0 set: Jaccard 1.000, 442 of 442 in common | cue@20 on intersection 0.539 (n=425), retest@20 0.113
+  t07_p10        fail  33.7%  TOT  455  DK  31  TOT:DK  14.7 | overlap with T=1.0 set: Jaccard 0.866, 440 of 506 in common | cue@20 on intersection 0.541 (n=423), retest@20 0.111
+  t10_p09        fail  32.9%  TOT  443  DK  33  TOT:DK  13.4 | overlap with T=1.0 set: Jaccard 0.882, 439 of 495 in common | cue@20 on intersection 0.540 (n=422), retest@20 0.111
+=== en / llama8b  (1503 items; published strict failures 350 = 23.3%) ===
+  published_t10  fail  23.3%  TOT  292  DK  41  TOT:DK   7.1 | overlap with T=1.0 set: Jaccard 1.000, 350 of 350 in common | cue@20 on intersection 0.640 (n=333), retest@20 0.135
+  t07_p10        fail  27.4%  TOT  346  DK  45  TOT:DK   7.7 | overlap with T=1.0 set: Jaccard 0.832, 346 of 412 in common | cue@20 on intersection 0.635 (n=329), retest@20 0.128
+  t10_p09        fail  26.7%  TOT  331  DK  49  TOT:DK   6.8 | overlap with T=1.0 set: Jaccard 0.854, 346 of 401 in common | cue@20 on intersection 0.635 (n=329), retest@20 0.131
+=== zh / qwen7b  (903 items; published strict failures 647 = 71.7%) ===
+  published_t10  fail  71.7%  TOT  513  DK  95  TOT:DK   5.4 | overlap with T=1.0 set: Jaccard 1.000, 647 of 647 in common | cue@20 on intersection 0.188 (n=608), retest@20 0.044
+  t07_p10        fail  74.0%  TOT  531  DK  98  TOT:DK   5.4 | overlap with T=1.0 set: Jaccard 0.963, 645 of 668 in common | cue@20 on intersection 0.186 (n=606), retest@20 0.041
+  t10_p09        fail  73.6%  TOT  530  DK  95  TOT:DK   5.6 | overlap with T=1.0 set: Jaccard 0.955, 641 of 665 in common | cue@20 on intersection 0.188 (n=602), retest@20 0.040
+=== zh / llama8b  (903 items; published strict failures 624 = 69.1%) ===
+  published_t10  fail  69.1%  TOT  429  DK 137  TOT:DK   3.1 | overlap with T=1.0 set: Jaccard 1.000, 624 of 624 in common | cue@20 on intersection 0.300 (n=566), retest@20 0.053
+  t07_p10        fail  70.7%  TOT  443  DK 137  TOT:DK   3.2 | overlap with T=1.0 set: Jaccard 0.942, 612 of 638 in common | cue@20 on intersection 0.295 (n=555), retest@20 0.049
+  t10_p09        fail  69.1%  TOT  430  DK 136  TOT:DK   3.2 | overlap with T=1.0 set: Jaccard 0.965, 613 of 624 in common | cue@20 on intersection 0.293 (n=557), retest@20 0.045

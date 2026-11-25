@@ -1,0 +1,500 @@
+{"item_id": "en_abscission", "first_letter": {"greedy": "A."}, "n_letters": {"greedy": "9"}, "n_syllables": {"greedy": "4"}, "sounds_like": {"greedy": "Abscess."}}
+{"item_id": "en_accenting", "first_letter": {"greedy": "A"}, "n_letters": {"greedy": "9"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Excentric."}}
+{"item_id": "en_actinolite", "first_letter": {"greedy": "A."}, "n_letters": {"greedy": "9"}, "n_syllables": {"greedy": "5"}, "sounds_like": {"greedy": "Actinium"}}
+{"item_id": "en_adjunction", "first_letter": {"greedy": "A."}, "n_letters": {"greedy": "9"}, "n_syllables": {"greedy": "4"}, "sounds_like": {"greedy": "Adduction"}}
+{"item_id": "en_aegir", "first_letter": {"greedy": "A."}, "n_letters": {"greedy": "5"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Eiger"}}
+{"item_id": "en_aerolite", "first_letter": {"greedy": "A."}, "n_letters": {"greedy": "7"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Aeroplane"}}
+{"item_id": "en_agio", "first_letter": {"greedy": "A."}, "n_letters": {"greedy": "4"}, "n_syllables": {"greedy": "2"}, "sounds_like": {"greedy": "Gio"}}
+{"item_id": "en_alimentation", "first_letter": {"greedy": "A"}, "n_letters": {"greedy": "11"}, "n_syllables": {"greedy": "5"}, "sounds_like": {"greedy": "Amputation"}}
+{"item_id": "en_allotrope", "first_letter": {"greedy": "A."}, "n_letters": {"greedy": "9"}, "n_syllables": {"greedy": "4"}, "sounds_like": {"greedy": "Alloy."}}
+{"item_id": "en_ambidexterity", "first_letter": {"greedy": "A."}, "n_letters": {"greedy": "13"}, "n_syllables": {"greedy": "6"}, "sounds_like": {"greedy": "Abidance"}}
+{"item_id": "en_ambuscade", "first_letter": {"greedy": "A."}, "n_letters": {"greedy": "9"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Abuse"}}
+{"item_id": "en_ameba", "first_letter": {"greedy": "A."}, "n_letters": {"greedy": "5"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Amigo"}}
+{"item_id": "en_amphioxus", "first_letter": {"greedy": "A."}, "n_letters": {"greedy": "9"}, "n_syllables": {"greedy": "5"}, "sounds_like": {"greedy": "Amnesia"}}
+{"item_id": "en_anaerobe", "first_letter": {"greedy": "A"}, "n_letters": {"greedy": "7"}, "n_syllables": {"greedy": "4"}, "sounds_like": {"greedy": "Anorak"}}
+{"item_id": "en_aneuploidy", "first_letter": {"greedy": "A"}, "n_letters": {"greedy": "10"}, "n_syllables": {"greedy": "5"}, "sounds_like": {"greedy": "Anodyne"}}
+{"item_id": "en_angiosarcoma", "first_letter": {"greedy": "A"}, "n_letters": {"greedy": "12"}, "n_syllables": {"greedy": "6"}, "sounds_like": {"greedy": "Anaglypta"}}
+{"item_id": "en_angiosperm", "first_letter": {"greedy": "A."}, "n_letters": {"greedy": "10"}, "n_syllables": {"greedy": "4"}, "sounds_like": {"greedy": "Angios\n\nThis word has a similar"}}
+{"item_id": "en_anglerfish", "first_letter": {"greedy": "A."}, "n_letters": {"greedy": "9"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Hanger"}}
+{"item_id": "en_anlage", "first_letter": {"greedy": "A"}, "n_letters": {"greedy": "5"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Angle"}}
+{"item_id": "en_annotator", "first_letter": {"greedy": "A"}, "n_letters": {"greedy": "9"}, "n_syllables": {"greedy": "4"}, "sounds_like": {"greedy": "Narrator"}}
+{"item_id": "en_annulet", "first_letter": {"greedy": "A"}, "n_letters": {"greedy": "7"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Annulet sounds similar to \"annulet"}}
+{"item_id": "en_anointment", "first_letter": {"greedy": "A"}, "n_letters": {"greedy": "10"}, "n_syllables": {"greedy": "4"}, "sounds_like": {"greedy": "Amendment"}}
+{"item_id": "en_anomia", "first_letter": {"greedy": "A"}, "n_letters": {"greedy": "6"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Amnesia"}}
+{"item_id": "en_anthropocentrism", "first_letter": {"greedy": "A"}, "n_letters": {"greedy": "13"}, "n_syllables": {"greedy": "8"}, "sounds_like": {"greedy": "Anthropoid."}}
+{"item_id": "en_antidiabetic", "first_letter": {"greedy": "A."}, "n_letters": {"greedy": "11"}, "n_syllables": {"greedy": "6"}, "sounds_like": {"greedy": "Anticipate"}}
+{"item_id": "en_apar", "first_letter": {"greedy": "A."}, "n_letters": {"greedy": "4"}, "n_syllables": {"greedy": "2"}, "sounds_like": {"greedy": "Apart"}}
+{"item_id": "en_aphelion", "first_letter": {"greedy": "A."}, "n_letters": {"greedy": "8"}, "n_syllables": {"greedy": "4"}, "sounds_like": {"greedy": "Helion"}}
+{"item_id": "en_appellative", "first_letter": {"greedy": "A."}, "n_letters": {"greedy": "10"}, "n_syllables": {"greedy": "4"}, "sounds_like": {"greedy": "Apparative"}}
+{"item_id": "en_apposition", "first_letter": {"greedy": "A."}, "n_letters": {"greedy": "10"}, "n_syllables": {"greedy": "4"}, "sounds_like": {"greedy": "Opposition"}}
+{"item_id": "en_appurtenance", "first_letter": {"greedy": "A"}, "n_letters": {"greedy": "11"}, "n_syllables": {"greedy": "4"}, "sounds_like": {"greedy": "Apparatus"}}
+{"item_id": "en_aquaplane", "first_letter": {"greedy": "A."}, "n_letters": {"greedy": "9"}, "n_syllables": {"greedy": "4"}, "sounds_like": {"greedy": "Quarantine"}}
+{"item_id": "en_archil", "first_letter": {"greedy": "A"}, "n_letters": {"greedy": "5"}, "n_syllables": {"greedy": "2"}, "sounds_like": {"greedy": "Arctic"}}
+{"item_id": "en_argal", "first_letter": {"greedy": "A"}, "n_letters": {"greedy": "5"}, "n_syllables": {"greedy": "2"}, "sounds_like": {"greedy": "Haral."}}
+{"item_id": "en_arthropathy", "first_letter": {"greedy": "A"}, "n_letters": {"greedy": "10"}, "n_syllables": {"greedy": "5"}, "sounds_like": {"greedy": "Orthography"}}
+{"item_id": "en_artiodactyl", "first_letter": {"greedy": "A."}, "n_letters": {"greedy": "10"}, "n_syllables": {"greedy": "5"}, "sounds_like": {"greedy": "Cartilage"}}
+{"item_id": "en_asafetida", "first_letter": {"greedy": "A."}, "n_letters": {"greedy": "8"}, "n_syllables": {"greedy": "5"}, "sounds_like": {"greedy": "Saffron"}}
+{"item_id": "en_ascription", "first_letter": {"greedy": "A."}, "n_letters": {"greedy": "10"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Ascension"}}
+{"item_id": "en_assenting", "first_letter": {"greedy": "A"}, "n_letters": {"greedy": "8"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Asserting"}}
+{"item_id": "en_astatine", "first_letter": {"greedy": "A."}, "n_letters": {"greedy": "8"}, "n_syllables": {"greedy": "4"}, "sounds_like": {"greedy": "Autistic"}}
+{"item_id": "en_atavist", "first_letter": {"greedy": "A."}, "n_letters": {"greedy": "7"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Autist."}}
+{"item_id": "en_atonia", "first_letter": {"greedy": "A."}, "n_letters": {"greedy": "6"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Autonomy"}}
+{"item_id": "en_auspiciousness", "first_letter": {"greedy": "A"}, "n_letters": {"greedy": "12"}, "n_syllables": {"greedy": "5"}, "sounds_like": {"greedy": "Suspiciousness"}}
+{"item_id": "en_autograft", "first_letter": {"greedy": "A"}, "n_letters": {"greedy": "8"}, "n_syllables": {"greedy": "4"}, "sounds_like": {"greedy": "Autograph"}}
+{"item_id": "en_autoregulation", "first_letter": {"greedy": "A"}, "n_letters": {"greedy": "12"}, "n_syllables": {"greedy": "6"}, "sounds_like": {"greedy": "Automaton."}}
+{"item_id": "en_avidity", "first_letter": {"greedy": "A"}, "n_letters": {"greedy": "7"}, "n_syllables": {"greedy": "4"}, "sounds_like": {"greedy": "Vigilant"}}
+{"item_id": "en_axil", "first_letter": {"greedy": "A."}, "n_letters": {"greedy": "4"}, "n_syllables": {"greedy": "2"}, "sounds_like": {"greedy": "Axle."}}
+{"item_id": "en_axiology", "first_letter": {"greedy": "A."}, "n_letters": {"greedy": "8"}, "n_syllables": {"greedy": "5"}, "sounds_like": {"greedy": "Oxology"}}
+{"item_id": "en_ayin", "first_letter": {"greedy": "A."}, "n_letters": {"greedy": "4"}, "n_syllables": {"greedy": "2"}, "sounds_like": {"greedy": "Ain"}}
+{"item_id": "en_aztreonam", "first_letter": {"greedy": "A"}, "n_letters": {"greedy": "8"}, "n_syllables": {"greedy": "5"}, "sounds_like": {"greedy": "Zestron"}}
+{"item_id": "en_babassu", "first_letter": {"greedy": "B"}, "n_letters": {"greedy": "7"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Bass."}}
+{"item_id": "en_babirusa", "first_letter": {"greedy": "B"}, "n_letters": {"greedy": "8"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Babirusa sounds similar to \""}}
+{"item_id": "en_babka", "first_letter": {"greedy": "B"}, "n_letters": {"greedy": "5"}, "n_syllables": {"greedy": "2"}, "sounds_like": {"greedy": "Baba"}}
+{"item_id": "en_backgrounding", "first_letter": {"greedy": "B"}, "n_letters": {"greedy": "12"}, "n_syllables": {"greedy": "4"}, "sounds_like": {"greedy": "Forgiving"}}
+{"item_id": "en_baluster", "first_letter": {"greedy": "B"}, "n_letters": {"greedy": "7"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Balsam."}}
+{"item_id": "en_bandoneon", "first_letter": {"greedy": "B"}, "n_letters": {"greedy": "9"}, "n_syllables": {"greedy": "4"}, "sounds_like": {"greedy": "Bandwagon."}}
+{"item_id": "en_barndoor", "first_letter": {"greedy": "B"}, "n_letters": {"greedy": "7"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Barnyard"}}
+{"item_id": "en_barracouta", "first_letter": {"greedy": "B"}, "n_letters": {"greedy": "10"}, "n_syllables": {"greedy": "4"}, "sounds_like": {"greedy": "Barbecue"}}
+{"item_id": "en_bathyscaphe", "first_letter": {"greedy": "B"}, "n_letters": {"greedy": "11"}, "n_syllables": {"greedy": "5"}, "sounds_like": {"greedy": "Thaumaturge"}}
+{"item_id": "en_begetter", "first_letter": {"greedy": "B"}, "n_letters": {"greedy": "8"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Beggar."}}
+{"item_id": "en_besom", "first_letter": {"greedy": "B"}, "n_letters": {"greedy": "5"}, "n_syllables": {"greedy": "2"}, "sounds_like": {"greedy": "Bosom."}}
+{"item_id": "en_billhook", "first_letter": {"greedy": "B"}, "n_letters": {"greedy": "7"}, "n_syllables": {"greedy": "2"}, "sounds_like": {"greedy": "Bilge."}}
+{"item_id": "en_binturong", "first_letter": {"greedy": "B"}, "n_letters": {"greedy": "8"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Bunting"}}
+{"item_id": "en_bionomics", "first_letter": {"greedy": "B"}, "n_letters": {"greedy": "8"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Ionics"}}
+{"item_id": "en_biquadratic", "first_letter": {"greedy": "B."}, "n_letters": {"greedy": "10"}, "n_syllables": {"greedy": "5"}, "sounds_like": {"greedy": "Bicarbonate."}}
+{"item_id": "en_bleb", "first_letter": {"greedy": "B"}, "n_letters": {"greedy": "4"}, "n_syllables": {"greedy": "1"}, "sounds_like": {"greedy": "Leap"}}
+{"item_id": "en_blueing", "first_letter": {"greedy": "B"}, "n_letters": {"greedy": "7"}, "n_syllables": {"greedy": "2"}, "sounds_like": {"greedy": "Gluing"}}
+{"item_id": "en_bluestocking", "first_letter": {"greedy": "B"}, "n_letters": {"greedy": "10"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Bouquet"}}
+{"item_id": "en_bolshie", "first_letter": {"greedy": "B"}, "n_letters": {"greedy": "6"}, "n_syllables": {"greedy": "2"}, "sounds_like": {"greedy": "Bolshevik"}}
+{"item_id": "en_bowfin", "first_letter": {"greedy": "B"}, "n_letters": {"greedy": "5"}, "n_syllables": {"greedy": "2"}, "sounds_like": {"greedy": "Bowel"}}
+{"item_id": "en_bregma", "first_letter": {"greedy": "B"}, "n_letters": {"greedy": "6"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Bergamot"}}
+{"item_id": "en_briefness", "first_letter": {"greedy": "B"}, "n_letters": {"greedy": "8"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Bribery"}}
+{"item_id": "en_brownness", "first_letter": {"greedy": "B"}, "n_letters": {"greedy": "8"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Roundness"}}
+{"item_id": "en_bullnose", "first_letter": {"greedy": "B"}, "n_letters": {"greedy": "8"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Bullfinch."}}
+{"item_id": "en_burgrave", "first_letter": {"greedy": "B"}, "n_letters": {"greedy": "7"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Burrow"}}
+{"item_id": "en_bushbuck", "first_letter": {"greedy": "B"}, "n_letters": {"greedy": "7"}, "n_syllables": {"greedy": "2"}, "sounds_like": {"greedy": "Husky"}}
+{"item_id": "en_butylene", "first_letter": {"greedy": "B"}, "n_letters": {"greedy": "8"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Butler"}}
+{"item_id": "en_calque", "first_letter": {"greedy": "C"}, "n_letters": {"greedy": "5"}, "n_syllables": {"greedy": "2"}, "sounds_like": {"greedy": "Caulk."}}
+{"item_id": "en_caltrop", "first_letter": {"greedy": "C"}, "n_letters": {"greedy": "7"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Calutron"}}
+{"item_id": "en_caparison", "first_letter": {"greedy": "C"}, "n_letters": {"greedy": "8"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Caravan"}}
+{"item_id": "en_capelin", "first_letter": {"greedy": "C"}, "n_letters": {"greedy": "6"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Cablein"}}
+{"item_id": "en_capriciousness", "first_letter": {"greedy": "C"}, "n_letters": {"greedy": "14"}, "n_syllables": {"greedy": "6"}, "sounds_like": {"greedy": "Capriciousness sounds similar to \""}}
+{"item_id": "en_carefulness", "first_letter": {"greedy": "C"}, "n_letters": {"greedy": "10"}, "n_syllables": {"greedy": "4"}, "sounds_like": {"greedy": "Carefree"}}
+{"item_id": "en_caryatid", "first_letter": {"greedy": "C"}, "n_letters": {"greedy": "8"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Caryatid sounds similar to \""}}
+{"item_id": "en_catamenia", "first_letter": {"greedy": "C"}, "n_letters": {"greedy": "8"}, "n_syllables": {"greedy": "4"}, "sounds_like": {"greedy": "Cantata"}}
+{"item_id": "en_caterwaul", "first_letter": {"greedy": "C"}, "n_letters": {"greedy": "9"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Waterfall"}}
+{"item_id": "en_cefuroxime", "first_letter": {"greedy": "C"}, "n_letters": {"greedy": "9"}, "n_syllables": {"greedy": "5"}, "sounds_like": {"greedy": "Cefuroxime sounds similar to"}}
+{"item_id": "en_cembalo", "first_letter": {"greedy": "C"}, "n_letters": {"greedy": "7"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Cello."}}
+{"item_id": "en_cestode", "first_letter": {"greedy": "C"}, "n_letters": {"greedy": "6"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Chestnut."}}
+{"item_id": "en_chadar", "first_letter": {"greedy": "C"}, "n_letters": {"greedy": "5"}, "n_syllables": {"greedy": "2"}, "sounds_like": {"greedy": "Shadar"}}
+{"item_id": "en_chamberpot", "first_letter": {"greedy": "C"}, "n_letters": {"greedy": "10"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Hammer."}}
+{"item_id": "en_chatterer", "first_letter": {"greedy": "C"}, "n_letters": {"greedy": "9"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Rattler"}}
+{"item_id": "en_chequer", "first_letter": {"greedy": "C"}, "n_letters": {"greedy": "7"}, "n_syllables": {"greedy": "2"}, "sounds_like": {"greedy": "Checker"}}
+{"item_id": "en_cherimoya", "first_letter": {"greedy": "C"}, "n_letters": {"greedy": "9"}, "n_syllables": {"greedy": "4"}, "sounds_like": {"greedy": "Cherubim"}}
+{"item_id": "en_cherrystone", "first_letter": {"greedy": "C"}, "n_letters": {"greedy": "10"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Cherry."}}
+{"item_id": "en_chignon", "first_letter": {"greedy": "C"}, "n_letters": {"greedy": "7"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Chignon sounds similar to \"chignon"}}
+{"item_id": "en_chiliad", "first_letter": {"greedy": "C"}, "n_letters": {"greedy": "7"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Chiliad sounds similar to \"child"}}
+{"item_id": "en_chlamys", "first_letter": {"greedy": "C"}, "n_letters": {"greedy": "6"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Chlamys sounds similar to \"cl"}}
+{"item_id": "en_chlorambucil", "first_letter": {"greedy": "C"}, "n_letters": {"greedy": "10"}, "n_syllables": {"greedy": "5"}, "sounds_like": {"greedy": "Chlorambucil sounds similar to"}}
+{"item_id": "en_cholecystokinin", "first_letter": {"greedy": "C"}, "n_letters": {"greedy": "15"}, "n_syllables": {"greedy": "9"}, "sounds_like": {"greedy": "Chlorine"}}
+{"item_id": "en_chough", "first_letter": {"greedy": "C"}, "n_letters": {"greedy": "5"}, "n_syllables": {"greedy": "2"}, "sounds_like": {"greedy": "Cough"}}
+{"item_id": "en_chromaticity", "first_letter": {"greedy": "C"}, "n_letters": {"greedy": "11"}, "n_syllables": {"greedy": "5"}, "sounds_like": {"greedy": "Homochromy"}}
+{"item_id": "en_chromosphere", "first_letter": {"greedy": "C"}, "n_letters": {"greedy": "10"}, "n_syllables": {"greedy": "5"}, "sounds_like": {"greedy": "Thermosphere"}}
+{"item_id": "en_chronoscope", "first_letter": {"greedy": "C"}, "n_letters": {"greedy": "9"}, "n_syllables": {"greedy": "4"}, "sounds_like": {"greedy": "Thermoscope"}}
+{"item_id": "en_chrysotile", "first_letter": {"greedy": "C"}, "n_letters": {"greedy": "9"}, "n_syllables": {"greedy": "5"}, "sounds_like": {"greedy": "Chrysalis"}}
+{"item_id": "en_chubbiness", "first_letter": {"greedy": "C"}, "n_letters": {"greedy": "10"}, "n_syllables": {"greedy": "4"}, "sounds_like": {"greedy": "Chumminess"}}
+{"item_id": "en_chuckwalla", "first_letter": {"greedy": "C"}, "n_letters": {"greedy": "9"}, "n_syllables": {"greedy": "4"}, "sounds_like": {"greedy": "Chuckle"}}
+{"item_id": "en_cinquefoil", "first_letter": {"greedy": "C"}, "n_letters": {"greedy": "9"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Quinoline."}}
+{"item_id": "en_cirrostratus", "first_letter": {"greedy": "C"}, "n_letters": {"greedy": "11"}, "n_syllables": {"greedy": "6"}, "sounds_like": {"greedy": "Cirrus."}}
+{"item_id": "en_cnidarian", "first_letter": {"greedy": "C"}, "n_letters": {"greedy": "8"}, "n_syllables": {"greedy": "4"}, "sounds_like": {"greedy": "Sandarian"}}
+{"item_id": "en_cockade", "first_letter": {"greedy": "C"}, "n_letters": {"greedy": "7"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Cockatoo."}}
+{"item_id": "en_cocobolo", "first_letter": {"greedy": "C"}, "n_letters": {"greedy": "7"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Cobalt."}}
+{"item_id": "en_comeliness", "first_letter": {"greedy": "C"}, "n_letters": {"greedy": "9"}, "n_syllables": {"greedy": "4"}, "sounds_like": {"greedy": "Comeliness sounds similar to \"commonness"}}
+{"item_id": "en_comestible", "first_letter": {"greedy": "C"}, "n_letters": {"greedy": "9"}, "n_syllables": {"greedy": "4"}, "sounds_like": {"greedy": "Commissible"}}
+{"item_id": "en_complacence", "first_letter": {"greedy": "C"}, "n_letters": {"greedy": "10"}, "n_syllables": {"greedy": "4"}, "sounds_like": {"greedy": "Compliance"}}
+{"item_id": "en_compliancy", "first_letter": {"greedy": "C"}, "n_letters": {"greedy": "10"}, "n_syllables": {"greedy": "4"}, "sounds_like": {"greedy": "Compliance"}}
+{"item_id": "en_conceptus", "first_letter": {"greedy": "C"}, "n_letters": {"greedy": "9"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Concepts"}}
+{"item_id": "en_conchology", "first_letter": {"greedy": "C"}, "n_letters": {"greedy": "9"}, "n_syllables": {"greedy": "4"}, "sounds_like": {"greedy": "Psychology"}}
+{"item_id": "en_continuant", "first_letter": {"greedy": "C"}, "n_letters": {"greedy": "10"}, "n_syllables": {"greedy": "5"}, "sounds_like": {"greedy": "Continual"}}
+{"item_id": "en_corymb", "first_letter": {"greedy": "C"}, "n_letters": {"greedy": "5"}, "n_syllables": {"greedy": "2"}, "sounds_like": {"greedy": "Corymb sounds similar to \"cor"}}
+{"item_id": "en_cotangent", "first_letter": {"greedy": "C"}, "n_letters": {"greedy": "9"}, "n_syllables": {"greedy": "4"}, "sounds_like": {"greedy": "Cognate."}}
+{"item_id": "en_coypu", "first_letter": {"greedy": "C"}, "n_letters": {"greedy": "5"}, "n_syllables": {"greedy": "2"}, "sounds_like": {"greedy": "Coyote"}}
+{"item_id": "en_cracklings", "first_letter": {"greedy": "C"}, "n_letters": {"greedy": "9"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Wracklings"}}
+{"item_id": "en_crawdaddy", "first_letter": {"greedy": "C"}, "n_letters": {"greedy": "9"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Caddis."}}
+{"item_id": "en_cresol", "first_letter": {"greedy": "C"}, "n_letters": {"greedy": "6"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Resin."}}
+{"item_id": "en_ctenophore", "first_letter": {"greedy": "C"}, "n_letters": {"greedy": "9"}, "n_syllables": {"greedy": "4"}, "sounds_like": {"greedy": "Tenor"}}
+{"item_id": "en_cumulation", "first_letter": {"greedy": "C"}, "n_letters": {"greedy": "9"}, "n_syllables": {"greedy": "4"}, "sounds_like": {"greedy": "Communion"}}
+{"item_id": "en_cuscus", "first_letter": {"greedy": "C"}, "n_letters": {"greedy": "5"}, "n_syllables": {"greedy": "2"}, "sounds_like": {"greedy": "Cuscus sounds similar to \"c"}}
+{"item_id": "en_cyclicity", "first_letter": {"greedy": "C"}, "n_letters": {"greedy": "9"}, "n_syllables": {"greedy": "4"}, "sounds_like": {"greedy": "Synchronicity"}}
+{"item_id": "en_cyclopia", "first_letter": {"greedy": "C"}, "n_letters": {"greedy": "8"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Cyclopean"}}
+{"item_id": "en_cycloserine", "first_letter": {"greedy": "C"}, "n_letters": {"greedy": "9"}, "n_syllables": {"greedy": "5"}, "sounds_like": {"greedy": "Cyclone"}}
+{"item_id": "en_cymene", "first_letter": {"greedy": "C"}, "n_letters": {"greedy": "6"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Symene sounds similar to \"cym"}}
+{"item_id": "en_cystocele", "first_letter": {"greedy": "C"}, "n_letters": {"greedy": "8"}, "n_syllables": {"greedy": "4"}, "sounds_like": {"greedy": "Cystoscope"}}
+{"item_id": "en_cytidine", "first_letter": {"greedy": "C"}, "n_letters": {"greedy": "7"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Cider"}}
+{"item_id": "en_dadaism", "first_letter": {"greedy": "D"}, "n_letters": {"greedy": "7"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Madam"}}
+{"item_id": "en_deadlight", "first_letter": {"greedy": "D"}, "n_letters": {"greedy": "8"}, "n_syllables": {"greedy": "2"}, "sounds_like": {"greedy": "Headlight"}}
+{"item_id": "en_deamination", "first_letter": {"greedy": "D"}, "n_letters": {"greedy": "10"}, "n_syllables": {"greedy": "4"}, "sounds_like": {"greedy": "Demain"}}
+{"item_id": "en_dearness", "first_letter": {"greedy": "D"}, "n_letters": {"greedy": "8"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Serenity"}}
+{"item_id": "en_debauchee", "first_letter": {"greedy": "D"}, "n_letters": {"greedy": "9"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Bouchee"}}
+{"item_id": "en_debilitation", "first_letter": {"greedy": "D"}, "n_letters": {"greedy": "11"}, "n_syllables": {"greedy": "5"}, "sounds_like": {"greedy": "Deification"}}
+{"item_id": "en_decussation", "first_letter": {"greedy": "D"}, "n_letters": {"greedy": "11"}, "n_syllables": {"greedy": "5"}, "sounds_like": {"greedy": "Dissension"}}
+{"item_id": "en_denticle", "first_letter": {"greedy": "D"}, "n_letters": {"greedy": "8"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Denticle sounds similar to \"indent"}}
+{"item_id": "en_descriptivism", "first_letter": {"greedy": "D"}, "n_letters": {"greedy": "12"}, "n_syllables": {"greedy": "5"}, "sounds_like": {"greedy": "Desperation."}}
+{"item_id": "en_devilment", "first_letter": {"greedy": "D"}, "n_letters": {"greedy": "8"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Deceit"}}
+{"item_id": "en_diaeresis", "first_letter": {"greedy": "D"}, "n_letters": {"greedy": "10"}, "n_syllables": {"greedy": "4"}, "sounds_like": {"greedy": "Diabetes"}}
+{"item_id": "en_diapir", "first_letter": {"greedy": "D"}, "n_letters": {"greedy": "6"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Diarist"}}
+{"item_id": "en_diarchy", "first_letter": {"greedy": "D"}, "n_letters": {"greedy": "7"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Diarist"}}
+{"item_id": "en_diastema", "first_letter": {"greedy": "D"}, "n_letters": {"greedy": "8"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Diadem"}}
+{"item_id": "en_diflunisal", "first_letter": {"greedy": "D"}, "n_letters": {"greedy": "9"}, "n_syllables": {"greedy": "5"}, "sounds_like": {"greedy": "Silicon"}}
+{"item_id": "en_disinflation", "first_letter": {"greedy": "D"}, "n_letters": {"greedy": "12"}, "n_syllables": {"greedy": "5"}, "sounds_like": {"greedy": "Deflation."}}
+{"item_id": "en_dismission", "first_letter": {"greedy": "D"}, "n_letters": {"greedy": "9"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Dismissal"}}
+{"item_id": "en_dissimilation", "first_letter": {"greedy": "D"}, "n_letters": {"greedy": "12"}, "n_syllables": {"greedy": "5"}, "sounds_like": {"greedy": "Simulation"}}
+{"item_id": "en_distich", "first_letter": {"greedy": "D"}, "n_letters": {"greedy": "7"}, "n_syllables": {"greedy": "2"}, "sounds_like": {"greedy": "Ditch."}}
+{"item_id": "en_divertimento", "first_letter": {"greedy": "D"}, "n_letters": {"greedy": "11"}, "n_syllables": {"greedy": "5"}, "sounds_like": {"greedy": "Diversant"}}
+{"item_id": "en_dosser", "first_letter": {"greedy": "D"}, "n_letters": {"greedy": "5"}, "n_syllables": {"greedy": "2"}, "sounds_like": {"greedy": "Doser"}}
+{"item_id": "en_dotterel", "first_letter": {"greedy": "D"}, "n_letters": {"greedy": "7"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Doterel sounds similar to \"dot"}}
+{"item_id": "en_doublethink", "first_letter": {"greedy": "D"}, "n_letters": {"greedy": "9"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Doubtful"}}
+{"item_id": "en_doxepin", "first_letter": {"greedy": "D"}, "n_letters": {"greedy": "7"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Doxology"}}
+{"item_id": "en_dragonet", "first_letter": {"greedy": "D"}, "n_letters": {"greedy": "7"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Dragonfly"}}
+{"item_id": "en_dysphonia", "first_letter": {"greedy": "D"}, "n_letters": {"greedy": "9"}, "n_syllables": {"greedy": "4"}, "sounds_like": {"greedy": "Dysania."}}
+{"item_id": "en_echinoderm", "first_letter": {"greedy": "E"}, "n_letters": {"greedy": "10"}, "n_syllables": {"greedy": "5"}, "sounds_like": {"greedy": "Chinook."}}
+{"item_id": "en_echolalia", "first_letter": {"greedy": "E"}, "n_letters": {"greedy": "9"}, "n_syllables": {"greedy": "4"}, "sounds_like": {"greedy": "Echo."}}
+{"item_id": "en_economizer", "first_letter": {"greedy": "E"}, "n_letters": {"greedy": "10"}, "n_syllables": {"greedy": "5"}, "sounds_like": {"greedy": "Organizer"}}
+{"item_id": "en_egis", "first_letter": {"greedy": "E"}, "n_letters": {"greedy": "4"}, "n_syllables": {"greedy": "2"}, "sounds_like": {"greedy": "Eggs"}}
+{"item_id": "en_elytron", "first_letter": {"greedy": "E"}, "n_letters": {"greedy": "7"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Elegy"}}
+{"item_id": "en_emaciation", "first_letter": {"greedy": "E"}, "n_letters": {"greedy": "10"}, "n_syllables": {"greedy": "5"}, "sounds_like": {"greedy": "Exaction"}}
+{"item_id": "en_embonpoint", "first_letter": {"greedy": "E"}, "n_letters": {"greedy": "9"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Embarrass"}}
+{"item_id": "en_encopresis", "first_letter": {"greedy": "E"}, "n_letters": {"greedy": "9"}, "n_syllables": {"greedy": "5"}, "sounds_like": {"greedy": "Encyclopaedia"}}
+{"item_id": "en_endolymph", "first_letter": {"greedy": "E"}, "n_letters": {"greedy": "9"}, "n_syllables": {"greedy": "4"}, "sounds_like": {"greedy": "Dendrite"}}
+{"item_id": "en_enfeeblement", "first_letter": {"greedy": "E"}, "n_letters": {"greedy": "11"}, "n_syllables": {"greedy": "5"}, "sounds_like": {"greedy": "Ennui"}}
+{"item_id": "en_enlistee", "first_letter": {"greedy": "E"}, "n_letters": {"greedy": "8"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Listee"}}
+{"item_id": "en_ennead", "first_letter": {"greedy": "E"}, "n_letters": {"greedy": "6"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Endear"}}
+{"item_id": "en_enucleation", "first_letter": {"greedy": "E"}, "n_letters": {"greedy": "10"}, "n_syllables": {"greedy": "5"}, "sounds_like": {"greedy": "Nucleation."}}
+{"item_id": "en_envoi", "first_letter": {"greedy": "E"}, "n_letters": {"greedy": "5"}, "n_syllables": {"greedy": "2"}, "sounds_like": {"greedy": "Envy"}}
+{"item_id": "en_epenthesis", "first_letter": {"greedy": "E"}, "n_letters": {"greedy": "10"}, "n_syllables": {"greedy": "5"}, "sounds_like": {"greedy": "Enthesis."}}
+{"item_id": "en_ephemerality", "first_letter": {"greedy": "E"}, "n_letters": {"greedy": "12"}, "n_syllables": {"greedy": "7"}, "sounds_like": {"greedy": "Elegance"}}
+{"item_id": "en_epiphora", "first_letter": {"greedy": "E"}, "n_letters": {"greedy": "8"}, "n_syllables": {"greedy": "4"}, "sounds_like": {"greedy": "Euphoria"}}
+{"item_id": "en_erotism", "first_letter": {"greedy": "E"}, "n_letters": {"greedy": "7"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Orchestration."}}
+{"item_id": "en_escheat", "first_letter": {"greedy": "E"}, "n_letters": {"greedy": "7"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Scheat."}}
+{"item_id": "en_esoterica", "first_letter": {"greedy": "E"}, "n_letters": {"greedy": "9"}, "n_syllables": {"greedy": "4"}, "sounds_like": {"greedy": "Osteoporica"}}
+{"item_id": "en_etanercept", "first_letter": {"greedy": "E"}, "n_letters": {"greedy": "9"}, "n_syllables": {"greedy": "6"}, "sounds_like": {"greedy": "Tenerife"}}
+{"item_id": "en_etymon", "first_letter": {"greedy": "E"}, "n_letters": {"greedy": "6"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Eton"}}
+{"item_id": "en_eversion", "first_letter": {"greedy": "E"}, "n_letters": {"greedy": "8"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Eviction."}}
+{"item_id": "en_exostosis", "first_letter": {"greedy": "E"}, "n_letters": {"greedy": "9"}, "n_syllables": {"greedy": "4"}, "sounds_like": {"greedy": "Excess"}}
+{"item_id": "en_extremum", "first_letter": {"greedy": "E"}, "n_letters": {"greedy": "8"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Extravagant"}}
+{"item_id": "en_fabulist", "first_letter": {"greedy": "F"}, "n_letters": {"greedy": "7"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Fabian"}}
+{"item_id": "en_famotidine", "first_letter": {"greedy": "F"}, "n_letters": {"greedy": "8"}, "n_syllables": {"greedy": "4"}, "sounds_like": {"greedy": "Fantodine"}}
+{"item_id": "en_fasciculation", "first_letter": {"greedy": "F"}, "n_letters": {"greedy": "13"}, "n_syllables": {"greedy": "5"}, "sounds_like": {"greedy": "Vaccination"}}
+{"item_id": "en_fattiness", "first_letter": {"greedy": "F"}, "n_letters": {"greedy": "9"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Flatness."}}
+{"item_id": "en_fauces", "first_letter": {"greedy": "F"}, "n_letters": {"greedy": "6"}, "n_syllables": {"greedy": "2"}, "sounds_like": {"greedy": "Faucets"}}
+{"item_id": "en_fecklessness", "first_letter": {"greedy": "F"}, "n_letters": {"greedy": "11"}, "n_syllables": {"greedy": "4"}, "sounds_like": {"greedy": "Freckles"}}
+{"item_id": "en_feijoa", "first_letter": {"greedy": "F"}, "n_letters": {"greedy": "6"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Fjord"}}
+{"item_id": "en_felly", "first_letter": {"greedy": "F"}, "n_letters": {"greedy": "5"}, "n_syllables": {"greedy": "2"}, "sounds_like": {"greedy": "Sally"}}
+{"item_id": "en_filiation", "first_letter": {"greedy": "F"}, "n_letters": {"greedy": "9"}, "n_syllables": {"greedy": "4"}, "sounds_like": {"greedy": "Villain"}}
+{"item_id": "en_fledgeling", "first_letter": {"greedy": "F"}, "n_letters": {"greedy": "9"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Fledgling sounds similar to \""}}
+{"item_id": "en_flummery", "first_letter": {"greedy": "F"}, "n_letters": {"greedy": "8"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Fumery"}}
+{"item_id": "en_foolhardiness", "first_letter": {"greedy": "F"}, "n_letters": {"greedy": "12"}, "n_syllables": {"greedy": "5"}, "sounds_like": {"greedy": "Foolproof"}}
+{"item_id": "en_foram", "first_letter": {"greedy": "F"}, "n_letters": {"greedy": "5"}, "n_syllables": {"greedy": "2"}, "sounds_like": {"greedy": "Form"}}
+{"item_id": "en_frangipane", "first_letter": {"greedy": "F"}, "n_letters": {"greedy": "9"}, "n_syllables": {"greedy": "4"}, "sounds_like": {"greedy": "Rangoli"}}
+{"item_id": "en_freakishness", "first_letter": {"greedy": "F"}, "n_letters": {"greedy": "11"}, "n_syllables": {"greedy": "4"}, "sounds_like": {"greedy": "Freakiness"}}
+{"item_id": "en_frier", "first_letter": {"greedy": "F"}, "n_letters": {"greedy": "5"}, "n_syllables": {"greedy": "2"}, "sounds_like": {"greedy": "Fryer"}}
+{"item_id": "en_furan", "first_letter": {"greedy": "F"}, "n_letters": {"greedy": "5"}, "n_syllables": {"greedy": "2"}, "sounds_like": {"greedy": "Furor"}}
+{"item_id": "en_gelly", "first_letter": {"greedy": "G."}, "n_letters": {"greedy": "5"}, "n_syllables": {"greedy": "2"}, "sounds_like": {"greedy": "Jelly"}}
+{"item_id": "en_girasol", "first_letter": {"greedy": "G."}, "n_letters": {"greedy": "7"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Giraffe"}}
+{"item_id": "en_glume", "first_letter": {"greedy": "G"}, "n_letters": {"greedy": "5"}, "n_syllables": {"greedy": "2"}, "sounds_like": {"greedy": "Gloom"}}
+{"item_id": "en_glyburide", "first_letter": {"greedy": "G."}, "n_letters": {"greedy": "8"}, "n_syllables": {"greedy": "4"}, "sounds_like": {"greedy": "Girder"}}
+{"item_id": "en_gnarl", "first_letter": {"greedy": "G"}, "n_letters": {"greedy": "5"}, "n_syllables": {"greedy": "2"}, "sounds_like": {"greedy": "Snarl"}}
+{"item_id": "en_gnomon", "first_letter": {"greedy": "G."}, "n_letters": {"greedy": "5"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Gnome"}}
+{"item_id": "en_goldcrest", "first_letter": {"greedy": "G"}, "n_letters": {"greedy": "8"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Folded"}}
+{"item_id": "en_goniometer", "first_letter": {"greedy": "G."}, "n_letters": {"greedy": "9"}, "n_syllables": {"greedy": "5"}, "sounds_like": {"greedy": "Thermometer"}}
+{"item_id": "en_goosander", "first_letter": {"greedy": "G"}, "n_letters": {"greedy": "8"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Gosling"}}
+{"item_id": "en_goujon", "first_letter": {"greedy": "G."}, "n_letters": {"greedy": "6"}, "n_syllables": {"greedy": "2"}, "sounds_like": {"greedy": "Gallon"}}
+{"item_id": "en_graybeard", "first_letter": {"greedy": "G"}, "n_letters": {"greedy": "8"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Sagebrush"}}
+{"item_id": "en_guilloche", "first_letter": {"greedy": "G"}, "n_letters": {"greedy": "9"}, "n_syllables": {"greedy": "4"}, "sounds_like": {"greedy": "Gullible"}}
+{"item_id": "en_gulper", "first_letter": {"greedy": "G"}, "n_letters": {"greedy": "5"}, "n_syllables": {"greedy": "2"}, "sounds_like": {"greedy": "Huler"}}
+{"item_id": "en_gumma", "first_letter": {"greedy": "G."}, "n_letters": {"greedy": "5"}, "n_syllables": {"greedy": "2"}, "sounds_like": {"greedy": "Chumma"}}
+{"item_id": "en_haematuria", "first_letter": {"greedy": "H"}, "n_letters": {"greedy": "9"}, "n_syllables": {"greedy": "4"}, "sounds_like": {"greedy": "Hematoma"}}
+{"item_id": "en_haemoptysis", "first_letter": {"greedy": "H"}, "n_letters": {"greedy": "10"}, "n_syllables": {"greedy": "4"}, "sounds_like": {"greedy": "Hemorrhage"}}
+{"item_id": "en_haemostasis", "first_letter": {"greedy": "H"}, "n_letters": {"greedy": "10"}, "n_syllables": {"greedy": "5"}, "sounds_like": {"greedy": "Hemisphere"}}
+{"item_id": "en_hairstreak", "first_letter": {"greedy": "H"}, "n_letters": {"greedy": "9"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Hairspray."}}
+{"item_id": "en_hatmaker", "first_letter": {"greedy": "H"}, "n_letters": {"greedy": "8"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Chatmaker"}}
+{"item_id": "en_hauteur", "first_letter": {"greedy": "H"}, "n_letters": {"greedy": "7"}, "n_syllables": {"greedy": "2"}, "sounds_like": {"greedy": "Halter"}}
+{"item_id": "en_heartiness", "first_letter": {"greedy": "H"}, "n_letters": {"greedy": "9"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Hartness"}}
+{"item_id": "en_hectolitre", "first_letter": {"greedy": "H"}, "n_letters": {"greedy": "9"}, "n_syllables": {"greedy": "5"}, "sounds_like": {"greedy": "Hectic"}}
+{"item_id": "en_hemicycle", "first_letter": {"greedy": "H"}, "n_letters": {"greedy": "8"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Hemicrania"}}
+{"item_id": "en_heptane", "first_letter": {"greedy": "H"}, "n_letters": {"greedy": "7"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Hepatitis"}}
+{"item_id": "en_highflyer", "first_letter": {"greedy": "H"}, "n_letters": {"greedy": "8"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Hideway"}}
+{"item_id": "en_hinderance", "first_letter": {"greedy": "H"}, "n_letters": {"greedy": "9"}, "n_syllables": {"greedy": "4"}, "sounds_like": {"greedy": "Hindrance sounds similar to \"ind"}}
+{"item_id": "en_hogget", "first_letter": {"greedy": "H"}, "n_letters": {"greedy": "5"}, "n_syllables": {"greedy": "2"}, "sounds_like": {"greedy": "Logget"}}
+{"item_id": "en_homophony", "first_letter": {"greedy": "H"}, "n_letters": {"greedy": "9"}, "n_syllables": {"greedy": "4"}, "sounds_like": {"greedy": "Homophone."}}
+{"item_id": "en_horologist", "first_letter": {"greedy": "H"}, "n_letters": {"greedy": "9"}, "n_syllables": {"greedy": "4"}, "sounds_like": {"greedy": "Geologist"}}
+{"item_id": "en_hryvnia", "first_letter": {"greedy": "H"}, "n_letters": {"greedy": "6"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Try"}}
+{"item_id": "en_huaraches", "first_letter": {"greedy": "H"}, "n_letters": {"greedy": "8"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Harasses"}}
+{"item_id": "en_hudood", "first_letter": {"greedy": "H"}, "n_letters": {"greedy": "5"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Wooded"}}
+{"item_id": "en_humourist", "first_letter": {"greedy": "H"}, "n_letters": {"greedy": "8"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Humorist"}}
+{"item_id": "en_hydantoin", "first_letter": {"greedy": "H"}, "n_letters": {"greedy": "8"}, "n_syllables": {"greedy": "4"}, "sounds_like": {"greedy": "Hydrant."}}
+{"item_id": "en_hydatid", "first_letter": {"greedy": "H"}, "n_letters": {"greedy": "7"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Hydrate"}}
+{"item_id": "en_hydrilla", "first_letter": {"greedy": "H"}, "n_letters": {"greedy": "7"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Hydrangea"}}
+{"item_id": "en_hymnody", "first_letter": {"greedy": "H"}, "n_letters": {"greedy": "7"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Symphony"}}
+{"item_id": "en_hypervitaminosis", "first_letter": {"greedy": "H"}, "n_letters": {"greedy": "15"}, "n_syllables": {"greedy": "7"}, "sounds_like": {"greedy": "Hyperbole."}}
+{"item_id": "en_hypochondriasis", "first_letter": {"greedy": "H"}, "n_letters": {"greedy": "14"}, "n_syllables": {"greedy": "7"}, "sounds_like": {"greedy": "Hyperbole."}}
+{"item_id": "en_hypophysis", "first_letter": {"greedy": "H"}, "n_letters": {"greedy": "9"}, "n_syllables": {"greedy": "5"}, "sounds_like": {"greedy": "Hyperbole."}}
+{"item_id": "en_hysteroscopy", "first_letter": {"greedy": "H"}, "n_letters": {"greedy": "11"}, "n_syllables": {"greedy": "5"}, "sounds_like": {"greedy": "Histology"}}
+{"item_id": "en_ichneumon", "first_letter": {"greedy": "I."}, "n_letters": {"greedy": "8"}, "n_syllables": {"greedy": "4"}, "sounds_like": {"greedy": "Ichthyosaur"}}
+{"item_id": "en_impulsion", "first_letter": {"greedy": "I."}, "n_letters": {"greedy": "9"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Impression"}}
+{"item_id": "en_inclosure", "first_letter": {"greedy": "I."}, "n_letters": {"greedy": "9"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Inclusion"}}
+{"item_id": "en_independency", "first_letter": {"greedy": "I."}, "n_letters": {"greedy": "11"}, "n_syllables": {"greedy": "7"}, "sounds_like": {"greedy": "Independence"}}
+{"item_id": "en_indumentum", "first_letter": {"greedy": "I."}, "n_letters": {"greedy": "9"}, "n_syllables": {"greedy": "5"}, "sounds_like": {"greedy": "Indolent"}}
+{"item_id": "en_inoculant", "first_letter": {"greedy": "I."}, "n_letters": {"greedy": "9"}, "n_syllables": {"greedy": "4"}, "sounds_like": {"greedy": "Incident"}}
+{"item_id": "en_insurrectionist", "first_letter": {"greedy": "I."}, "n_letters": {"greedy": "13"}, "n_syllables": {"greedy": "5"}, "sounds_like": {"greedy": "Instructionist"}}
+{"item_id": "en_intellection", "first_letter": {"greedy": "I."}, "n_letters": {"greedy": "10"}, "n_syllables": {"greedy": "5"}, "sounds_like": {"greedy": "Intercision"}}
+{"item_id": "en_introjection", "first_letter": {"greedy": "I."}, "n_letters": {"greedy": "11"}, "n_syllables": {"greedy": "5"}, "sounds_like": {"greedy": "Intrigue"}}
+{"item_id": "en_invigoration", "first_letter": {"greedy": "I."}, "n_letters": {"greedy": "12"}, "n_syllables": {"greedy": "5"}, "sounds_like": {"greedy": "Vigilant"}}
+{"item_id": "en_involucre", "first_letter": {"greedy": "I."}, "n_letters": {"greedy": "9"}, "n_syllables": {"greedy": "4"}, "sounds_like": {"greedy": "Involve"}}
+{"item_id": "en_isosorbide", "first_letter": {"greedy": "I."}, "n_letters": {"greedy": "9"}, "n_syllables": {"greedy": "5"}, "sounds_like": {"greedy": "Absorbent"}}
+{"item_id": "en_javelina", "first_letter": {"greedy": "J"}, "n_letters": {"greedy": "7"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Jaguar"}}
+{"item_id": "en_jewelweed", "first_letter": {"greedy": "J"}, "n_letters": {"greedy": "9"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Julep."}}
+{"item_id": "en_jook", "first_letter": {"greedy": "J"}, "n_letters": {"greedy": "4"}, "n_syllables": {"greedy": "1"}, "sounds_like": {"greedy": "Hook"}}
+{"item_id": "en_karabiner", "first_letter": {"greedy": "K"}, "n_letters": {"greedy": "8"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Barber"}}
+{"item_id": "en_kilobit", "first_letter": {"greedy": "K"}, "n_letters": {"greedy": "7"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Kilobyte"}}
+{"item_id": "en_koinonia", "first_letter": {"greedy": "K"}, "n_letters": {"greedy": "8"}, "n_syllables": {"greedy": "4"}, "sounds_like": {"greedy": "Coinage"}}
+{"item_id": "en_kumis", "first_letter": {"greedy": "K"}, "n_letters": {"greedy": "5"}, "n_syllables": {"greedy": "2"}, "sounds_like": {"greedy": "Kumis sounds similar to \"comes"}}
+{"item_id": "en_kurrajong", "first_letter": {"greedy": "K."}, "n_letters": {"greedy": "9"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Burragong"}}
+{"item_id": "en_labium", "first_letter": {"greedy": "L"}, "n_letters": {"greedy": "5"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Lambit"}}
+{"item_id": "en_larghetto", "first_letter": {"greedy": "L"}, "n_letters": {"greedy": "8"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Ragazzo"}}
+{"item_id": "en_lateen", "first_letter": {"greedy": "L"}, "n_letters": {"greedy": "6"}, "n_syllables": {"greedy": "2"}, "sounds_like": {"greedy": "Plateau"}}
+{"item_id": "en_laterality", "first_letter": {"greedy": "L"}, "n_letters": {"greedy": "10"}, "n_syllables": {"greedy": "5"}, "sounds_like": {"greedy": "Literacy"}}
+{"item_id": "en_lavabo", "first_letter": {"greedy": "L"}, "n_letters": {"greedy": "5"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Ravage"}}
+{"item_id": "en_lazarette", "first_letter": {"greedy": "L"}, "n_letters": {"greedy": "9"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Bazaar"}}
+{"item_id": "en_leatherwood", "first_letter": {"greedy": "L"}, "n_letters": {"greedy": "10"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Weathered"}}
+{"item_id": "en_lechwe", "first_letter": {"greedy": "L"}, "n_letters": {"greedy": "5"}, "n_syllables": {"greedy": "2"}, "sounds_like": {"greedy": "Sheath."}}
+{"item_id": "en_leflunomide", "first_letter": {"greedy": "L"}, "n_letters": {"greedy": "9"}, "n_syllables": {"greedy": "5"}, "sounds_like": {"greedy": "Leflunomide sounds similar to"}}
+{"item_id": "en_leitmotiv", "first_letter": {"greedy": "L"}, "n_letters": {"greedy": "9"}, "n_syllables": {"greedy": "4"}, "sounds_like": {"greedy": "Lettuce"}}
+{"item_id": "en_lemniscus", "first_letter": {"greedy": "L"}, "n_letters": {"greedy": "9"}, "n_syllables": {"greedy": "4"}, "sounds_like": {"greedy": "Meniscus."}}
+{"item_id": "en_leptospira", "first_letter": {"greedy": "L"}, "n_letters": {"greedy": "9"}, "n_syllables": {"greedy": "5"}, "sounds_like": {"greedy": "Leprosy"}}
+{"item_id": "en_levirate", "first_letter": {"greedy": "L"}, "n_letters": {"greedy": "8"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Vibrate"}}
+{"item_id": "en_liebfraumilch", "first_letter": {"greedy": "L"}, "n_letters": {"greedy": "13"}, "n_syllables": {"greedy": "7"}, "sounds_like": {"greedy": "Biergarten"}}
+{"item_id": "en_lineament", "first_letter": {"greedy": "L"}, "n_letters": {"greedy": "8"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Limeant"}}
+{"item_id": "en_liposome", "first_letter": {"greedy": "L"}, "n_letters": {"greedy": "7"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Lisp."}}
+{"item_id": "en_literalness", "first_letter": {"greedy": "L"}, "n_letters": {"greedy": "10"}, "n_syllables": {"greedy": "5"}, "sounds_like": {"greedy": "Literalness sounds similar to \"literacy"}}
+{"item_id": "en_lithotomy", "first_letter": {"greedy": "L"}, "n_letters": {"greedy": "9"}, "n_syllables": {"greedy": "4"}, "sounds_like": {"greedy": "Thalidomide"}}
+{"item_id": "en_litotes", "first_letter": {"greedy": "L"}, "n_letters": {"greedy": "7"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Lithium"}}
+{"item_id": "en_lomustine", "first_letter": {"greedy": "L"}, "n_letters": {"greedy": "8"}, "n_syllables": {"greedy": "4"}, "sounds_like": {"greedy": "Luminesce"}}
+{"item_id": "en_lumper", "first_letter": {"greedy": "L"}, "n_letters": {"greedy": "5"}, "n_syllables": {"greedy": "2"}, "sounds_like": {"greedy": "Dumper"}}
+{"item_id": "en_lysin", "first_letter": {"greedy": "L"}, "n_letters": {"greedy": "5"}, "n_syllables": {"greedy": "2"}, "sounds_like": {"greedy": "Lysin sounds similar to \"listen"}}
+{"item_id": "en_malarky", "first_letter": {"greedy": "M"}, "n_letters": {"greedy": "7"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Malarkey"}}
+{"item_id": "en_mamey", "first_letter": {"greedy": "M"}, "n_letters": {"greedy": "5"}, "n_syllables": {"greedy": "2"}, "sounds_like": {"greedy": "Mammy"}}
+{"item_id": "en_manakin", "first_letter": {"greedy": "M"}, "n_letters": {"greedy": "7"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Banana"}}
+{"item_id": "en_manat", "first_letter": {"greedy": "M"}, "n_letters": {"greedy": "5"}, "n_syllables": {"greedy": "2"}, "sounds_like": {"greedy": "Banat"}}
+{"item_id": "en_mangabey", "first_letter": {"greedy": "M"}, "n_letters": {"greedy": "7"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Mangrove"}}
+{"item_id": "en_maravilla", "first_letter": {"greedy": "M"}, "n_letters": {"greedy": "8"}, "n_syllables": {"greedy": "4"}, "sounds_like": {"greedy": "Harborilla"}}
+{"item_id": "en_mastaba", "first_letter": {"greedy": "M"}, "n_letters": {"greedy": "6"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Mastiff"}}
+{"item_id": "en_mastopexy", "first_letter": {"greedy": "M"}, "n_letters": {"greedy": "9"}, "n_syllables": {"greedy": "4"}, "sounds_like": {"greedy": "Masturbation"}}
+{"item_id": "en_maulers", "first_letter": {"greedy": "M"}, "n_letters": {"greedy": "7"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Maulers sounds similar to \"m"}}
+{"item_id": "en_mealybug", "first_letter": {"greedy": "M"}, "n_letters": {"greedy": "8"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Meadow"}}
+{"item_id": "en_mefloquine", "first_letter": {"greedy": "M"}, "n_letters": {"greedy": "8"}, "n_syllables": {"greedy": "4"}, "sounds_like": {"greedy": "Melofane"}}
+{"item_id": "en_menorrhagia", "first_letter": {"greedy": "M"}, "n_letters": {"greedy": "10"}, "n_syllables": {"greedy": "5"}, "sounds_like": {"greedy": "Menagerie"}}
+{"item_id": "en_messuage", "first_letter": {"greedy": "M"}, "n_letters": {"greedy": "8"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Measure"}}
+{"item_id": "en_mestiza", "first_letter": {"greedy": "M"}, "n_letters": {"greedy": "6"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Mestiza sounds similar to \"m"}}
+{"item_id": "en_metaphysis", "first_letter": {"greedy": "M"}, "n_letters": {"greedy": "9"}, "n_syllables": {"greedy": "5"}, "sounds_like": {"greedy": "Metaphysics"}}
+{"item_id": "en_minicar", "first_letter": {"greedy": "M"}, "n_letters": {"greedy": "7"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Minivan"}}
+{"item_id": "en_mitomycin", "first_letter": {"greedy": "M"}, "n_letters": {"greedy": "8"}, "n_syllables": {"greedy": "4"}, "sounds_like": {"greedy": "Mitosis."}}
+{"item_id": "en_mizen", "first_letter": {"greedy": "M"}, "n_letters": {"greedy": "5"}, "n_syllables": {"greedy": "2"}, "sounds_like": {"greedy": "Misanthrope"}}
+{"item_id": "en_molality", "first_letter": {"greedy": "M"}, "n_letters": {"greedy": "8"}, "n_syllables": {"greedy": "4"}, "sounds_like": {"greedy": "Molarity"}}
+{"item_id": "en_molarity", "first_letter": {"greedy": "M"}, "n_letters": {"greedy": "7"}, "n_syllables": {"greedy": "4"}, "sounds_like": {"greedy": "Moral"}}
+{"item_id": "en_monal", "first_letter": {"greedy": "M"}, "n_letters": {"greedy": "5"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Monial sounds similar to \"monial"}}
+{"item_id": "en_moong", "first_letter": {"greedy": "M"}, "n_letters": {"greedy": "5"}, "n_syllables": {"greedy": "2"}, "sounds_like": {"greedy": "Hoon."}}
+{"item_id": "en_morion", "first_letter": {"greedy": "M"}, "n_letters": {"greedy": "5"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Morion sounds similar to \"moron"}}
+{"item_id": "en_mudguard", "first_letter": {"greedy": "M"}, "n_letters": {"greedy": "8"}, "n_syllables": {"greedy": "2"}, "sounds_like": {"greedy": "Mudguard sounds similar to \"m"}}
+{"item_id": "en_multiflora", "first_letter": {"greedy": "M"}, "n_letters": {"greedy": "9"}, "n_syllables": {"greedy": "5"}, "sounds_like": {"greedy": "Multiflora sounds similar to \""}}
+{"item_id": "en_muniments", "first_letter": {"greedy": "M"}, "n_letters": {"greedy": "8"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Communions"}}
+{"item_id": "en_muskmelon", "first_letter": {"greedy": "M"}, "n_letters": {"greedy": "9"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Huskum"}}
+{"item_id": "en_mustiness", "first_letter": {"greedy": "M"}, "n_letters": {"greedy": "9"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Mistiness"}}
+{"item_id": "en_myalgia", "first_letter": {"greedy": "M"}, "n_letters": {"greedy": "7"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Myopia"}}
+{"item_id": "en_myelogram", "first_letter": {"greedy": "M"}, "n_letters": {"greedy": "8"}, "n_syllables": {"greedy": "4"}, "sounds_like": {"greedy": "Myoglobin"}}
+{"item_id": "en_myometrium", "first_letter": {"greedy": "M"}, "n_letters": {"greedy": "9"}, "n_syllables": {"greedy": "5"}, "sounds_like": {"greedy": "Myocardium"}}
+{"item_id": "en_nanus", "first_letter": {"greedy": "N"}, "n_letters": {"greedy": "5"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Canvas"}}
+{"item_id": "en_needlefish", "first_letter": {"greedy": "N"}, "n_letters": {"greedy": "9"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Needle."}}
+{"item_id": "en_neuroblast", "first_letter": {"greedy": "N"}, "n_letters": {"greedy": "10"}, "n_syllables": {"greedy": "4"}, "sounds_like": {"greedy": "Nebula"}}
+{"item_id": "en_neuropil", "first_letter": {"greedy": "N"}, "n_letters": {"greedy": "8"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Nephew."}}
+{"item_id": "en_nocturia", "first_letter": {"greedy": "N"}, "n_letters": {"greedy": "8"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Nostalgia"}}
+{"item_id": "en_noncitizen", "first_letter": {"greedy": "N"}, "n_letters": {"greedy": "10"}, "n_syllables": {"greedy": "4"}, "sounds_like": {"greedy": "Nominant"}}
+{"item_id": "en_nondisjunction", "first_letter": {"greedy": "N"}, "n_letters": {"greedy": "12"}, "n_syllables": {"greedy": "6"}, "sounds_like": {"greedy": "Disjoint."}}
+{"item_id": "en_nonresistance", "first_letter": {"greedy": "N"}, "n_letters": {"greedy": "12"}, "n_syllables": {"greedy": "6"}, "sounds_like": {"greedy": "Nonchalant"}}
+{"item_id": "en_norethindrone", "first_letter": {"greedy": "N"}, "n_letters": {"greedy": "11"}, "n_syllables": {"greedy": "6"}, "sounds_like": {"greedy": "Northeast"}}
+{"item_id": "en_nosology", "first_letter": {"greedy": "N"}, "n_letters": {"greedy": "8"}, "n_syllables": {"greedy": "4"}, "sounds_like": {"greedy": "Biology"}}
+{"item_id": "en_noumenon", "first_letter": {"greedy": "N"}, "n_letters": {"greedy": "8"}, "n_syllables": {"greedy": "4"}, "sounds_like": {"greedy": "Noun."}}
+{"item_id": "en_oblateness", "first_letter": {"greedy": "O"}, "n_letters": {"greedy": "10"}, "n_syllables": {"greedy": "4"}, "sounds_like": {"greedy": "Oblivion"}}
+{"item_id": "en_ocellus", "first_letter": {"greedy": "O"}, "n_letters": {"greedy": "7"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Cellus"}}
+{"item_id": "en_oestradiol", "first_letter": {"greedy": "O"}, "n_letters": {"greedy": "9"}, "n_syllables": {"greedy": "5"}, "sounds_like": {"greedy": "Ostrich"}}
+{"item_id": "en_orchitis", "first_letter": {"greedy": "O"}, "n_letters": {"greedy": "8"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Orthotics"}}
+{"item_id": "en_ordure", "first_letter": {"greedy": "O"}, "n_letters": {"greedy": "5"}, "n_syllables": {"greedy": "2"}, "sounds_like": {"greedy": "Order"}}
+{"item_id": "en_ornithischian", "first_letter": {"greedy": "O"}, "n_letters": {"greedy": "13"}, "n_syllables": {"greedy": "5"}, "sounds_like": {"greedy": "Orthodontic"}}
+{"item_id": "en_osteitis", "first_letter": {"greedy": "O"}, "n_letters": {"greedy": "8"}, "n_syllables": {"greedy": "4"}, "sounds_like": {"greedy": "Osteitis sounds similar to \"ost"}}
+{"item_id": "en_otology", "first_letter": {"greedy": "O"}, "n_letters": {"greedy": "7"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Osteology"}}
+{"item_id": "en_overrating", "first_letter": {"greedy": "O"}, "n_letters": {"greedy": "10"}, "n_syllables": {"greedy": "4"}, "sounds_like": {"greedy": "Overload"}}
+{"item_id": "en_panoche", "first_letter": {"greedy": "P"}, "n_letters": {"greedy": "6"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Poncho"}}
+{"item_id": "en_papule", "first_letter": {"greedy": "P"}, "n_letters": {"greedy": "5"}, "n_syllables": {"greedy": "2"}, "sounds_like": {"greedy": "Paprika"}}
+{"item_id": "en_paramyxovirus", "first_letter": {"greedy": "P"}, "n_letters": {"greedy": "13"}, "n_syllables": {"greedy": "6"}, "sounds_like": {"greedy": "Paralysis."}}
+{"item_id": "en_paresthesia", "first_letter": {"greedy": "P"}, "n_letters": {"greedy": "10"}, "n_syllables": {"greedy": "5"}, "sounds_like": {"greedy": "Hysteria"}}
+{"item_id": "en_paspalum", "first_letter": {"greedy": "P"}, "n_letters": {"greedy": "8"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Passion."}}
+{"item_id": "en_passerine", "first_letter": {"greedy": "P"}, "n_letters": {"greedy": "8"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Pacerine"}}
+{"item_id": "en_pectus", "first_letter": {"greedy": "P"}, "n_letters": {"greedy": "6"}, "n_syllables": {"greedy": "2"}, "sounds_like": {"greedy": "Excess"}}
+{"item_id": "en_penicillamine", "first_letter": {"greedy": "P"}, "n_letters": {"greedy": "12"}, "n_syllables": {"greedy": "6"}, "sounds_like": {"greedy": "Pencillin"}}
+{"item_id": "en_penult", "first_letter": {"greedy": "P"}, "n_letters": {"greedy": "6"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Penthouse."}}
+{"item_id": "en_perambulation", "first_letter": {"greedy": "P"}, "n_letters": {"greedy": "12"}, "n_syllables": {"greedy": "5"}, "sounds_like": {"greedy": "Perfidy"}}
+{"item_id": "en_perilymph", "first_letter": {"greedy": "P"}, "n_letters": {"greedy": "9"}, "n_syllables": {"greedy": "4"}, "sounds_like": {"greedy": "Perfidy"}}
+{"item_id": "en_periosteum", "first_letter": {"greedy": "P"}, "n_letters": {"greedy": "10"}, "n_syllables": {"greedy": "5"}, "sounds_like": {"greedy": "Perfidy"}}
+{"item_id": "en_periphrasis", "first_letter": {"greedy": "P"}, "n_letters": {"greedy": "11"}, "n_syllables": {"greedy": "5"}, "sounds_like": {"greedy": "Perfidy"}}
+{"item_id": "en_peroneus", "first_letter": {"greedy": "P"}, "n_letters": {"greedy": "9"}, "n_syllables": {"greedy": "4"}, "sounds_like": {"greedy": "Peroneus sounds similar to \"person"}}
+{"item_id": "en_phagocyte", "first_letter": {"greedy": "P"}, "n_letters": {"greedy": "9"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Bagpipe"}}
+{"item_id": "en_phalloplasty", "first_letter": {"greedy": "P"}, "n_letters": {"greedy": "10"}, "n_syllables": {"greedy": "4"}, "sounds_like": {"greedy": "Calliope"}}
+{"item_id": "en_phenobarbitone", "first_letter": {"greedy": "P"}, "n_letters": {"greedy": "12"}, "n_syllables": {"greedy": "6"}, "sounds_like": {"greedy": "Phenomenon"}}
+{"item_id": "en_phlogopite", "first_letter": {"greedy": "P"}, "n_letters": {"greedy": "9"}, "n_syllables": {"greedy": "5"}, "sounds_like": {"greedy": "Flog"}}
+{"item_id": "en_pillager", "first_letter": {"greedy": "P"}, "n_letters": {"greedy": "8"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Pilfer"}}
+{"item_id": "en_pinny", "first_letter": {"greedy": "P"}, "n_letters": {"greedy": "5"}, "n_syllables": {"greedy": "2"}, "sounds_like": {"greedy": "Winnie"}}
+{"item_id": "en_pintado", "first_letter": {"greedy": "P"}, "n_letters": {"greedy": "6"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Painted"}}
+{"item_id": "en_pipet", "first_letter": {"greedy": "P"}, "n_letters": {"greedy": "4"}, "n_syllables": {"greedy": "2"}, "sounds_like": {"greedy": "Sippet"}}
+{"item_id": "en_piroxicam", "first_letter": {"greedy": "P."}, "n_letters": {"greedy": "9"}, "n_syllables": {"greedy": "5"}, "sounds_like": {"greedy": "Pyjamas"}}
+{"item_id": "en_pizzaz", "first_letter": {"greedy": "P"}, "n_letters": {"greedy": "6"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Fizz."}}
+{"item_id": "en_plasmin", "first_letter": {"greedy": "P"}, "n_letters": {"greedy": "7"}, "n_syllables": {"greedy": "2"}, "sounds_like": {"greedy": "Glassman"}}
+{"item_id": "en_pleating", "first_letter": {"greedy": "P"}, "n_letters": {"greedy": "8"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Pleading"}}
+{"item_id": "en_plyers", "first_letter": {"greedy": "P"}, "n_letters": {"greedy": "5"}, "n_syllables": {"greedy": "2"}, "sounds_like": {"greedy": "Pliers"}}
+{"item_id": "en_pochard", "first_letter": {"greedy": "P."}, "n_letters": {"greedy": "6"}, "n_syllables": {"greedy": "2"}, "sounds_like": {"greedy": "Porch"}}
+{"item_id": "en_poilu", "first_letter": {"greedy": "P"}, "n_letters": {"greedy": "5"}, "n_syllables": {"greedy": "2"}, "sounds_like": {"greedy": "Pillow"}}
+{"item_id": "en_polychaete", "first_letter": {"greedy": "P"}, "n_letters": {"greedy": "9"}, "n_syllables": {"greedy": "5"}, "sounds_like": {"greedy": "Polyphony"}}
+{"item_id": "en_polysemy", "first_letter": {"greedy": "P"}, "n_letters": {"greedy": "8"}, "n_syllables": {"greedy": "4"}, "sounds_like": {"greedy": "Polyphony."}}
+{"item_id": "en_pomology", "first_letter": {"greedy": "P"}, "n_letters": {"greedy": "8"}, "n_syllables": {"greedy": "4"}, "sounds_like": {"greedy": "Psychology"}}
+{"item_id": "en_postilion", "first_letter": {"greedy": "P"}, "n_letters": {"greedy": "9"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Postman"}}
+{"item_id": "en_postposition", "first_letter": {"greedy": "P"}, "n_letters": {"greedy": "11"}, "n_syllables": {"greedy": "4"}, "sounds_like": {"greedy": "Posture."}}
+{"item_id": "en_praesidium", "first_letter": {"greedy": "P"}, "n_letters": {"greedy": "9"}, "n_syllables": {"greedy": "5"}, "sounds_like": {"greedy": "Preside"}}
+{"item_id": "en_precociousness", "first_letter": {"greedy": "P"}, "n_letters": {"greedy": "14"}, "n_syllables": {"greedy": "5"}, "sounds_like": {"greedy": "Precipitous"}}
+{"item_id": "en_preexistence", "first_letter": {"greedy": "P"}, "n_letters": {"greedy": "12"}, "n_syllables": {"greedy": "5"}, "sounds_like": {"greedy": "Presence"}}
+{"item_id": "en_presbyopia", "first_letter": {"greedy": "P"}, "n_letters": {"greedy": "9"}, "n_syllables": {"greedy": "4"}, "sounds_like": {"greedy": "Presbyopia sounds similar to \"pres"}}
+{"item_id": "en_prevue", "first_letter": {"greedy": "P"}, "n_letters": {"greedy": "5"}, "n_syllables": {"greedy": "2"}, "sounds_like": {"greedy": "Review"}}
+{"item_id": "en_propoxyphene", "first_letter": {"greedy": "P"}, "n_letters": {"greedy": "11"}, "n_syllables": {"greedy": "6"}, "sounds_like": {"greedy": "Prophecy"}}
+{"item_id": "en_proselyte", "first_letter": {"greedy": "P"}, "n_letters": {"greedy": "9"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Prosperity"}}
+{"item_id": "en_prosthodontics", "first_letter": {"greedy": "P"}, "n_letters": {"greedy": "13"}, "n_syllables": {"greedy": "6"}, "sounds_like": {"greedy": "Psychotics"}}
+{"item_id": "en_psephologist", "first_letter": {"greedy": "P"}, "n_letters": {"greedy": "10"}, "n_syllables": {"greedy": "5"}, "sounds_like": {"greedy": "Psychologist"}}
+{"item_id": "en_pseud", "first_letter": {"greedy": "P"}, "n_letters": {"greedy": "5"}, "n_syllables": {"greedy": "2"}, "sounds_like": {"greedy": "Pulse"}}
+{"item_id": "en_psylla", "first_letter": {"greedy": "P"}, "n_letters": {"greedy": "6"}, "n_syllables": {"greedy": "2"}, "sounds_like": {"greedy": "Silva"}}
+{"item_id": "en_puku", "first_letter": {"greedy": "P"}, "n_letters": {"greedy": "4"}, "n_syllables": {"greedy": "2"}, "sounds_like": {"greedy": "Puck"}}
+{"item_id": "en_pumpkinseed", "first_letter": {"greedy": "P"}, "n_letters": {"greedy": "10"}, "n_syllables": {"greedy": "4"}, "sounds_like": {"greedy": "Chumpkin"}}
+{"item_id": "en_pyrexia", "first_letter": {"greedy": "P"}, "n_letters": {"greedy": "7"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Syzygy"}}
+{"item_id": "en_quadric", "first_letter": {"greedy": "Q"}, "n_letters": {"greedy": "7"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Quadrant"}}
+{"item_id": "en_quadruplicate", "first_letter": {"greedy": "Q"}, "n_letters": {"greedy": "12"}, "n_syllables": {"greedy": "5"}, "sounds_like": {"greedy": "Quadruplicate sounds similar to \"duplicate"}}
+{"item_id": "en_quinsy", "first_letter": {"greedy": "Q"}, "n_letters": {"greedy": "6"}, "n_syllables": {"greedy": "2"}, "sounds_like": {"greedy": "Quinsy sounds similar to \"qu"}}
+{"item_id": "en_raffinose", "first_letter": {"greedy": "R"}, "n_letters": {"greedy": "9"}, "n_syllables": {"greedy": "5"}, "sounds_like": {"greedy": "Raffinose sounds similar to \""}}
+{"item_id": "en_ramee", "first_letter": {"greedy": "R"}, "n_letters": {"greedy": "5"}, "n_syllables": {"greedy": "2"}, "sounds_like": {"greedy": "Ramee sounds similar to \"ram"}}
+{"item_id": "en_ramie", "first_letter": {"greedy": "R"}, "n_letters": {"greedy": "5"}, "n_syllables": {"greedy": "2"}, "sounds_like": {"greedy": "Ramee"}}
+{"item_id": "en_randomisation", "first_letter": {"greedy": "R"}, "n_letters": {"greedy": "12"}, "n_syllables": {"greedy": "5"}, "sounds_like": {"greedy": "Civilisation"}}
+{"item_id": "en_ratel", "first_letter": {"greedy": "R"}, "n_letters": {"greedy": "4"}, "n_syllables": {"greedy": "2"}, "sounds_like": {"greedy": "Halter"}}
+{"item_id": "en_rathskeller", "first_letter": {"greedy": "R"}, "n_letters": {"greedy": "9"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Bathhouse"}}
+{"item_id": "en_recrudescence", "first_letter": {"greedy": "R"}, "n_letters": {"greedy": "12"}, "n_syllables": {"greedy": "5"}, "sounds_like": {"greedy": "Redundance"}}
+{"item_id": "en_rectocele", "first_letter": {"greedy": "R"}, "n_letters": {"greedy": "8"}, "n_syllables": {"greedy": "4"}, "sounds_like": {"greedy": "Rectify"}}
+{"item_id": "en_redpoll", "first_letter": {"greedy": "R"}, "n_letters": {"greedy": "6"}, "n_syllables": {"greedy": "2"}, "sounds_like": {"greedy": "Teddy"}}
+{"item_id": "en_renovator", "first_letter": {"greedy": "R"}, "n_letters": {"greedy": "8"}, "n_syllables": {"greedy": "4"}, "sounds_like": {"greedy": "Narrator"}}
+{"item_id": "en_residuum", "first_letter": {"greedy": "R"}, "n_letters": {"greedy": "8"}, "n_syllables": {"greedy": "4"}, "sounds_like": {"greedy": "Residue"}}
+{"item_id": "en_reviser", "first_letter": {"greedy": "R"}, "n_letters": {"greedy": "7"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Reviewer"}}
+{"item_id": "en_ritualism", "first_letter": {"greedy": "R"}, "n_letters": {"greedy": "8"}, "n_syllables": {"greedy": "4"}, "sounds_like": {"greedy": "Ritualism sounds similar to \""}}
+{"item_id": "en_roadman", "first_letter": {"greedy": "R"}, "n_letters": {"greedy": "6"}, "n_syllables": {"greedy": "2"}, "sounds_like": {"greedy": "Roadside"}}
+{"item_id": "en_ropeway", "first_letter": {"greedy": "R"}, "n_letters": {"greedy": "7"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Rampway"}}
+{"item_id": "en_sahuaro", "first_letter": {"greedy": "S"}, "n_letters": {"greedy": "6"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Savannah"}}
+{"item_id": "en_salal", "first_letter": {"greedy": "S"}, "n_letters": {"greedy": "5"}, "n_syllables": {"greedy": "2"}, "sounds_like": {"greedy": "Sandal"}}
+{"item_id": "en_salmonid", "first_letter": {"greedy": "S"}, "n_letters": {"greedy": "7"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Salmonid sounds similar to \"sal"}}
+{"item_id": "en_saprolite", "first_letter": {"greedy": "S"}, "n_letters": {"greedy": "9"}, "n_syllables": {"greedy": "4"}, "sounds_like": {"greedy": "Saprophyte"}}
+{"item_id": "en_sarcolemma", "first_letter": {"greedy": "S"}, "n_letters": {"greedy": "9"}, "n_syllables": {"greedy": "4"}, "sounds_like": {"greedy": "Sarcasm"}}
+{"item_id": "en_sawm", "first_letter": {"greedy": "S"}, "n_letters": {"greedy": "3"}, "n_syllables": {"greedy": "1"}, "sounds_like": {"greedy": "Sawm sounds similar to \"s"}}
+{"item_id": "en_scaup", "first_letter": {"greedy": "S"}, "n_letters": {"greedy": "5"}, "n_syllables": {"greedy": "2"}, "sounds_like": {"greedy": "Scape."}}
+{"item_id": "en_schematization", "first_letter": {"greedy": "S"}, "n_letters": {"greedy": "13"}, "n_syllables": {"greedy": "6"}, "sounds_like": {"greedy": "Civilization"}}
+{"item_id": "en_schistosome", "first_letter": {"greedy": "S"}, "n_letters": {"greedy": "10"}, "n_syllables": {"greedy": "4"}, "sounds_like": {"greedy": "Chrysosome"}}
+{"item_id": "en_scofflaw", "first_letter": {"greedy": "S"}, "n_letters": {"greedy": "7"}, "n_syllables": {"greedy": "2"}, "sounds_like": {"greedy": "Scourge"}}
+{"item_id": "en_scorner", "first_letter": {"greedy": "S"}, "n_letters": {"greedy": "6"}, "n_syllables": {"greedy": "2"}, "sounds_like": {"greedy": "Corner"}}
+{"item_id": "en_scrutineer", "first_letter": {"greedy": "S"}, "n_letters": {"greedy": "10"}, "n_syllables": {"greedy": "4"}, "sounds_like": {"greedy": "Sturgeon"}}
+{"item_id": "en_semivowel", "first_letter": {"greedy": "S"}, "n_letters": {"greedy": "9"}, "n_syllables": {"greedy": "4"}, "sounds_like": {"greedy": "Seminal."}}
+{"item_id": "en_sensitizer", "first_letter": {"greedy": "S"}, "n_letters": {"greedy": "10"}, "n_syllables": {"greedy": "4"}, "sounds_like": {"greedy": "Sensitizer sounds similar to \"s"}}
+{"item_id": "en_serail", "first_letter": {"greedy": "S"}, "n_letters": {"greedy": "6"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Serial"}}
+{"item_id": "en_sgraffito", "first_letter": {"greedy": "S"}, "n_letters": {"greedy": "8"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Safari"}}
+{"item_id": "en_shabbiness", "first_letter": {"greedy": "S"}, "n_letters": {"greedy": "9"}, "n_syllables": {"greedy": "4"}, "sounds_like": {"greedy": "Sabbath"}}
+{"item_id": "en_shako", "first_letter": {"greedy": "S"}, "n_letters": {"greedy": "5"}, "n_syllables": {"greedy": "2"}, "sounds_like": {"greedy": "Chako"}}
+{"item_id": "en_silenus", "first_letter": {"greedy": "S"}, "n_letters": {"greedy": "7"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Silent"}}
+{"item_id": "en_sinlessness", "first_letter": {"greedy": "S"}, "n_letters": {"greedy": "10"}, "n_syllables": {"greedy": "4"}, "sounds_like": {"greedy": "Sensibility"}}
+{"item_id": "en_siris", "first_letter": {"greedy": "S"}, "n_letters": {"greedy": "5"}, "n_syllables": {"greedy": "2"}, "sounds_like": {"greedy": "Sirius"}}
+{"item_id": "en_skittishness", "first_letter": {"greedy": "S"}, "n_letters": {"greedy": "11"}, "n_syllables": {"greedy": "4"}, "sounds_like": {"greedy": "Skepticism"}}
+{"item_id": "en_smocking", "first_letter": {"greedy": "S"}, "n_letters": {"greedy": "7"}, "n_syllables": {"greedy": "2"}, "sounds_like": {"greedy": "Socking"}}
+{"item_id": "en_sodalite", "first_letter": {"greedy": "S"}, "n_letters": {"greedy": "7"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Sandalwood."}}
+{"item_id": "en_soddy", "first_letter": {"greedy": "S."}, "n_letters": {"greedy": "5"}, "n_syllables": {"greedy": "2"}, "sounds_like": {"greedy": "Muddy"}}
+{"item_id": "en_solfeggio", "first_letter": {"greedy": "S"}, "n_letters": {"greedy": "8"}, "n_syllables": {"greedy": "4"}, "sounds_like": {"greedy": "Solfeggio sounds similar to \""}}
+{"item_id": "en_sorbate", "first_letter": {"greedy": "S"}, "n_letters": {"greedy": "7"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Sorbet."}}
+{"item_id": "en_sorbent", "first_letter": {"greedy": "S"}, "n_letters": {"greedy": "7"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Sorbet"}}
+{"item_id": "en_soursop", "first_letter": {"greedy": "S"}, "n_letters": {"greedy": "7"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Sorbet"}}
+{"item_id": "en_spacefaring", "first_letter": {"greedy": "S"}, "n_letters": {"greedy": "11"}, "n_syllables": {"greedy": "4"}, "sounds_like": {"greedy": "Placebo"}}
+{"item_id": "en_spadix", "first_letter": {"greedy": "S"}, "n_letters": {"greedy": "6"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Padix"}}
+{"item_id": "en_spindrift", "first_letter": {"greedy": "S"}, "n_letters": {"greedy": "9"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Windrift"}}
+{"item_id": "en_spirochete", "first_letter": {"greedy": "S"}, "n_letters": {"greedy": "9"}, "n_syllables": {"greedy": "4"}, "sounds_like": {"greedy": "Sporadic."}}
+{"item_id": "en_spiv", "first_letter": {"greedy": "S"}, "n_letters": {"greedy": "4"}, "n_syllables": {"greedy": "1"}, "sounds_like": {"greedy": "Sip."}}
+{"item_id": "en_splenomegaly", "first_letter": {"greedy": "S"}, "n_letters": {"greedy": "11"}, "n_syllables": {"greedy": "5"}, "sounds_like": {"greedy": "Splenomegaly sounds similar to"}}
+{"item_id": "en_sporotrichosis", "first_letter": {"greedy": "S"}, "n_letters": {"greedy": "13"}, "n_syllables": {"greedy": "6"}, "sounds_like": {"greedy": "Sport."}}
+{"item_id": "en_sporulation", "first_letter": {"greedy": "S"}, "n_letters": {"greedy": "11"}, "n_syllables": {"greedy": "4"}, "sounds_like": {"greedy": "Sporulation sounds similar to \"s"}}
+{"item_id": "en_sprag", "first_letter": {"greedy": "S"}, "n_letters": {"greedy": "5"}, "n_syllables": {"greedy": "1"}, "sounds_like": {"greedy": "Spray"}}
+{"item_id": "en_steatorrhea", "first_letter": {"greedy": "S"}, "n_letters": {"greedy": "10"}, "n_syllables": {"greedy": "5"}, "sounds_like": {"greedy": "Territorry"}}
+{"item_id": "en_strappado", "first_letter": {"greedy": "S"}, "n_letters": {"greedy": "8"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Rapido"}}
+{"item_id": "en_strapper", "first_letter": {"greedy": "S"}, "n_letters": {"greedy": "7"}, "n_syllables": {"greedy": "2"}, "sounds_like": {"greedy": "Strap."}}
+{"item_id": "en_subvention", "first_letter": {"greedy": "S"}, "n_letters": {"greedy": "9"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Subdue"}}
+{"item_id": "en_sulfonylurea", "first_letter": {"greedy": "S"}, "n_letters": {"greedy": "11"}, "n_syllables": {"greedy": "5"}, "sounds_like": {"greedy": "Sulphur."}}
+{"item_id": "en_sunchoke", "first_letter": {"greedy": "S"}, "n_letters": {"greedy": "7"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Sunkist"}}
+{"item_id": "en_suntrap", "first_letter": {"greedy": "S"}, "n_letters": {"greedy": "6"}, "n_syllables": {"greedy": "2"}, "sounds_like": {"greedy": "Sundown"}}
+{"item_id": "en_supertax", "first_letter": {"greedy": "S"}, "n_letters": {"greedy": "8"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Supercal."}}
+{"item_id": "en_supertonic", "first_letter": {"greedy": "S"}, "n_letters": {"greedy": "9"}, "n_syllables": {"greedy": "4"}, "sounds_like": {"greedy": "Supreme"}}
+{"item_id": "en_supremacism", "first_letter": {"greedy": "S"}, "n_letters": {"greedy": "11"}, "n_syllables": {"greedy": "5"}, "sounds_like": {"greedy": "Supremacy"}}
+{"item_id": "en_suprematism", "first_letter": {"greedy": "S"}, "n_letters": {"greedy": "11"}, "n_syllables": {"greedy": "5"}, "sounds_like": {"greedy": "Supremacy"}}
+{"item_id": "en_sureness", "first_letter": {"greedy": "S"}, "n_letters": {"greedy": "7"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Surgeon"}}
+{"item_id": "en_swearword", "first_letter": {"greedy": "S"}, "n_letters": {"greedy": "8"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Sweater."}}
+{"item_id": "en_sweetbriar", "first_letter": {"greedy": "S"}, "n_letters": {"greedy": "10"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Sweater"}}
+{"item_id": "en_synaesthesia", "first_letter": {"greedy": "S"}, "n_letters": {"greedy": "11"}, "n_syllables": {"greedy": "5"}, "sounds_like": {"greedy": "Sensory"}}
+{"item_id": "en_synapsis", "first_letter": {"greedy": "S"}, "n_letters": {"greedy": "8"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Snapshots"}}
+{"item_id": "en_systole", "first_letter": {"greedy": "S"}, "n_letters": {"greedy": "7"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Syzygy."}}
+{"item_id": "en_tabulator", "first_letter": {"greedy": "T"}, "n_letters": {"greedy": "8"}, "n_syllables": {"greedy": "4"}, "sounds_like": {"greedy": "Calculator"}}
+{"item_id": "en_tadalafil", "first_letter": {"greedy": "T"}, "n_letters": {"greedy": "8"}, "n_syllables": {"greedy": "4"}, "sounds_like": {"greedy": "Talidomide"}}
+{"item_id": "en_takahe", "first_letter": {"greedy": "T"}, "n_letters": {"greedy": "5"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Takings"}}
+{"item_id": "en_tautog", "first_letter": {"greedy": "T"}, "n_letters": {"greedy": "6"}, "n_syllables": {"greedy": "2"}, "sounds_like": {"greedy": "Tough"}}
+{"item_id": "en_tegument", "first_letter": {"greedy": "T"}, "n_letters": {"greedy": "7"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Regiment"}}
+{"item_id": "en_telencephalon", "first_letter": {"greedy": "T"}, "n_letters": {"greedy": "12"}, "n_syllables": {"greedy": "5"}, "sounds_like": {"greedy": "Telson"}}
+{"item_id": "en_teleworking", "first_letter": {"greedy": "T"}, "n_letters": {"greedy": "10"}, "n_syllables": {"greedy": "4"}, "sounds_like": {"greedy": "Televised"}}
+{"item_id": "en_tenia", "first_letter": {"greedy": "T"}, "n_letters": {"greedy": "5"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Tania"}}
+{"item_id": "en_teratogen", "first_letter": {"greedy": "T"}, "n_letters": {"greedy": "9"}, "n_syllables": {"greedy": "4"}, "sounds_like": {"greedy": "Terrorist"}}
+{"item_id": "en_terazosin", "first_letter": {"greedy": "T"}, "n_letters": {"greedy": "9"}, "n_syllables": {"greedy": "5"}, "sounds_like": {"greedy": "Tazarine"}}
+{"item_id": "en_theca", "first_letter": {"greedy": "T"}, "n_letters": {"greedy": "5"}, "n_syllables": {"greedy": "2"}, "sounds_like": {"greedy": "Thea"}}
+{"item_id": "en_thymol", "first_letter": {"greedy": "T"}, "n_letters": {"greedy": "6"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Chimol"}}
+{"item_id": "en_tictac", "first_letter": {"greedy": "T"}, "n_letters": {"greedy": "5"}, "n_syllables": {"greedy": "2"}, "sounds_like": {"greedy": "Ticket"}}
+{"item_id": "en_tisane", "first_letter": {"greedy": "T"}, "n_letters": {"greedy": "5"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Vaseline"}}
+{"item_id": "en_tonometry", "first_letter": {"greedy": "T"}, "n_letters": {"greedy": "9"}, "n_syllables": {"greedy": "4"}, "sounds_like": {"greedy": "Tonometer"}}
+{"item_id": "en_tricorn", "first_letter": {"greedy": "T"}, "n_letters": {"greedy": "7"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Tircon"}}
+{"item_id": "en_triskelion", "first_letter": {"greedy": "T"}, "n_letters": {"greedy": "9"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Triskelion sounds similar to \""}}
+{"item_id": "en_trismus", "first_letter": {"greedy": "T"}, "n_letters": {"greedy": "7"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Trims"}}
+{"item_id": "en_trochee", "first_letter": {"greedy": "T"}, "n_letters": {"greedy": "7"}, "n_syllables": {"greedy": "2"}, "sounds_like": {"greedy": "Trochee sounds similar to \"tro"}}
+{"item_id": "en_tropism", "first_letter": {"greedy": "T"}, "n_letters": {"greedy": "7"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Trope"}}
+{"item_id": "en_truster", "first_letter": {"greedy": "T"}, "n_letters": {"greedy": "6"}, "n_syllables": {"greedy": "2"}, "sounds_like": {"greedy": "Rusher"}}
+{"item_id": "en_tsaritsa", "first_letter": {"greedy": "T"}, "n_letters": {"greedy": "7"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Sarissa"}}
+{"item_id": "en_tularemia", "first_letter": {"greedy": "T"}, "n_letters": {"greedy": "9"}, "n_syllables": {"greedy": "4"}, "sounds_like": {"greedy": "Tulip."}}
+{"item_id": "en_turps", "first_letter": {"greedy": "T"}, "n_letters": {"greedy": "5"}, "n_syllables": {"greedy": "2"}, "sounds_like": {"greedy": "Surps"}}
+{"item_id": "en_ukase", "first_letter": {"greedy": "U."}, "n_letters": {"greedy": "5"}, "n_syllables": {"greedy": "2"}, "sounds_like": {"greedy": "Ukelele"}}
+{"item_id": "en_upcast", "first_letter": {"greedy": "U"}, "n_letters": {"greedy": "6"}, "n_syllables": {"greedy": "2"}, "sounds_like": {"greedy": "Upsurge"}}
+{"item_id": "en_usufruct", "first_letter": {"greedy": "U"}, "n_letters": {"greedy": "8"}, "n_syllables": {"greedy": "4"}, "sounds_like": {"greedy": "Usurp."}}
+{"item_id": "en_uvea", "first_letter": {"greedy": "U."}, "n_letters": {"greedy": "4"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Urea"}}
+{"item_id": "en_uxor", "first_letter": {"greedy": "U"}, "n_letters": {"greedy": "3"}, "n_syllables": {"greedy": "2"}, "sounds_like": {"greedy": "Exor"}}
+{"item_id": "en_valiance", "first_letter": {"greedy": "V"}, "n_letters": {"greedy": "7"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Valiant"}}
+{"item_id": "en_valsartan", "first_letter": {"greedy": "V"}, "n_letters": {"greedy": "8"}, "n_syllables": {"greedy": "4"}, "sounds_like": {"greedy": "Valsalva"}}
+{"item_id": "en_varicocele", "first_letter": {"greedy": "V"}, "n_letters": {"greedy": "9"}, "n_syllables": {"greedy": "4"}, "sounds_like": {"greedy": "Vicarage"}}
+{"item_id": "en_vermifuge", "first_letter": {"greedy": "V"}, "n_letters": {"greedy": "8"}, "n_syllables": {"greedy": "4"}, "sounds_like": {"greedy": "Vermifuge sounds similar to \""}}
+{"item_id": "en_versant", "first_letter": {"greedy": "V"}, "n_letters": {"greedy": "7"}, "n_syllables": {"greedy": "2"}, "sounds_like": {"greedy": "Desert"}}
+{"item_id": "en_vervet", "first_letter": {"greedy": "V"}, "n_letters": {"greedy": "5"}, "n_syllables": {"greedy": "2"}, "sounds_like": {"greedy": "Herbert"}}
+{"item_id": "en_vesuvian", "first_letter": {"greedy": "V"}, "n_letters": {"greedy": "8"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Vesuvian sounds similar to \"vision"}}
+{"item_id": "en_videodisc", "first_letter": {"greedy": "V"}, "n_letters": {"greedy": "8"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Videodisc sounds similar to \""}}
+{"item_id": "en_viniculture", "first_letter": {"greedy": "V"}, "n_letters": {"greedy": "9"}, "n_syllables": {"greedy": "4"}, "sounds_like": {"greedy": "Vindication."}}
+{"item_id": "en_vivarium", "first_letter": {"greedy": "V"}, "n_letters": {"greedy": "8"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Villain"}}
+{"item_id": "en_vizor", "first_letter": {"greedy": "V."}, "n_letters": {"greedy": "5"}, "n_syllables": {"greedy": "2"}, "sounds_like": {"greedy": "Vizor sounds similar to \"visor"}}
+{"item_id": "en_volute", "first_letter": {"greedy": "V"}, "n_letters": {"greedy": "6"}, "n_syllables": {"greedy": "2"}, "sounds_like": {"greedy": "Volute sounds similar to \"volatile\"."}}
+{"item_id": "en_wannabee", "first_letter": {"greedy": "W"}, "n_letters": {"greedy": "7"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Wanderbee"}}
+{"item_id": "en_zettabyte", "first_letter": {"greedy": "Z"}, "n_letters": {"greedy": "9"}, "n_syllables": {"greedy": "5"}, "sounds_like": {"greedy": "Settler"}}
+{"item_id": "en_zoonosis", "first_letter": {"greedy": "Z"}, "n_letters": {"greedy": "8"}, "n_syllables": {"greedy": "3"}, "sounds_like": {"greedy": "Boonosis"}}

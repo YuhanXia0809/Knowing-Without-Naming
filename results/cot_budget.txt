@@ -1,0 +1,32 @@
+============================================================================================
+IS THE CUE-MINUS-RETRY INCREMENT A SAMPLING-BUDGET ARTIFACT?
+============================================================================================
+matched rows (correct cue AND CoT retry present) = 5178
+cue budgets n_cue = [20]; cot budgets n_cot = [5]
+
+--- EN ------------------------------------------------------------------------------
+  A published    greedy+20 vs greedy+5  cue 0.6166  retry 0.3483 | increment +0.2683 [+0.2304,+0.3073]  n=1938 rows / 640 items
+  B greedy only  1 vs 1  (matched)      cue 0.3870  retry 0.1548 | increment +0.2322 [+0.1968,+0.2671]  n=1938 rows / 640 items
+  C cue DOWN to greedy+5 (exact)        cue 0.5164  retry 0.3483 | increment +0.1681 [+0.1300,+0.2049]  n=1938 rows / 640 items
+  D both UP to greedy+20 (iid)          cue 0.5846  retry 0.3470 | increment +0.2376 [+0.1996,+0.2758]  n=1938 rows / 640 items
+
+--- ZH ------------------------------------------------------------------------------
+  A published    greedy+20 vs greedy+5  cue 0.3444  retry 0.0731 | increment +0.2713 [+0.2445,+0.2994]  n=3240 rows / 723 items
+  B greedy only  1 vs 1  (matched)      cue 0.2139  retry 0.0256 | increment +0.1883 [+0.1655,+0.2111]  n=3240 rows / 723 items
+  C cue DOWN to greedy+5 (exact)        cue 0.2806  retry 0.0731 | increment +0.2075 [+0.1830,+0.2325]  n=3240 rows / 723 items
+  D both UP to greedy+20 (iid)          cue 0.3224  retry 0.0728 | increment +0.2497 [+0.2240,+0.2766]  n=3240 rows / 723 items
+
+per-dataset, spec C (the budget-matched increment), item-block bootstrap:
+  en/llama70b    n= 211 | cue@5 0.571  CoT@5 0.242 | +0.3293 [+0.2557,+0.4017] *
+  en/llama8b     n= 333 | cue@5 0.500  CoT@5 0.282 | +0.2181 [+0.1650,+0.2712] *
+  en/qwen14b     n= 357 | cue@5 0.535  CoT@5 0.403 | +0.1312 [+0.0724,+0.1909] *
+  en/qwen32b     n= 341 | cue@5 0.537  CoT@5 0.446 | +0.0916 [+0.0317,+0.1536] *
+  en/qwen72b     n= 271 | cue@5 0.541  CoT@5 0.284 | +0.2564 [+0.1867,+0.3246] *
+  en/qwen7b      n= 425 | cue@5 0.454  CoT@5 0.369 | +0.0849 [+0.0330,+0.1368] *
+  zh/llama70b    n= 487 | cue@5 0.334  CoT@5 0.053 | +0.2805 [+0.2391,+0.3217] *
+  zh/llama8b     n= 566 | cue@5 0.228  CoT@5 0.016 | +0.2117 [+0.1798,+0.2436] *
+  zh/qwen14b     n= 549 | cue@5 0.330  CoT@5 0.100 | +0.2295 [+0.1895,+0.2693] *
+  zh/qwen32b     n= 532 | cue@5 0.337  CoT@5 0.105 | +0.2318 [+0.1919,+0.2725] *
+  zh/qwen72b     n= 498 | cue@5 0.360  CoT@5 0.086 | +0.2739 [+0.2308,+0.3152] *
+  zh/qwen7b      n= 608 | cue@5 0.128  CoT@5 0.079 | +0.0493 [+0.0208,+0.0773] *
+  individually positive with CI excluding 0: 12/12 datasets

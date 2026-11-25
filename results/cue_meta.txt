@@ -1,0 +1,92 @@
+================================================================================================
+ITEM-CLUSTERED META LAYER
+================================================================================================
+item-block bootstrap replicates B=2000; items resampled with replacement within language; all datasets refit per replicate.
+
+
+### FAMILY B: confirmatory first-unit
+
+------------------------------------------------------------------------------------------------
+FAMILY B -- confirmatory first-unit (initial_unit), covariate-adjusted per-dataset logits   (k=8)
+------------------------------------------------------------------------------------------------
+  INDEPENDENCE ASSUMED:
+    IV/FE pool  b=+0.5211  SE=0.2406  CI[+0.0494,+0.9927]  p=0.03036
+    Q(7)=6.02 p=0.5370  I2=0.0%  tau2=0.0000
+  ITEM-BLOCK BOOTSTRAP (B=2000 usable replicates, items resampled within language):
+    per-dataset  analytic SE vs bootstrap SD:
+      en/llama70b    b=+1.963  analytic SE=1.043  boot SD=0.630  ratio=0.60
+      en/llama8b     b=+0.310  analytic SE=0.482  boot SD=0.561  ratio=1.16
+      en/qwen72b     b=+0.617  analytic SE=0.666  boot SD=0.742  ratio=1.11
+      en/qwen7b      b=-0.159  analytic SE=0.516  boot SD=0.588  ratio=1.14
+      zh/llama70b    b=+1.947  analytic SE=1.028  boot SD=0.676  ratio=0.66
+      zh/llama8b     b=+0.512  analytic SE=0.641  boot SD=0.759  ratio=1.18
+      zh/qwen72b     b=+0.603  analytic SE=0.760  boot SD=0.725  ratio=0.95
+      zh/qwen7b      b=+1.013  analytic SE=1.041  boot SD=0.725  ratio=0.70
+    mean off-diagonal correlation: same-language +0.037, cross-language -0.000
+    pooled estimator, item-block bootstrap: SD=0.2697 (vs analytic SE 0.2406, inflation 1.12x)  percentile CI[+0.1518,+1.1930]
+    -> clustered p=0.05334
+    mean off-diagonal correlation rho_bar = +0.0158
+    correlation-corrected Q = Q/(1-rho) = 6.12 on 7 df, p=0.5258  ->  corrected I2 = 0.0% (published I2 = 0.0%)
+    corrected tau2 = 0.0000 (published tau2 = 0.0000)
+
+  one-stage pooled fit (already item-clustered, the main text's +0.68): b=+0.6767 SE=0.2486 CI[+0.190,+1.164] p=0.0065
+  -> the ONE-STAGE estimate is the correctly clustered one; it is the META layer (I2/tau2/HKSJ) that assumes independence.
+
+
+### FAMILY A: cue-unlocked production
+
+------------------------------------------------------------------------------------------------
+FAMILY A -- cue-unlocked production, TOT-vs-DK log-OR (correct-cue arm)   (k=12)
+------------------------------------------------------------------------------------------------
+  INDEPENDENCE ASSUMED:
+    IV/FE pool  b=+0.5527  SE=0.0909  CI[+0.3746,+0.7309]  p=1.191e-09
+    Q(11)=8.94 p=0.6278  I2=0.0%  tau2=0.0000
+  ITEM-BLOCK BOOTSTRAP (B=2000 usable replicates, items resampled within language):
+    per-dataset  analytic SE vs bootstrap SD:
+      en/llama70b    b=+0.770  analytic SE=0.430  boot SD=0.449  ratio=1.05
+      en/llama8b     b=+0.381  analytic SE=0.334  boot SD=0.347  ratio=1.04
+      en/qwen14b     b=+0.887  analytic SE=0.406  boot SD=0.426  ratio=1.05
+      en/qwen32b     b=+0.568  analytic SE=0.452  boot SD=0.477  ratio=1.06
+      en/qwen72b     b=+0.380  analytic SE=0.480  boot SD=0.526  ratio=1.10
+      en/qwen7b      b=+0.600  analytic SE=0.380  boot SD=0.387  ratio=1.02
+      zh/llama70b    b=+0.336  analytic SE=0.232  boot SD=0.230  ratio=0.99
+      zh/llama8b     b=+1.027  analytic SE=0.252  boot SD=0.257  ratio=1.02
+      zh/qwen14b     b=+0.138  analytic SE=0.249  boot SD=0.248  ratio=0.99
+      zh/qwen32b     b=+0.490  analytic SE=0.291  boot SD=0.297  ratio=1.02
+      zh/qwen72b     b=+0.634  analytic SE=0.270  boot SD=0.268  ratio=1.00
+      zh/qwen7b      b=+0.731  analytic SE=0.345  boot SD=0.374  ratio=1.09
+    mean off-diagonal correlation: same-language +0.312, cross-language +0.010
+    pooled estimator, item-block bootstrap: SD=0.1458 (vs analytic SE 0.0909, inflation 1.60x)  percentile CI[+0.2750,+0.8490]
+    -> clustered p=0.0001494
+    mean off-diagonal correlation rho_bar = +0.1474
+    correlation-corrected Q = Q/(1-rho) = 10.48 on 11 df, p=0.4877  ->  corrected I2 = 0.0% (published I2 = 0.0%)
+    corrected tau2 = 0.0000 (published tau2 = 0.0000)
+
+
+### FAMILY C: AoA equivalence
+
+  AoA analysis subset: 504 items shared by all 4 models (this sharing is what the pool ignores); per-model analysis n = [504, 504, 504, 504]
+
+------------------------------------------------------------------------------------------------
+FAMILY C -- AoA coefficient, 4 EN models on the same normed subset   (k=4)
+------------------------------------------------------------------------------------------------
+  INDEPENDENCE ASSUMED:
+    IV/FE pool  b=+0.0586  SE=0.0895  CI[-0.1169,+0.2341]  p=0.5131
+    Q(3)=0.89 p=0.8286  I2=0.0%  tau2=0.0000
+  ITEM-BLOCK BOOTSTRAP (B=2000 usable replicates, items resampled within language):
+    per-dataset  analytic SE vs bootstrap SD:
+      qwen7b         b=-0.051  analytic SE=0.153  boot SD=0.156  ratio=1.02
+      llama8b        b=+0.106  analytic SE=0.169  boot SD=0.175  ratio=1.04
+      qwen72b        b=+0.085  analytic SE=0.193  boot SD=0.204  ratio=1.06
+      llama70b       b=+0.176  analytic SE=0.224  boot SD=0.235  ratio=1.05
+    mean off-diagonal correlation: same-language +nan, cross-language +0.614
+    pooled estimator, item-block bootstrap: SD=0.1554 (vs analytic SE 0.0895, inflation 1.74x)  percentile CI[-0.2345,+0.3642]
+    -> clustered p=0.7063
+    mean off-diagonal correlation rho_bar = +0.6140
+    correlation-corrected Q = Q/(1-rho) = 2.30 on 3 df, p=0.5130  ->  corrected I2 = 0.0% (published I2 = 0.0%)
+    corrected tau2 = 0.0000 (published tau2 = 0.0000)
+  TOST (+-0.20) with analytic (independent) SE=0.0895: p_lower=0.0019 p_upper=0.0571  p_TOST=0.0571  -> EQUIVALENCE NOT ESTABLISHED
+    90% equivalence interval [-0.0887,+0.2059] NOT inside +-0.20
+  TOST (+-0.20) with item-block bootstrap   SE=0.1554: p_lower=0.0481 p_upper=0.1814  p_TOST=0.1814  -> EQUIVALENCE NOT ESTABLISHED
+    90% equivalence interval [-0.1971,+0.3142] NOT inside +-0.20
+  smallest equivalence bound the item-clustered SE supports at alpha=.05: +-0.314
